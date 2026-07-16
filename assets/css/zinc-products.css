@@ -1,0 +1,503 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+  /* /*----------------------------------------------------------------===================================================================== */
+
+
+  /* Cover Section */
+/* Cover Section */
+.cover-section {
+  background-image: url('../Zinc-ProductBG.jpg'); 
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  animation: fadeInBackground 2s ease-out forwards; /* Add animation for background */
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0; /* Ensure the section is hidden initially */
+  animation-delay: 0.5s; /* Slight delay before showing */
+}
+
+/* Fade-in animation for background */
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Cover Text */
+.cover-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 13px 13px 8px rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+  animation: fadeInText 2s ease-out forwards; /* Fade-in text with duration */
+}
+
+.cover-text p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0; /* Hidden initially */
+  animation: fadeInText 2s ease-out 0.5s forwards; /* Fade-in animation for paragraph */
+  text-shadow: 19px 15px 28px rgb(0, 0, 0);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Fade-in animation for text */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Cover Section */
+@media (max-width: 768px) {
+  .cover-text h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+  .cover-text p {
+    font-size: 1rem; /* Adjust paragraph font size */
+    max-width: 90%;
+  }
+}
+
+
+/* Responsive Cover Section */
+@media (max-width: 1024px) {
+  .cover-text h1 {
+      font-size: 2.5rem;
+  }
+  .cover-text p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover-section {
+      min-height: 80vh;
+  }
+  .cover-text h1 {
+      font-size: 2rem;
+  }
+  .cover-text p {
+      font-size: 1rem;
+  }
+}
+#products h1{
+  font-size:xx-large;
+  color: #007b5e;
+}
+/* Product Section */
+.product-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+/* Product Cards Grid */
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Dynamic columns */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Product Card Styling */
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.product-card img {
+ width: 250px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: -10px;
+}
+
+/* Stylish Heading */
+.product-card h3 {
+  font-size: 1.6rem;
+  color:#007b5e  ;
+  margin: 10px 0;
+  position: relative;
+  display: inline-block;
+}
+
+/* Line Decorations */
+.product-card h3::before,
+.product-card h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 2px;
+  background: #ff7b00;
+}
+
+.product-card h3::before {
+  left: -50px;
+}
+
+.product-card h3::after {
+  right: -50px;
+}
+
+/* Product Description */
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.learn-more-btn {
+  display: inline-block;
+  background-color: #ff7b00;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.learn-more-btn:hover {
+  background-color: #e66a00;
+  transform: scale(1.05);
+}
+
+/* Improved Responsive Design */
+@media (max-width: 1024px) {
+  .product-cards {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .product-cards {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .product-card {
+      padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-cards {
+      grid-template-columns: 1fr;
+  }
+  .product-card h3::before,
+  .product-card h3::after {
+      width: 30px;
+  }
+}
+
+/* quality======================== */
+/* Quality Assurance */
+/* Quality Commitment Section */
+.quality-section {
+  background: #007b5e;
+  color: #fff;
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.quality-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Left Side - Text */
+.quality-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #007b5e ;
+}
+.quality-section {
+  background: #1b1b1b;
+  color: #fff;
+}
+.quality-list li::before {
+  color: #ffd700; /* Golden checkmarks */
+}
+
+.quality-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.quality-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.quality-list li {
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quality-list li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #ffd700;
+  font-size: 1.5rem;
+}
+
+/* Right Side - Badges */
+.certification-badges {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.certification-badges img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.certification-badges img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quality-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .quality-list {
+    text-align: center;
+  }
+
+  .certification-badges {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.certification-badges {
+  flex: 1 1 30%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.certification-badges img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Sustainability */
+.sustainability-section {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+.sustainability-section h2{
+  text-align: center;
+  color: #007b5e;
+}
+.sustainability-section h3{
+  color: #007b5e;
+}
+.eco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.eco-card {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.eco-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Global Reach */
+/* Global Reach Section */
+.global-section {
+  background: #1b1b1b;
+  color: #fff;
+  padding: 4rem 10%;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.global-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #007b5e;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Stats Container */
+.distribution-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+ 
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.stat-card p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .distribution-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stat-card{
+    width: 80%;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .distribution-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .distribution-stats {
+      position: relative;
+      transform: none;
+      left: auto;
+      top: auto;
+      margin-top: 2rem;
+  }
+}
+
+/* Professional fade+scale scroll animations */
+.fade-in-up, .fade-in-left, .fade-in-right {
+  opacity: 0;
+  transform: scale(0.96) translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  will-change: opacity, transform;
+}
+.fade-in-left {
+  transform: scale(0.96) translateX(-40px);
+}
+.fade-in-right {
+  transform: scale(0.96) translateX(40px);
+}
+.fade-in-up.visible,
+.fade-in-left.visible,
+.fade-in-right.visible {
+  opacity: 1;
+  transform: scale(1) translateX(0) translateY(0);
+}

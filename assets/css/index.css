@@ -1,0 +1,906 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+z-index: 1;
+position: relative; /* Ensures that any absolute elements are positioned relative to this container */
+color: white; /* Assuming you want white text */
+}
+
+.hero-content h1 {
+    font-size: clamp(30px, 5vw, 80px);
+    margin-bottom: clamp(15px, 2vw, 30px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+   font-family: 'Sora', sans-serif;
+
+}
+
+.hero p {
+    font-size: clamp(16px, 2vw, 36px);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Headings use Poppins for a refined look */
+h1, h2 {
+    font-family: Poppins, Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Hero CTAs */
+.hero-ctas {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #007b5e;
+    border: 1px solid #007b5e;
+}
+.btn-primary:hover {
+    background-color: #036953;
+    border-color: #036953;
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.65);
+}
+.btn-outline:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-1px);
+}
+
+/* Optional: Background overlay for better text visibility */
+.hero {
+position: relative; /* Ensure it contains absolutely positioned elements */
+
+height: 100vh; /* Full viewport height */
+}
+
+
+.hero::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.2); /* Dark overlay for contrast */
+z-index: -1; /* Position it behind the text */
+}
+
+.hero p {
+/* font-size: 20px; */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Lighter shadow for the paragraph */
+opacity: 0; /* Initially hidden */
+transform: translateY(20px); /* Start slightly below */
+transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and transform */
+}
+
+/* Animation applied on hover */
+.hero:hover p {
+opacity: 1; /* Fully visible */
+transform: translateY(0); /* Move to original position */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Retain lighter shadow effect on hover */
+}
+
+  
+  
+  /* ------------------------ */
+
+#about {
+background-size: cover;
+background-position: center;
+color: white;
+position: relative; /* Ensures proper positioning for the overlay */
+}
+
+
+/* Optional: Background overlay for better text visibility */
+#about::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.2); /* Dark overlay for contrast */
+z-index: -1; /* Position it behind the text */
+}
+
+.about-h2 {
+font-size: 36px;
+margin-bottom: 20px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow to the heading */
+}
+
+.about-p {
+font-size: clamp(16px, 2vw, 36px);
+line-height: 1.6;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow to the paragraph */
+}
+
+#about:hover .about-p {
+animation: slideInFromBottom 2.5s forwards;
+}
+
+@keyframes slideInFromBottom {
+0% {
+transform: translateY(100%); /* Start off-screen below */
+opacity: 0; /* Fully transparent */
+}
+100% {
+transform: translateY(0); /* End at original position */
+opacity: 1; /* Fully opaque */
+}
+}
+.about-button {
+display: inline-block;
+margin-top: calc(4% + 12px);
+padding: 12px 24px;
+color: #ffffff;
+background-color: #3CB371; /* Initial Parrot Green */
+border: 2px solid #3CB371; /* Initial Parrot Green border */
+font-size: 1rem;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 25px;
+transition: all 0.3s ease;
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+
+.about-button::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(163, 160, 160); /* Gray background */
+  box-shadow: inset 0 12px 22px rgba(0.4, 0.4, 0.5, 0.4); /* Inner shadow */
+z-index: -1;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.4s ease;
+}
+
+.about-button:hover::before {
+transform: scaleX(1);
+transform-origin: left;
+}
+
+.about-button:hover {
+color: #ffffff; /* White text on hover */
+border-color: #333333; /* Gray border on hover */
+background-color: transparent;
+transform: scale(1.05);
+}
+
+
+
+/* Content Section Styles */
+.content-section {
+padding: 40px 20px;
+text-align: center;
+color: white;
+position: relative;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+/* Background Video Styles */
+.background-video-small {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
+}
+
+
+/* Product Section Styles */
+.product-section {
+    padding: clamp(16px, 4vh, 28px) 16px;
+    text-align: left;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Desktop: responsive product section height for better balance */
+@media (min-width: 769px) and (max-width: 1366px) {
+  .product-section { min-height: 110vh; height: auto; overflow: visible; }
+}
+@media (min-width: 1367px) and (max-width: 1599px) {
+  .product-section { min-height: 120vh; height: auto; overflow: visible; }
+}
+@media (min-width: 1600px) {
+  .product-section { min-height: 130vh; height: auto; overflow: visible; }
+}
+/* Mobile: allow content to grow beyond viewport height */
+@media (max-width: 768px) {
+  .product-section { height: auto; overflow: visible; padding: 20px 14px; }
+  .products-title { padding-left: 0; text-align: center; margin-top: 6px; }
+  .products-description { padding-left: 0; text-align: center; margin-top: 8px; }
+  .use-badges { margin-left: 0; justify-content: center; margin-top: 10px; }
+  .product-card p { -webkit-line-clamp: 3; }
+  .card-link { align-self: center; }
+  .products-button { width: min(92%, 340px); margin-top: 14px; }
+}
+
+/* Products Section Background */
+#products {
+background-size: cover;
+background-position: center;
+color: white;
+position: relative; /* Ensures proper positioning for the overlay */
+overflow: hidden; /* Prevent overflow during animations */
+}
+
+/* Background Overlay for Better Text Visibility */
+#products::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.2); /* Dark overlay for contrast */
+z-index: -1; /* Position it behind the text */
+}
+
+/* Product Title Styles */
+.products-title {
+ 
+padding-left: 20px;
+font-size: clamp(26px, 3.2vw, 34px);
+margin-top: 10px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+/* Product Description Styles */
+.products-description {
+    padding-left: 20px;
+    margin-top: 8px;
+    font-size: clamp(18px, 2.2vw, 24px);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.5);
+    overflow-wrap: break-word;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.products-subtext {
+    font-size: clamp(14px, 1.6vw, 20px);
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+/* Use badges (applications) */
+.use-badges {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 2vh, 20px); /* bigger gap */
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+
+.badge {
+    display: inline-block;
+
+    /* Padding grows with screen size */
+    padding: calc(0.6rem + 0.5vw) calc(1.2rem + 0.8vw);
+
+    /* Pill shape */
+    border-radius: 999px;
+
+    /* Font scales with screen width */
+    font-size: calc(0.8rem + 0.7vw);
+
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #fff;
+    backdrop-filter: blur(4px);
+}
+
+
+
+/* Products grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(8px, 1.4vh, 12px);
+    margin: 12px 16px 0 16px;
+}
+/* Responsive grid: 1-col phones, 2-col tablets, auto-fit desktop */
+@media (max-width: 480px) {
+  .products-grid { grid-template-columns: 1fr; gap: 12px; margin: 10px 10px 0; }
+  .product-card img { width: clamp(52px, 8vh, 76px); height: clamp(52px, 8vh, 76px); }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 12px 14px 0; }
+  .product-card img { width: clamp(48px, 7vh, 72px); height: clamp(48px, 7vh, 72px); }
+}
+/* Refined mobile layout for better feel */
+@media (max-width: 640px) {
+  .product-section { padding: 16px 12px; }
+  .products-title { padding-left: 4px; text-align: left; margin-top: 4px; }
+  .products-description { padding-left: 4px; text-align: left; margin-top: 6px; }
+
+  .use-badges {
+    margin-left: 4px; margin-right: 4px; margin-top: 8px;
+    justify-content: flex-start;
+    overflow-x: auto; overflow-y: hidden; white-space: nowrap; gap: 8px;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .use-badges::-webkit-scrollbar { display: none; }
+  .badge { white-space: nowrap; }
+
+  .products-grid { grid-template-columns: 1fr; gap: 16px; margin: 12px 12px 0; }
+  .product-card { padding: 16px; text-align: left; }
+  .product-card img { width: 68px; height: 68px; }
+
+  .card-link {
+    align-self: stretch; display: block; width: 100%; text-align: center;
+    background-color: #3CB371; border-color: #3CB371; color: #ffffff;
+    padding: 10px 14px;
+  }
+  .card-link:hover { background-color: #349e60; }
+
+  .products-button { width: min(94%, 320px); }
+}
+.product-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: clamp(10px, 1.6vh, 14px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(6px, 1vh, 10px);
+    height: 70%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.product-card img {
+    width: clamp(54%, 9.5vh, 70%);
+    height: clamp(44%, 9.5vh, 70%);
+    mix-blend-mode: multiply; /* removes white/bright icon backgrounds over dark bg */
+    background: transparent;
+    border-radius: 10%;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+   
+}
+.product-card:hover img {
+    transform: scale(1.04) rotate(-1.5deg);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+}
+/* Try different blending for certain icons if halos appear */
+.product-card:nth-child(2) img { mix-blend-mode: darken; }
+.product-card:nth-child(3) img { mix-blend-mode: darken; }
+.product-card h3 {
+    font-family: Poppins, Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.product-card p {
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0.95;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card-link {
+    margin-top: 2%;
+    align-self: flex-start;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.45);
+    padding: 6px 12px;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-size: 13px;
+}
+.card-link:hover {
+    background-color: rgba(255,255,255,0.12);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Initial State for List Items */
+.products-list li {
+opacity: 0; /* Start with hidden items */
+transform: translateY(20px); /* Start below */
+animation: none; /* No animation initially */
+}
+
+/* Apply animations only on hover */
+#products:hover .products-list li {
+animation: fadeIn 1.5s forwards; /* Adjusted animation duration */
+}
+
+/* Animation to reveal list items */
+@keyframes fadeIn {
+0% {
+opacity: 0; /* Fully transparent */
+transform: translateY(20px); /* Start slightly below */
+}
+100% {
+opacity: 1; /* Fully opaque */
+transform: translateY(0); /* Move to original position */
+}
+}
+
+/* Compact tweaks for short viewports to keep products within 100vh */
+@media (max-height: 760px) {
+  .products-title { margin-top: 4px; }
+  .products-description { margin-top: 6px; }
+  .products-grid { gap: 10px; }
+  .product-card { padding: 12px; }
+  .product-card h3 { font-size: 16px; }
+  .product-card p { font-size: 12px; }
+}
+@media (max-height: 650px) {
+  .use-badges { gap: 6px; }
+  .badge { font-size: 11px; }
+  .products-button { margin-top: 8px; }
+}
+
+/* Reveal on scroll */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: none; transform: none; }
+  .reveal.in { transition: none; transform: none; }
+}
+
+/* Background Video Styles */
+.background-video-small {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
+}
+
+
+
+.content-section {
+padding: 40px 20px;
+text-align: center;
+position: relative;
+color: white;
+}
+
+
+
+
+
+#contact {
+padding: 0;
+margin: 0;
+}
+
+.contact-section {
+padding: 40px 20px;
+text-align: center;
+color: white;
+position: relative;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+
+
+.contact-h {
+    font-size: clamp(28px, 3vw, 48px);
+    margin-bottom: clamp(15px, 2vh, 25px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease-in-out forwards;
+    margin-top: clamp(100px, 15vh, 140px);
+}
+
+.contact-description {
+    font-size: clamp(26px, 2.7vw, 46px);
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    color: white;
+   
+    margin: 0 auto;
+}
+
+/* FadeIn animation */
+@keyframes fadeIn {
+0% {
+opacity: 0; /* Fully transparent */
+transform: translateY(20px); /* Start slightly below */
+}
+100% {
+opacity: 1; /* Fully opaque */
+transform: translateY(0); /* Move to original position */
+}
+}
+
+/* Text Hover Animation for .contact-p */
+@keyframes textHover {
+0% {
+transform: translateY(0); /* Original position */
+opacity: 1; /* Fully opaque */
+}
+50% {
+transform: translateY(-10px); /* Move slightly upward */
+opacity: 0.8; /* Slightly fade */
+}
+100% {
+transform: translateY(0); /* Return to original position */
+opacity: 1; /* Fully opaque again */
+}
+}
+.contact-section .mouse-btn {
+display: none;  
+overflow: hidden;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: rgb(163, 160, 160); /* Gray background */
+    box-shadow: inset 0 12px 22px rgba(0.4, 0.4, 0.5, 0.4); /* Inner shadow */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    color:white;
+    margin-top: auto; /* This makes the footer stick to the bottom */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0 0 10px;
+    font-weight: 500;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .social-link img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    filter: grayscale(10%);
+  }
+  
+  .social-link:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    .footer p {
+      font-size: 12px;
+    }
+  
+    .social-link img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .footer {
+      padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+  }
+  
+
+
+.scroll-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    visibility: hidden;
+}
+
+.scroll-buttons {
+    position: absolute;
+    left: -9999px; /* Move the buttons off-screen */
+}
+.mouse-btn {
+width: 80px; 
+height: auto; /* Allow height to adjust automatically based on content */
+margin-top: 400px; /* Margin to give space from the bottom */
+text-align: center; /* Center the text horizontally */
+position: fixed;   
+display: flex; /* Aligns the image and text */
+flex-direction: column; /* Stack items vertically */
+align-items: center; /* Centers the content horizontally */
+}
+
+.mouse-img {
+width: 50px;
+height: 50px;
+margin-bottom: 5px;
+
+/* Optional: If you want rounded borders */
+}
+.scroll {
+display: flex;
+justify-content: center; /* Centers the content horizontally */
+align-items: center;     /* Centers the content vertically inside the element */
+position: fixed;         /* Positions the element relative to the viewport */
+bottom: 90px;               /* Places it at the bottom of the page */
+left: 50%;               /* Aligns to the center of the viewport horizontally */
+transform: translateX(-50%); /* Shifts it back by 50% to truly center it */
+width: 100%;             /* Optional: You can adjust the width as needed */
+/* Optional: Set a background color if desired */
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+font-size: larger;
+}
+.scroll-down {
+font-size: 24px; /* Adjust size of the arrow */
+font-weight: bold;
+text-align: center;
+color:white; /* Arrow color */
+position: fixed;
+bottom: 45px; /* Distance from the bottom of the page */
+left: 50%; /* Center horizontally */
+transform: translateX(-50%); /* Adjust to truly center */
+animation: bounce 1s infinite; /* Optional: Add a bounce animation */
+}
+
+@keyframes bounce {
+0%, 100% {
+transform: translate(-50%, 0);
+}
+50% {
+transform: translate(-50%, -10px);
+}
+}
+
+
+
+.mouse-btn span {
+display: block; /* Ensure the text takes the full width */
+white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+@media (max-width: 768px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* .hero h1 {
+        font-size: 40px;
+    } */
+
+    /* .hero p {
+        font-size: 16px;
+    } */
+
+    .products-description {
+        font-size: 30px;
+    }
+
+    .products-list {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .products-list li {
+        font-size: 16px;
+        padding: 12px 15px 12px 35px;
+        max-width: 100%;
+    }
+
+    .products-list li::before {
+        left: 12px;
+        width: 6px;
+        height: 6px;
+    }
+}
+
+.contact-p {
+font-size: clamp(16px, 1.7vw, 26px);
+margin: 10px 0;
+margin-top: 5px;
+
+}
+
+.contact-p a {
+text-decoration: none;
+color: white;
+display: flex;
+align-items: center;
+transition: color 0.3s ease;
+}
+/* Apply hover effect to the entire contact section */
+.contact-section:hover .contact-p {
+animation: textHover 0.5s ease forwards; /* Trigger hover animation */
+}
+.icon {
+width: 40px;
+height: 40px;
+margin-right: 10px;
+transition: transform 0.3s ease;
+}
+
+.icon:hover {
+transform: scale(1.1); /* Slight zoom-in on hover */
+}
+
+
+  
+
+  .products-title {
+  font-size: 36px;
+  }
+  .products-description {
+  font-size: 1.6rem;
+  }
+  
+  .products-list {
+  font-size: 18px;
+  margin-top: 16px;
+  }
+
+  
+  
+  
+  .contact-h {
+  
+  font-size: 3rem; /* Larger contact heading */
+  }
+  
+  
+ 
+  
+  .footer {
+  padding: 30px; /* More padding for footer */
+  }
+  
+
+@media (max-width: 514px) {
+    body {
+        font-size: 14px;
+    }
+
+    #about .logo {
+        display: none;
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+   
+}
+
+/* Default button style */
+.products-button {
+    padding: clamp(8px, 1.2vh, 12px) clamp(14px, 1.6vw, 20px);
+    color: #ffffff;
+    background-color: #3CB371;
+    border: 2px solid #3CB371;
+    font-size: clamp(.9rem, 1.2vw, 2rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+    width: clamp(180px, 28vw, 240px);
+    height: auto;
+    display: block;
+    margin: clamp(8px, 1.8vh, 16px) auto 0;
+    position: relative;
+    margin-top: -100px;
+}
+
+/* Hover state */
+.products-button::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(163, 160, 160); /* Gray background */
+  box-shadow: inset 0 12px 22px rgba(0.4, 0.4, 0.5, 0.4); /* Inner shadow */
+z-index: -1;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.4s ease;
+}
+
+.products-button:hover::before {
+transform: scaleX(1);
+transform-origin: left;
+}
+
+.products-button:hover {
+color: #ffffff; /* White text on hover */
+border-color: #333333; /* Gray border on hover */
+background-color: transparent;
+transform: scale(1.05);
+}
+
+
+/* Responsive Styles */
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+/* for sub menu on nav bar */

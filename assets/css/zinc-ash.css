@@ -1,0 +1,221 @@
+#bg-image{
+   
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* Product Specifications Table Styles */
+.specifications-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    max-width: 90%;
+    margin: 2.5rem auto;
+}
+
+.specifications-section h2 {
+    color: #007b5e;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.table-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 8px;
+    background: white;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 0.95rem;
+}
+
+.specs-table th {
+    background-color: #007b5e;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.specs-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    color: #2c3e50;
+}
+
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.specs-table tbody tr:hover {
+    background-color: #e8f5e9;
+    transition: background-color 0.3s ease;
+}
+
+/* View Products Button */
+.view-products-btn {
+  display: block;
+  margin: calc(4% + 12px) auto 0 auto;
+  padding: 12px 24px;
+  color: #ffffff;
+  background-color: #3CB371;
+  border: 2px solid #3CB371;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: fit-content;
+}
+
+.view-products-btn::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(163, 160, 160); /* Gray background */
+box-shadow: inset 0 12px 22px rgba(0.4, 0.4, 0.5, 0.4); /* Inner shadow */
+z-index: -1;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.4s ease;
+}
+
+.view-products-btn:hover::before {
+transform: scaleX(1);
+transform-origin: left;
+}
+
+.view-products-btn:hover {
+color: #ffffff; /* White text on hover */
+border-color: #333333; /* Gray border on hover */
+background-color: transparent;
+transform: scale(1.05);
+}
+
+
+
+
+/* Manufacturing Process Section */
+.manufacturing-process {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    max-width: 90%;
+    margin: 2.5rem auto;
+    padding: 2.2rem 1.5rem;
+}
+
+.manufacturing-process h2 {
+    color: #007b5e;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.manufacturing-process ol {
+    counter-reset: process-step;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.manufacturing-process ol li {
+    background: #f5f7fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.08);
+    padding: 1.2rem 1rem;
+    flex: 0 1 calc(33.333% - 2rem); /* 3 per row */
+    margin-bottom: 1rem;
+    position: relative;
+    font-size: 1.08rem;
+    color: #222;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 220px;
+    padding: 1.8rem 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manufacturing-process ol li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.15);
+}
+
+.manufacturing-process ol li:before {
+    counter-increment: process-step;
+    content: counter(process-step);
+    position: absolute;
+    top: -18px;
+    left: 16px;
+    background: #007b5e;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .manufacturing-process ol {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .manufacturing-process ol li {
+        flex: 1 1 100%;
+        min-height: auto;
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .specifications-section {
+        padding: 2rem 1rem;
+    }
+    
+    .specs-table {
+        font-size: 0.85rem;
+    }
+    
+    .specs-table th,
+    .specs-table td {
+        padding: 0.75rem;
+    }
+    
+    .process-cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .process-card {
+        padding: 1.5rem;
+    }
+}
