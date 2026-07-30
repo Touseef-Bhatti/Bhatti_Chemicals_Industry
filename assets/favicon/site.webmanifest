@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Bhatti Chemicals Industry",
+  "short_name": "Bhatti Chemicals",
   "icons": [
     {
       "src": "web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#007b5e",
   "background_color": "#ffffff",
   "display": "standalone"
 }

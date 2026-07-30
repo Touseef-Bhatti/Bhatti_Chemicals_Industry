@@ -1,4 +1,13 @@
-<?php require_once __DIR__ . '/includes/helpers.php'; ?>
+<?php
+require_once __DIR__ . '/includes/helpers.php';
+define('BCI_HEADER_ASSETS_LOADED', true);
+define('BCI_FOOTER_ASSETS_LOADED', true);
+$host = $_SERVER['HTTP_HOST'] ?? '';
+$isLocalhost = preg_match('/^(localhost|127\.0\.0\.1)(:\d+)?$/', $host);
+if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
+    header('Clear-Site-Data: "cache", "storage"');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,25 +34,39 @@
     <link rel="icon" type="image/svg+xml" href="<?php echo site_url('/assets/favicon/favicon.svg'); ?>">
     <link rel="shortcut icon" href="<?php echo site_url('/assets/favicon/favicon.ico'); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
-    <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
     <!-- PWA -->
     <link rel="manifest" href="<?php echo site_url('/manifest.json'); ?>">
     <meta name="theme-color" content="#007b5e">
     <link rel="icon" href="<?php echo site_url('/assets/favicon/web-app-manifest-192x192.png'); ?>" type="image/png">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.css'); ?>">
+    <link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>">
+    <script src="<?php echo site_url('/assets/js/lazy-bg.js'); ?>" defer></script>
+    <script>document.documentElement.classList.add('js');</script>
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-F1BD95KL8M');
+      (function () {
+        if (location.hostname !== 'www.bhattichemicalsindustry.com.pk') return;
+        function loadAnalytics() {
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function(){ dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', 'G-F1BD95KL8M');
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M';
+          document.head.appendChild(script);
+        }
+        window.addEventListener('load', function () {
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadAnalytics, { timeout: 3000 });
+          } else {
+            setTimeout(loadAnalytics, 1500);
+          }
+        });
+      })();
     </script>
 
     <title>Zinc Oxide Manufacturer & Zinc Ash Exporter in Pakistan | Bhatti Chemicals Industry</title>
@@ -118,6 +141,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Contact us by email at info@bhattichemicalsindustry.com.pk or via WhatsApp at +92 304 1462460 with your product name, required quantity, and destination country."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which industries use Zinc Oxide from Bhatti Chemicals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our Zinc Oxide is used by manufacturers in rubber and tyre production, paints and coatings, ceramics and glass, pharmaceuticals and ointments, cosmetics and sunscreens, animal feed, agricultural fertilizers, and battery manufacturing."
           }
         }
       ]
@@ -364,6 +395,14 @@
     .trust-icon {
       font-size: 1.5rem; flex-shrink: 0;
     }
+    .trust-icon svg,
+    .industry-icon svg,
+    .why-icon svg {
+      display: block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+    }
     .trust-item-text strong {
       display: block;
       font-family: 'Sora', sans-serif;
@@ -380,6 +419,14 @@
     .about-section {
       padding: 90px 24px;
       background: #fafafa;
+    }
+    .about-section,
+    .products-section,
+    .industries-section,
+    .why-section,
+    .faq-section {
+      content-visibility: auto;
+      contain-intrinsic-size: 900px;
     }
     .about-grid {
       max-width: 1200px; margin: 0 auto;
@@ -553,6 +600,13 @@
       border-color: #007b5e;
       color: #fff;
     }
+    .industry-icon {
+      width: 1.35rem;
+      height: 1.35rem;
+      flex-shrink: 0;
+      color: #007b5e;
+    }
+    .industries-grid li:hover .industry-icon { color: #fff; }
 
     /* ============================================================
        WHY CHOOSE US
@@ -584,6 +638,7 @@
     }
     .why-icon {
       font-size: 2rem; margin-bottom: 1rem;
+      color: #4ade9e;
     }
     .why-card h3 { color: #fff; margin-bottom: 0.7rem; font-size: 1.05rem; }
     .why-card p { color: rgba(255,255,255,0.65); font-size: 0.92rem; }
@@ -654,6 +709,8 @@
     @media (max-width: 768px) {
       h1 { font-size: 2rem; }
       .hero-molecule { font-size: 160px; right: -15%; }
+      .hero-eyebrow { flex-wrap: wrap; line-height: 1.45; }
+      .hero-section h1 em { display: block; }
       .trust-bar-inner { flex-direction: column; }
       .trust-item { border-right: none; border-bottom: 1px solid #e2e8e0; }
       .trust-item:last-child { border-bottom: none; }
@@ -662,7 +719,11 @@
       .products-grid { grid-template-columns: 1fr; }
       .why-grid { grid-template-columns: 1fr; }
       .industries-grid { grid-template-columns: 1fr 1fr; }
-      .hero-stats { gap: 20px; }
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 18px;
+      }
       .hero-stat { border-right: none; padding-right: 0; margin-right: 0; }
       .featured-product { padding: 28px 22px; }
       .feature-list { grid-template-columns: 1fr; }
@@ -670,16 +731,18 @@
       .hero-ctas a { text-align: center; }
     }
     @media (max-width: 480px) {
+      .hero-section h1 { font-size: 1.9rem; }
       .industries-grid { grid-template-columns: 1fr; }
       .hero-molecule { display: none; }
     }
 
     /* Scroll animations */
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
+    .reveal { opacity: 1; transform: none; }
+    .js .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .js .reveal.visible { opacity: 1; transform: none; }
 
     @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity: 1; transform: none; transition: none; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
     }
     </style>
 </head>
@@ -706,7 +769,7 @@
     <div class="hero-ctas">
       <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="btn-primary">Explore Zinc Oxide</a>
       <a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="btn-secondary" style="color:#4ade9e;border-color:#4ade9e;">Zinc Ash Export</a>
-      <a href="#contact" class="btn-ghost">Request a Quote</a>
+      <a href="<?php echo site_url('/contact-us.php#quote'); ?>" class="btn-ghost">Request a Quote</a>
     </div>
 
     <div class="hero-stats">
@@ -736,28 +799,36 @@
 <div class="trust-bar" role="list" aria-label="Key company credentials">
   <div class="trust-bar-inner">
     <div class="trust-item" role="listitem">
-      <div class="trust-icon" aria-hidden="true"><i class="fa-solid fa-medal"></i></div>
+      <div class="trust-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2.5 4.5 5.7v5.9c0 4.7 3.2 8.4 7.5 9.9 4.3-1.5 7.5-5.2 7.5-9.9V5.7L12 2.5Zm0 2.2 5.5 2.4v4.5c0 3.4-2.1 6.2-5.5 7.8-3.4-1.6-5.5-4.4-5.5-7.8V7.1L12 4.7Zm3.6 5.1-4.5 4.5-2.2-2.2-1.4 1.4 3.6 3.6L17 11.2l-1.4-1.4Z"/></svg>
+      </div>
       <div class="trust-item-text">
         <strong>ISO 9001:2015</strong>
         <span>Quality Management Certified</span>
       </div>
     </div>
     <div class="trust-item" role="listitem">
-      <div class="trust-icon" aria-hidden="true"><i class="fa-solid fa-industry"></i></div>
+      <div class="trust-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M3 21V9l6 3V9l6 3V6h4v15H3Zm2-2h12V8h-1v7.2l-6-3V15l-6-3v7Zm2-2h2v-2H7v2Zm4 0h2v-2h-2v2Zm4 0h2v-2h-2v2Z"/></svg>
+      </div>
       <div class="trust-item-text">
-        <strong>50+ Years</strong>
+        <strong>30+ Years</strong>
         <span>Manufacturing Experience</span>
       </div>
     </div>
     <div class="trust-item" role="listitem">
-      <div class="trust-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></div>
+      <div class="trust-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M9 2h6v2h-1v4.5l5 8.7A3.2 3.2 0 0 1 16.2 22H7.8A3.2 3.2 0 0 1 5 17.2l5-8.7V4H9V2Zm3 7.1-5.3 9.1A1.2 1.2 0 0 0 7.8 20h8.4a1.2 1.2 0 0 0 1.1-1.8L12 9.1ZM8.9 16h6.2l1.1 2H7.8l1.1-2Z"/></svg>
+      </div>
       <div class="trust-item-text">
         <strong>99.9% Purity</strong>
         <span>Zinc Oxide, Every Batch</span>
       </div>
     </div>
     <div class="trust-item" role="listitem">
-      <div class="trust-icon" aria-hidden="true"><i class="fa-solid fa-earth-americas"></i></div>
+      <div class="trust-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3.1a15 15 0 0 0-1-5A8.1 8.1 0 0 1 18.9 11ZM12 4.1c.7 1 1.5 3.1 1.8 6.9h-3.6c.3-3.8 1.1-5.9 1.8-6.9ZM4.3 13h3.9c.1 1.5.3 2.8.6 3.9A8 8 0 0 1 4.3 13Zm3.9-2H4.3a8 8 0 0 1 4.5-3.9A17 17 0 0 0 8.2 11Zm3.8 8.9c-.7-1-1.5-3.1-1.8-6.9h3.6c-.3 3.8-1.1 5.9-1.8 6.9Zm3.2-3c.3-1.1.5-2.4.6-3.9h3.9a8 8 0 0 1-4.5 3.9Z"/></svg>
+      </div>
       <div class="trust-item-text">
         <strong>International Export</strong>
         <span>15+ Countries Served</span>
@@ -882,14 +953,14 @@
     <p class="section-desc">Our Zinc Oxide is used as a critical input material in eight major industrial categories, each with distinct quality requirements that our 99.9% purity product meets consistently.</p>
   </div>
   <ul class="industries-grid" role="list">
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-car"></i></span> Rubber &amp; Tyres</li>
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-palette"></i></span> Paints &amp; Coatings</li>
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-jar"></i></span> Ceramics &amp; Glass</li>
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-pills"></i></span> Pharmaceuticals</li>
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-leaf"></i></span> Cosmetics &amp; Skincare</li>
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-wheat-awn"></i></span> Agriculture &amp; Fertilizers</li>
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-cow"></i></span> Animal Feed</li>
-    <li class="reveal" role="listitem"><span aria-hidden="true"><i class="fa-solid fa-bolt"></i></span> Battery Manufacturing</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17h10v2H7v-2Zm-3-4h2.2l1-4H20l1.4 4H23v5h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H1v-3a2 2 0 0 1 2-2h1Zm5-2-.5 2h10.8l-.7-2H9Zm-3 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm12 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></span> Rubber &amp; Tyres</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18h1.4a2.6 2.6 0 0 0 0-5.2H12a1.2 1.2 0 0 1 0-2.4h2a7 7 0 0 0 0-10.4H12Zm-3 7a1.4 1.4 0 1 1 0-2.8A1.4 1.4 0 0 1 9 10Zm4-1.5a1.4 1.4 0 1 1 2.8 0 1.4 1.4 0 0 1-2.8 0ZM7.5 15a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z"/></svg></span> Paints &amp; Coatings</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 2h8v5.5l3.3 5.7A5.8 5.8 0 0 1 14.3 22H9.7a5.8 5.8 0 0 1-5-8.8L8 7.5V2Zm2 2v4.1l-3.6 6.1A3.8 3.8 0 0 0 9.7 20h4.6a3.8 3.8 0 0 0 3.3-5.8L14 8.1V4h-4Zm-1 11h6l1.2 2H7.8L9 15Z"/></svg></span> Ceramics &amp; Glass</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.4 3.4a4.8 4.8 0 0 1 6.8 6.8l-4 4a4.8 4.8 0 0 1-6.8-6.8l4-4Zm1.4 1.4-4 4a2.8 2.8 0 0 0 4 4l1.3-1.3-4-4 2.7-2.7Zm5.4 5 4.4 4.4a4 4 0 0 1-5.6 5.6l-4.4-4.4 5.6-5.6Zm0 2.8-2.8 2.8 3 3a2 2 0 0 0 2.8-2.8l-3-3Z"/></svg></span> Pharmaceuticals</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 3.5C13.5 4 8.8 7.2 7.1 12.6A8.3 8.3 0 0 0 3 20.5l2 .1c.2-2.2 1.1-4.2 2.6-5.8 2.3 2.3 6.4 2.3 9.3-.5 2.4-2.4 3.3-6.1 3.6-10.8Zm-2.3 2.3c-.4 3.3-1.2 5.5-2.7 7-1.9 1.9-4.5 2.1-6 .6 1.8-1.6 4.1-2.7 6.8-3.3l-.4-2c-2.4.5-4.6 1.4-6.4 2.7 1.7-2.7 4.5-4.3 8.7-5Z"/></svg></span> Cosmetics &amp; Skincare</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22V12.8C8.5 12.2 6 9.4 6 6V3h2v3a4 4 0 0 0 3 3.9V2h2v7.9A4 4 0 0 0 16 6V3h2v3c0 3.4-2.5 6.2-6 6.8V22h-2Z"/></svg></span> Agriculture &amp; Fertilizers</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 10a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v4h2v2h-2v3h-2v-3H7v3H5v-3H3v-2h2v-4Zm2 0v4h10v-4a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm3-1h2v2h-2V9Zm4 0h2v2h-2V9Z"/></svg></span> Animal Feed</li>
+    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h9a2 2 0 0 1 2 2v2h2v4h-2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v12h9V6H7Zm5 1-3 5h2l-1 5 4-6h-2l2-4h-2Z"/></svg></span> Battery Manufacturing</li>
   </ul>
 </section>
 
@@ -903,22 +974,22 @@
   </div>
   <div class="why-grid">
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2h6v2h-1v4.5l5 8.7A3.2 3.2 0 0 1 16.2 22H7.8A3.2 3.2 0 0 1 5 17.2l5-8.7V4H9V2Zm3 7.1-5.3 9.1A1.2 1.2 0 0 0 7.8 20h8.4a1.2 1.2 0 0 0 1.1-1.8L12 9.1ZM8.9 16h6.2l1.1 2H7.8l1.1-2Z"/></svg></div>
       <h3>Consistent Product Quality</h3>
       <p>Every batch of Zinc Oxide is tested for purity, moisture, and physical properties before dispatch. ISO 9001:2015 certified processes ensure batch-to-batch consistency across all orders.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-box"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 9 4.5v11L12 22l-9-4.5v-11L12 2Zm0 2.2L6.2 7.1 12 10l5.8-2.9L12 4.2ZM5 8.7v7.6l6 3v-7.6l-6-3Zm8 10.6 6-3V8.7l-6 3v7.6Z"/></svg></div>
       <h3>Reliable Supply Chain</h3>
       <p>With more than 50 years in zinc manufacturing, we maintain stable production capacity and fulfil both domestic and international orders on consistent schedules.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-earth-americas"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3.1a15 15 0 0 0-1-5A8.1 8.1 0 0 1 18.9 11ZM12 4.1c.7 1 1.5 3.1 1.8 6.9h-3.6c.3-3.8 1.1-5.9 1.8-6.9ZM4.3 13h3.9c.1 1.5.3 2.8.6 3.9A8 8 0 0 1 4.3 13Zm3.9-2H4.3a8 8 0 0 1 4.5-3.9A17 17 0 0 0 8.2 11Zm3.8 8.9c-.7-1-1.5-3.1-1.8-6.9h3.6c-.3 3.8-1.1 5.9-1.8 6.9Zm3.2-3c.3-1.1.5-2.4.6-3.9h3.9a8 8 0 0 1-4.5 3.9Z"/></svg></div>
       <h3>International Export Experience</h3>
       <p>We export Zinc Ash and other zinc products to buyers across 15+ countries, providing complete export documentation, proper packaging, and logistics coordination.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-wrench"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 19.6 19.6 22l-5.8-5.8 2.4-2.4 5.8 5.8ZM14.7 4.2l2.1 2.1-3.3 3.3 1.9 1.9-2.1 2.1-1.9-1.9-5.6 5.6H3v-2.8l5.6-5.6-2-2L8.7 4.8l2 2 4-2.6Z"/></svg></div>
       <h3>Technical Support</h3>
       <p>Our team provides product guidance and consultation for industrial buyers integrating zinc materials into manufacturing processes, helping ensure correct application and performance.</p>
     </div>
@@ -936,7 +1007,7 @@
   </div>
 
   <div class="faq-list" role="list">
-    <div class="faq-item reveal">
+    <div class="faq-item reveal" role="listitem">
       <button class="faq-q" aria-expanded="false">
         What products does Bhatti Chemicals Industry manufacture?
         <span class="faq-chevron" aria-hidden="true">&#9660;</span>
@@ -945,7 +1016,7 @@
         <p>Bhatti Chemicals Industry manufactures <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>">Zinc Oxide (ZnO)</a> as its flagship product. We also supply <a href="<?php echo site_url('/products/zinc-ash.php'); ?>">Zinc Ash Fine (65–70%)</a>, Zinc Ingot, Zinc Dross, Zinc Dust (APCD), and Zinc Alloy. Zinc Oxide is our primary manufactured product; Zinc Ash is our primary export product.</p>
       </div>
     </div>
-    <div class="faq-item reveal">
+    <div class="faq-item reveal" role="listitem">
       <button class="faq-q" aria-expanded="false">
         What is the purity of your Zinc Oxide?
         <span class="faq-chevron" aria-hidden="true">&#9660;</span>
@@ -954,7 +1025,7 @@
         <p>Our Zinc Oxide is produced at 99.9% purity and presented as a fine white powder, free from visible contaminants. It is packed in standard 25 kg bags with a minimum order quantity of 25 kg. Samples and full lab reports are available on request.</p>
       </div>
     </div>
-    <div class="faq-item reveal">
+    <div class="faq-item reveal" role="listitem">
       <button class="faq-q" aria-expanded="false">
         Are your products ISO 9001:2015 certified?
         <span class="faq-chevron" aria-hidden="true">&#9660;</span>
@@ -963,7 +1034,7 @@
         <p>Yes. Bhatti Chemicals Industry is ISO 9001:2015 certified. All products undergo regular third-party laboratory testing to verify purity, composition, and physical properties before shipment, ensuring compliance with international quality standards.</p>
       </div>
     </div>
-    <div class="faq-item reveal">
+    <div class="faq-item reveal" role="listitem">
       <button class="faq-q" aria-expanded="false">
         Do you export Zinc Ash internationally?
         <span class="faq-chevron" aria-hidden="true">&#9660;</span>
@@ -972,7 +1043,7 @@
         <p>Yes. Zinc Ash Fine (65–70%) is one of our primary export products. We supply international buyers with full export documentation, appropriate industrial packaging (25–50 kg bags, custom sizes available), and logistics coordination. Contact us with your destination country and required quantities for a quote.</p>
       </div>
     </div>
-    <div class="faq-item reveal">
+    <div class="faq-item reveal" role="listitem">
       <button class="faq-q" aria-expanded="false">
         Which industries use Zinc Oxide from Bhatti Chemicals?
         <span class="faq-chevron" aria-hidden="true">&#9660;</span>
@@ -981,7 +1052,7 @@
         <p>Our Zinc Oxide is used by manufacturers in rubber and tyre production, paints and coatings, ceramics and glass, pharmaceuticals and ointments, cosmetics and sunscreens, animal feed, agricultural fertilizers, and battery manufacturing.</p>
       </div>
     </div>
-    <div class="faq-item reveal">
+    <div class="faq-item reveal" role="listitem">
       <button class="faq-q" aria-expanded="false">
         How do I request a quotation or product sample?
         <span class="faq-chevron" aria-hidden="true">&#9660;</span>
@@ -1006,6 +1077,10 @@
 // Reveal on scroll
 (function(){
   const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(el => el.classList.add('visible'));
+    return;
+  }
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
   }, { threshold: 0.1 });
@@ -1038,10 +1113,40 @@
 
 <!-- Service Worker -->
 <script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('<?php echo site_url('/service-worker.js'); ?>')
-    .catch(err => console.error('SW error:', err));
-}
+(function () {
+  if (!('serviceWorker' in navigator)) return;
+  var isLocalhost = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+
+  function clearLocalServiceWorkers() {
+    navigator.serviceWorker.getRegistrations()
+      .then(function (registrations) {
+        registrations.forEach(function (registration) {
+          registration.unregister();
+        });
+      })
+      .catch(function () {});
+
+    if ('caches' in window) {
+      caches.keys()
+        .then(function (keys) {
+          keys.forEach(function (key) {
+            caches.delete(key);
+          });
+        })
+        .catch(function () {});
+    }
+  }
+
+  window.addEventListener('load', function () {
+    if (isLocalhost) {
+      clearLocalServiceWorkers();
+      return;
+    }
+
+    navigator.serviceWorker.register('<?php echo site_url('/service-worker.js'); ?>')
+      .catch(err => console.error('SW error:', err));
+  });
+})();
 </script>
 
 </body>

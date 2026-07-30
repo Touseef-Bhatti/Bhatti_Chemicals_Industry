@@ -1,4 +1,21 @@
-const CACHE_NAME = 'static-v3';
+const CACHE_NAME = 'static-v5';
+const IS_LOCALHOST = /^(localhost|127\.0\.0\.1)$/.test(self.location.hostname);
+
+if (IS_LOCALHOST) {
+  self.addEventListener('install', (event) => {
+    event.waitUntil(self.skipWaiting());
+  });
+
+  self.addEventListener('activate', (event) => {
+    event.waitUntil((async () => {
+      const cacheNames = await caches.keys();
+      await Promise.all(cacheNames.map((cacheName) => caches.delete(cacheName)));
+      await self.registration.unregister();
+      const clients = await self.clients.matchAll({ type: 'window' });
+      await Promise.all(clients.map((client) => client.navigate(client.url)));
+    })());
+  });
+} else {
 
 // Small critical assets to cache during install (fast)
 const FILES_TO_CACHE = [
@@ -30,8 +47,16 @@ self.addEventListener('install', (event) => {
 
 // On activate, warm video cache in background (non-fatal if any fail)
 self.addEventListener('activate', (event) => {
-  // Claim clients immediately so page is controlled by this SW.
-  event.waitUntil(self.clients.claim());
+  // Claim clients immediately and remove old caches from previous deployments.
+  event.waitUntil((async () => {
+    await self.clients.claim();
+    const cacheNames = await caches.keys();
+    await Promise.all(
+      cacheNames
+        .filter((cacheName) => cacheName !== CACHE_NAME)
+        .map((cacheName) => caches.delete(cacheName))
+    );
+  })());
 
   // NOTE: We intentionally do NOT warm large video files during activation anymore.
   // Warming large assets can block network and slow page loads. Use the "warm-videos"
@@ -43,19 +68,13 @@ self.addEventListener('fetch', (event) => {
   const req = event.request;
   const url = new URL(req.url);
 
-  // Handle navigation requests (HTML pages) with a cache-first strategy so
-  // navigating back/forward or returning to a page uses the cached response
-  // instead of re-downloading the HTML every time.
+  // Handle navigation requests (HTML pages) with a network-first strategy so
+  // returning visitors get fresh page content after deployments.
   const acceptHeader = req.headers && req.headers.get && req.headers.get('accept');
   const isNavigation = req.mode === 'navigate' || (acceptHeader && acceptHeader.indexOf('text/html') !== -1);
   if (isNavigation) {
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);
-      const cached = await cache.match(req);
-      if (cached) {
-        // Return cached HTML immediately
-        return cached;
-      }
       try {
         const networkResponse = await fetch(req);
         // Cache the HTML for future navigations if we get a successful response
@@ -69,6 +88,7 @@ self.addEventListener('fetch', (event) => {
         return networkResponse;
       } catch (err) {
         // If network fails, fallback to cache if available, otherwise propagate
+        const cached = await cache.match(req);
         if (cached) return cached;
         throw err;
       }
@@ -159,3 +179,4 @@ self.addEventListener('message', (event) => {
     });
   }
 });
+}

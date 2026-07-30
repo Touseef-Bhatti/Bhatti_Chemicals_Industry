@@ -244,7 +244,7 @@ p{line-height:1.8;color:#4a5568}
       <div class="qc-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
       <div class="qc-text"><strong>Email Us</strong><span>info@bhattichemicalsindustry.com.pk</span></div>
     </a>
-    <a href="https://wa.me/9203041462460" target="_blank" rel="noopener noreferrer" class="quick-contact-item">
+    <a href="https://wa.me/923041462460" target="_blank" rel="noopener noreferrer" class="quick-contact-item">
       <div class="qc-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
       <div class="qc-text"><strong>WhatsApp</strong><span>+92 304 1462 460</span></div>
     </a>
@@ -282,26 +282,25 @@ p{line-height:1.8;color:#4a5568}
         <blockquote>"Our vision is to continuously innovate and provide the highest quality Zinc Oxide products, meeting global standards and exceeding customer expectations."</blockquote>
         <div class="leader-contact-row">
           <a href="mailto:info@bhattichemicalsindustry.com.pk"><span aria-hidden="true"><i class="fa-solid fa-envelope"></i></span> info@bhattichemicalsindustry.com.pk</a>
-          <a href="https://wa.me/9203041462460" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> WhatsApp: +92 304 1462 460</a>
+          <a href="https://wa.me/923206881487" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> WhatsApp: +92 320 6881 487</a>
         </div>
       </div>
     </div>
 
-    <!-- Managing Director — SAMPLE DATA, to be replaced -->
+    <!-- Managing Director -->
     <div class="leader-card reveal">
       <div class="leader-photo-wrap">
         <div class="leader-photo-placeholder" aria-hidden="true">MD</div>
         <span class="leader-role-badge" style="background:rgba(200,146,42,.92);">Managing Director</span>
       </div>
       <div class="leader-body">
-        <h3>[Managing Director Name]</h3>
+        <h3>Nafees Qamar</h3>
         <p class="leader-title">Managing Director</p>
-        <blockquote>"Sample quote — replace with the Managing Director's actual statement on operations, quality, or company direction."</blockquote>
+        <blockquote>"We are committed to disciplined operations, consistent quality, and dependable service that builds lasting trust with every customer and business partner."</blockquote>
         <div class="leader-contact-row">
           <a href="mailto:info@bhattichemicalsindustry.com.pk"><span aria-hidden="true"><i class="fa-solid fa-envelope"></i></span> info@bhattichemicalsindustry.com.pk</a>
-          <a href="https://wa.me/9203041462460" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> WhatsApp: +92 304 1462 460</a>
+          <a href="https://wa.me/923041462460" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span> WhatsApp: +92 304 1462 460</a>
         </div>
-        <span class="sample-data-note"><i class="fa-solid fa-triangle-exclamation"></i> Sample placeholder — update with real MD details</span>
       </div>
     </div>
 
@@ -331,7 +330,7 @@ p{line-height:1.8;color:#4a5568}
         <div class="info-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
         <div class="info-card-body">
           <strong>WhatsApp</strong>
-          <a href="https://wa.me/9203041462460" target="_blank" rel="noopener noreferrer">+92 304 1462 460</a>
+          <a href="https://wa.me/923041462460" target="_blank" rel="noopener noreferrer">+92 304 1462 460</a>
         </div>
       </div>
       <div class="info-card">
@@ -409,7 +408,7 @@ p{line-height:1.8;color:#4a5568}
         </div>
         <button type="submit" class="btn-submit">Send Quotation Request</button>
       </form>
-      <p class="form-alt-contact">Prefer WhatsApp? <a href="https://wa.me/9203041462460" target="_blank" rel="noopener noreferrer">Message us directly →</a></p>
+      <p class="form-alt-contact">Prefer WhatsApp? <a href="https://wa.me/923041462460" target="_blank" rel="noopener noreferrer">Message us directly →</a></p>
     </div>
 
   </div>

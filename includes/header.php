@@ -1,4 +1,5 @@
 <?php include_once __DIR__ . '/helpers.php'; ?>
+<?php if (!defined('BCI_HEADER_ASSETS_LOADED')): ?>
 <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.css'); ?>">
 
 <!-- Prefetch common next pages to speed navigation -->
@@ -8,14 +9,18 @@
 <link rel="prefetch" href="<?php echo site_url('/contact-us.php'); ?>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="<?php echo site_url('/assets/js/lazy-bg.js'); ?>" defer></script>
+<?php endif; ?>
 
 <?php
-$currentPage = basename($_SERVER['PHP_SELF']);
-$productPages = ['Zincproducts.php','zinc oxide.php','Zinc-Ingot.php','Zinc-Ash.php','zincDross.php','zincDust.php','zincAlloy.php'];
-$isProductsActive = in_array($currentPage, $productPages);
+$scriptName = str_replace('\\', '/', $_SERVER['SCRIPT_NAME'] ?? ($_SERVER['PHP_SELF'] ?? ''));
+$currentPage = basename($scriptName);
+$isProductSection = strpos($scriptName, '/products/') !== false;
+$productPages = ['zinc-oxide.php','zinc-ash.php','zinc-ingot.php','zinc-dross.php','zinc-dust.php','zinc-alloy.php'];
+$isProductsActive = $isProductSection || in_array($currentPage, $productPages, true);
 $isAboutActive = ($currentPage == 'about.php');
 $isServicesActive = ($currentPage == 'services.php');
 $isContactActive = ($currentPage == 'contact-us.php');
+$isHomeActive = (!$isProductSection && $currentPage == 'index.php');
 ?>
 
 <header class="site-header" id="siteHeader">
@@ -28,7 +33,7 @@ $isContactActive = ($currentPage == 'contact-us.php');
     <nav class="main-nav" aria-label="Primary navigation">
       <ul>
         <li>
-          <a href="<?php echo site_url('/'); ?>" class="nav-link <?php echo ($currentPage == 'index.php') ? 'active' : ''; ?>">Home</a>
+          <a href="<?php echo site_url('/'); ?>" class="nav-link <?php echo $isHomeActive ? 'active' : ''; ?>">Home</a>
         </li>
 
         <li class="has-dropdown">
@@ -46,12 +51,12 @@ $isContactActive = ($currentPage == 'contact-us.php');
               </div>
             </a>
             <ul class="dropdown-list">
-              <li><a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="<?php echo ($currentPage=='zinc oxide.php')?'active':''; ?>">Zinc Oxide</a></li>
-              <li><a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="<?php echo ($currentPage=='Zinc-Ash.php')?'active':''; ?>">Zinc Ash Fine</a></li>
-              <li><a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="<?php echo ($currentPage=='Zinc-Ingot.php')?'active':''; ?>">Zinc Ingot</a></li>
-              <li><a href="<?php echo site_url('/products/zinc-dross.php'); ?>" class="<?php echo ($currentPage=='zincDross.php')?'active':''; ?>">Zinc Dross</a></li>
-              <li><a href="<?php echo site_url('/products/zinc-dust.php'); ?>" class="<?php echo ($currentPage=='zincDust.php')?'active':''; ?>">Zinc Dust (APCD)</a></li>
-              <li><a href="<?php echo site_url('/products/zinc-alloy.php'); ?>" class="<?php echo ($currentPage=='zincAlloy.php')?'active':''; ?>">Zinc Alloy</a></li>
+              <li><a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="<?php echo ($currentPage=='zinc-oxide.php')?'active':''; ?>">Zinc Oxide</a></li>
+              <li><a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="<?php echo ($currentPage=='zinc-ash.php')?'active':''; ?>">Zinc Ash Fine</a></li>
+              <li><a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="<?php echo ($currentPage=='zinc-ingot.php')?'active':''; ?>">Zinc Ingot</a></li>
+              <li><a href="<?php echo site_url('/products/zinc-dross.php'); ?>" class="<?php echo ($currentPage=='zinc-dross.php')?'active':''; ?>">Zinc Dross</a></li>
+              <li><a href="<?php echo site_url('/products/zinc-dust.php'); ?>" class="<?php echo ($currentPage=='zinc-dust.php')?'active':''; ?>">Zinc Dust (APCD)</a></li>
+              <li><a href="<?php echo site_url('/products/zinc-alloy.php'); ?>" class="<?php echo ($currentPage=='zinc-alloy.php')?'active':''; ?>">Zinc Alloy</a></li>
             </ul>
             <a href="<?php echo site_url('/products/'); ?>" class="dropdown-viewall">View All Products →</a>
           </div>
@@ -100,7 +105,7 @@ $isContactActive = ($currentPage == 'contact-us.php');
 
   <ul class="mobile-nav-list">
     <li>
-      <a href="<?php echo site_url('/'); ?>" class="mobile-nav-link <?php echo ($currentPage=='index.php')?'active':''; ?>">Home</a>
+      <a href="<?php echo site_url('/'); ?>" class="mobile-nav-link <?php echo $isHomeActive ? 'active' : ''; ?>">Home</a>
     </li>
 
     <li>
@@ -111,13 +116,13 @@ $isContactActive = ($currentPage == 'contact-us.php');
         </span>
       </div>
       <ul class="mobile-submenu">
-        <li><a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="<?php echo ($currentPage=='zinc oxide.php')?'active':''; ?>">Zinc Oxide</a></li>
-        <li><a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="<?php echo ($currentPage=='Zinc-Ash.php')?'active':''; ?>">Zinc Ash Fine</a></li>
-        <li><a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="<?php echo ($currentPage=='Zinc-Ingot.php')?'active':''; ?>">Zinc Ingot</a></li>
-        <li><a href="<?php echo site_url('/products/zinc-dross.php'); ?>" class="<?php echo ($currentPage=='zincDross.php')?'active':''; ?>">Zinc Dross</a></li>
-        <li><a href="<?php echo site_url('/products/zinc-dust.php'); ?>" class="<?php echo ($currentPage=='zincDust.php')?'active':''; ?>">Zinc Dust (APCD)</a></li>
-        <li><a href="<?php echo site_url('/products/zinc-alloy.php'); ?>" class="<?php echo ($currentPage=='zincAlloy.php')?'active':''; ?>">Zinc Alloy</a></li>
-        <li><a href="<?php echo site_url('/products/'); ?>" class="<?php echo ($currentPage=='Zincproducts.php')?'active':''; ?>">View All Products</a></li>
+        <li><a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="<?php echo ($currentPage=='zinc-oxide.php')?'active':''; ?>">Zinc Oxide</a></li>
+        <li><a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="<?php echo ($currentPage=='zinc-ash.php')?'active':''; ?>">Zinc Ash Fine</a></li>
+        <li><a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="<?php echo ($currentPage=='zinc-ingot.php')?'active':''; ?>">Zinc Ingot</a></li>
+        <li><a href="<?php echo site_url('/products/zinc-dross.php'); ?>" class="<?php echo ($currentPage=='zinc-dross.php')?'active':''; ?>">Zinc Dross</a></li>
+        <li><a href="<?php echo site_url('/products/zinc-dust.php'); ?>" class="<?php echo ($currentPage=='zinc-dust.php')?'active':''; ?>">Zinc Dust (APCD)</a></li>
+        <li><a href="<?php echo site_url('/products/zinc-alloy.php'); ?>" class="<?php echo ($currentPage=='zinc-alloy.php')?'active':''; ?>">Zinc Alloy</a></li>
+        <li><a href="<?php echo site_url('/products/'); ?>" class="<?php echo ($isProductSection && $currentPage=='index.php')?'active':''; ?>">View All Products</a></li>
       </ul>
     </li>
 
