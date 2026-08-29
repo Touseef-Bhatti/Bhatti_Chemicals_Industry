@@ -466,6 +466,7 @@
       .services-grid { grid-template-columns: 1fr; }
       .why-grid { grid-template-columns: 1fr; }
       .identity-facts { grid-template-columns: 1fr 1fr; }
+      .ceo-card { width: 90%; margin-inline: auto; }
       .timeline::before { display: none; }
     }
     @media (max-width: 480px) {

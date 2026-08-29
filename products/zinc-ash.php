@@ -1,4 +1,11 @@
-<?php require_once __DIR__ . '/../includes/helpers.php'; ?>
+<?php
+if (!headers_sent() && extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
+    ob_start('ob_gzhandler');
+}
+define('BCI_HEADER_ASSETS_LOADED', true);
+define('BCI_FOOTER_ASSETS_LOADED', true);
+require_once __DIR__ . '/../includes/helpers.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +25,26 @@
 <link rel="shortcut icon" href="<?php echo site_url('/assets/favicon/favicon.ico'); ?>">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
 <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F1BD95KL8M');</script>
+<link rel="stylesheet" href="<?php echo site_url('/assets/css/header.css'); ?>">
+<link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
+<script>
+(function(){
+  if(location.hostname!=='www.bhattichemicalsindustry.com.pk')return;
+  function loadAnalytics(){
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());gtag('config','G-F1BD95KL8M');
+    var script=document.createElement('script');
+    script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M';
+    document.head.appendChild(script);
+  }
+  window.addEventListener('load',function(){
+    if('requestIdleCallback' in window){requestIdleCallback(loadAnalytics,{timeout:3000});}
+    else{setTimeout(loadAnalytics,1500);}
+  });
+})();
+</script>
 <title>Zinc Ash Fine (65–70%) | Export Supplier | Bhatti Chemicals Industry, Pakistan</title>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Zinc Ash Fine (65–70%)","description":"Zinc Ash Fine with 65–70% metallic zinc content from Bhatti Chemicals Industry, Gujranwala, Pakistan. ISO 9001:2015 certified, packed in 25–50 kg bags, available for international export.","image":"https://www.bhattichemicalsindustry.com.pk/assets/images/products/zinc-ash-fine.jpg","brand":{"@type":"Brand","name":"Bhatti Chemicals Industry"},"manufacturer":{"@type":"Organization","name":"Bhatti Chemicals Industry","address":{"@type":"PostalAddress","addressLocality":"Gujranwala","addressCountry":"PK"}},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","areaServed":"Worldwide"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the zinc content of Bhatti Chemicals Industry's Zinc Ash Fine?","acceptedAnswer":{"@type":"Answer","text":"Bhatti Chemicals Industry's Zinc Ash Fine contains 65–70% metallic zinc (typical). Full laboratory analysis reports are provided with every shipment."}},{"@type":"Question","name":"Do you export Zinc Ash internationally?","acceptedAnswer":{"@type":"Answer","text":"Yes. Zinc Ash Fine is our primary export product. We export to buyers across 15+ countries with full export documentation, ISO-compliant packaging, and logistics coordination."}},{"@type":"Question","name":"What is the packaging for Zinc Ash Fine?","acceptedAnswer":{"@type":"Answer","text":"Zinc Ash Fine is packed in standard 25–50 kg bags. Custom packaging is available on request for bulk or container shipments."}},{"@type":"Question","name":"Is Bhatti Chemicals Industry's Zinc Ash ISO certified?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bhatti Chemicals Industry is ISO 9001:2015 certified. Zinc Ash Fine undergoes quality testing before dispatch and full laboratory reports are available."}},{"@type":"Question","name":"What industries use Zinc Ash Fine?","acceptedAnswer":{"@type":"Answer","text":"Zinc Ash Fine is used for metallic zinc recovery, zinc compound manufacturing, galvanizing industry feedstock, brass and alloy production, and as a raw material in chemical and fertilizer industries."}}]}</script>
@@ -30,8 +52,8 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:82px}
-body{font-family:'Inter',system-ui,sans-serif;color:#1a1a1a;background:#fafafa;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.15}
+body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#1a1a1a;background:#fafafa;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.15}
 h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800}
 h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700}
 h3{font-size:1.1rem;font-weight:600}
@@ -59,8 +81,8 @@ p{line-height:1.8;color:#4a5568}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
 
 /* BTNS */
-.btn-gold{display:inline-block;padding:13px 28px;background:#c8922a;color:#fff;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s,transform .15s;font-family:'Inter',sans-serif}
-.btn-gold:hover{background:#a87020;transform:translateY(-1px)}
+.btn-gold{display:inline-block;padding:13px 28px;background:#8a5a0a;color:#fff;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s,transform .15s;font-family:'Inter',sans-serif}
+.btn-gold:hover{background:#6d4607;transform:translateY(-1px)}
 .btn-ghost{display:inline-block;padding:13px 28px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s;font-family:'Inter',sans-serif}
 .btn-ghost:hover{background:rgba(255,255,255,.18)}
 .btn-primary{display:inline-block;padding:13px 28px;background:#007b5e;color:#fff;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s,transform .15s;font-family:'Inter',sans-serif}
@@ -71,8 +93,8 @@ p{line-height:1.8;color:#4a5568}
 .overview-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
 .overview-item{padding:26px 24px;border-right:1px solid #e2e8e0;display:flex;flex-direction:column}
 .overview-item:last-child{border-right:none}
-.overview-label{font-size:.73rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#9ca3af;margin-bottom:4px}
-.overview-value{font-family:'Sora',sans-serif;font-size:1.3rem;font-weight:700;color:#c8922a;line-height:1.1;margin-bottom:3px}
+.overview-label{font-size:.73rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#4b5563;margin-bottom:4px}
+.overview-value{font-family:'Sora',sans-serif;font-size:1.3rem;font-weight:700;color:#8a5a0a;line-height:1.1;margin-bottom:3px}
 .overview-note{font-size:.8rem;color:#6b7280}
 
 /* EXPORT SECTION */
@@ -80,7 +102,7 @@ p{line-height:1.8;color:#4a5568}
 .export-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .export-text h2{color:#1a1a1a;margin-bottom:1rem}
 .export-text p{margin-bottom:1rem;font-size:1rem}
-.export-text .eyebrow{color:#c8922a}
+.export-text .eyebrow{color:#8a5a0a}
 .export-img-block{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .export-img-card{border-radius:10px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.09);border:1px solid #e2e8e0;background:#fff}
 .export-img-card img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;cursor:zoom-in;transition:transform .3s}
@@ -96,10 +118,10 @@ p{line-height:1.8;color:#4a5568}
 .lab-report-info{display:flex;flex-direction:column;gap:2px}
 .lab-report-info strong{font-size:.88rem;color:#1a1a1a;font-family:'Sora',sans-serif}
 .lab-report-info span{font-size:.78rem;color:#6b7280}
-.lab-report-icon{margin-left:auto;flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#c8922a;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+.lab-report-icon{margin-left:auto;flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#8a5a0a;color:#fff;display:flex;align-items:center;justify-content:center}.lab-report-icon svg{width:17px;height:17px;fill:currentColor}
 .export-highlights{margin-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .export-highlight{background:#fef9ef;border:1px solid #f0d89a;border-radius:8px;padding:12px 14px;display:flex;align-items:flex-start;gap:10px}
-.export-highlight-icon{font-size:1.1rem;flex-shrink:0;margin-top:1px}
+.export-highlight-icon{font-size:1.1rem;color:#8a5a0a;font-weight:700;flex-shrink:0;margin-top:1px}
 .export-highlight strong{display:block;font-size:.88rem;font-weight:600;color:#1a1a1a;margin-bottom:2px}
 .export-highlight span{font-size:.8rem;color:#6b7280}
 
@@ -107,19 +129,19 @@ p{line-height:1.8;color:#4a5568}
 .specs-section{padding:90px 24px;background:#f0f2f0}
 .specs-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .specs-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.specs-table th{background:#c8922a;color:#fff;font-family:'Sora',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.specs-table th{background:#8a5a0a;color:#fff;font-family:'Sora',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:12px 16px;text-align:left}
 .specs-table td{padding:13px 16px;font-size:.92rem;border-bottom:1px solid #e2e8e0;color:#374151}
 .specs-table tr:last-child td{border-bottom:none}
 .specs-table tr:nth-child(even) td{background:#f9fafb}
 .specs-table td:first-child{font-weight:600;color:#1a1a1a}
-.specs-table td.good{color:#c8922a;font-weight:500}
+.specs-table td.good{color:#8a5a0a;font-weight:600}
 
 /* PROCESS */
 .process-section{padding:90px 24px;background:#fff}
 .process-steps{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .process-step{background:#f0f2f0;border:1px solid #e2e8e0;border-radius:12px;padding:28px 24px;transition:box-shadow .25s,transform .2s}
 .process-step:hover{box-shadow:0 8px 28px rgba(0,0,0,.09);transform:translateY(-2px)}
-.step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#c8922a;color:#fff;font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;margin-bottom:14px}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#8a5a0a;color:#fff;font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;margin-bottom:14px}
 .process-step h3{color:#1a1a1a;margin-bottom:.5rem;font-size:1rem}
 .process-step p{font-size:.9rem;color:#4a5568}
 
@@ -131,7 +153,7 @@ p{line-height:1.8;color:#4a5568}
 .app-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .app-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:28px 24px;transition:background .2s,border-color .2s}
 .app-card:hover{background:rgba(200,146,42,.18);border-color:rgba(200,146,42,.4)}
-.app-icon{font-size:1.8rem;margin-bottom:14px}
+.app-icon{font-size:1.8rem;color:#f4c85a;margin-bottom:14px}
 .app-card h3{color:#fff;margin-bottom:.5rem;font-size:1rem}
 .app-card p{color:rgba(255,255,255,.65);font-size:.9rem}
 
@@ -140,7 +162,7 @@ p{line-height:1.8;color:#4a5568}
 .why-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .why-card{background:#fff;border:1px solid #e2e8e0;border-radius:12px;padding:28px 22px;box-shadow:0 2px 10px rgba(0,0,0,.04);transition:box-shadow .25s,transform .2s}
 .why-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.09);transform:translateY(-2px)}
-.why-icon{font-size:1.8rem;margin-bottom:12px}
+.why-icon{font-size:1.8rem;color:#8a5a0a;margin-bottom:12px}
 .why-card h3{color:#1a1a1a;margin-bottom:.5rem;font-size:1rem}
 .why-card p{font-size:.9rem;color:#4a5568}
 
@@ -160,8 +182,8 @@ p{line-height:1.8;color:#4a5568}
 .faq-item{border:1px solid #e2e8e0;border-radius:10px;margin-bottom:12px;background:#fff;overflow:hidden}
 .faq-q{width:100%;background:none;border:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;color:#1a1a1a;transition:background .15s}
 .faq-q:hover{background:#f0f2f0}
-.faq-q[aria-expanded="true"]{background:#f0f2f0;color:#c8922a}
-.faq-chevron{flex-shrink:0;width:22px;height:22px;border:2px solid #c8922a;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c8922a;font-size:.85rem;transition:transform .25s}
+.faq-q[aria-expanded="true"]{background:#f0f2f0;color:#8a5a0a}
+.faq-chevron{flex-shrink:0;width:22px;height:22px;border:2px solid #8a5a0a;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#8a5a0a;font-size:.85rem;transition:transform .25s}
 .faq-q[aria-expanded="true"] .faq-chevron{transform:rotate(180deg)}
 .faq-a{padding:0 24px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s}
 .faq-a.open{max-height:300px;padding:0 24px 20px}
@@ -169,11 +191,11 @@ p{line-height:1.8;color:#4a5568}
 .faq-a a{color:#007b5e}
 
 /* CTA STRIP */
-.cta-strip{background:#c8922a;padding:70px 24px;text-align:center}
+.cta-strip{background:#8a5a0a;padding:70px 24px;text-align:center}
 .cta-strip h2{color:#fff;margin-bottom:.75rem}
-.cta-strip p{color:rgba(255,255,255,.85);font-size:1rem;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-strip p{color:#fff;font-size:1rem;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
 .cta-btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn-white{display:inline-block;padding:14px 30px;background:#fff;color:#c8922a;border-radius:6px;font-weight:700;font-size:.95rem;text-decoration:none;transition:transform .15s,box-shadow .15s;font-family:'Inter',sans-serif}
+.btn-white{display:inline-block;padding:14px 30px;background:#fff;color:#714804;border-radius:6px;font-weight:700;font-size:.95rem;text-decoration:none;transition:transform .15s,box-shadow .15s;font-family:'Inter',sans-serif}
 .btn-white:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.15)}
 .btn-ghost-white{display:inline-block;padding:14px 30px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55);border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s;font-family:'Inter',sans-serif}
 .btn-ghost-white:hover{background:rgba(255,255,255,.12)}
@@ -182,12 +204,17 @@ p{line-height:1.8;color:#4a5568}
 #imgModal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.88);align-items:center;justify-content:center}
 #imgModal.open{display:flex}
 #imgModal img{max-width:90vw;max-height:90vh;border-radius:8px}
-#imgModal button{position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1}
+.modal-actions{position:absolute;top:20px;right:24px;display:flex;align-items:center;gap:12px}
+.modal-download{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:9px 14px;border-radius:6px;background:#8a5a0a;color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;transition:background .2s,transform .15s}
+.modal-download:hover{background:#6d4607;transform:translateY(-1px)}
+.modal-download[hidden]{display:none}
+.modal-download svg{width:16px;height:16px;fill:currentColor}
+.modal-close{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:1.8rem;cursor:pointer;line-height:1}
 
 /* RESPONSIVE */
 @media(max-width:1024px){.export-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.specs-grid{grid-template-columns:1fr}.app-grid{grid-template-columns:1fr 1fr}.related-grid{grid-template-columns:1fr 1fr}.overview-inner{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.process-steps{grid-template-columns:1fr}.export-img-block{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.app-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.export-highlights{grid-template-columns:1fr}.overview-item{border-right:none;border-bottom:1px solid #e2e8e0}.overview-item:last-child{border-bottom:none}.hero-bg-text{display:none}}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+@media(max-width:768px){.modal-actions{top:14px;right:14px;left:14px;justify-content:space-between}.modal-download{min-height:36px;padding:8px 11px;font-size:.78rem}.modal-close{width:36px;height:36px;font-size:1.5rem}.process-steps{grid-template-columns:1fr}.export-img-block{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.app-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.export-highlights{grid-template-columns:1fr}.overview-item{border-right:none;border-bottom:1px solid #e2e8e0}.overview-item:last-child{border-bottom:none}.hero-bg-text{display:none}}
+.export-section,.specs-section,.process-section,.applications-section,.why-section,.related-section,.faq-section{content-visibility:auto;contain-intrinsic-size:auto 900px}.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 </style>
@@ -196,6 +223,7 @@ p{line-height:1.8;color:#4a5568}
 <?php include __DIR__ . '/../includes/header.php'; ?>
 <?php include __DIR__ . '/../includes/whatsapp-widget.php'; ?>
 
+<main id="main-content">
 <section class="page-hero" aria-label="Zinc Ash Fine product page">
   <div class="hero-bg-text" aria-hidden="true">ZnAsh</div>
   <div class="page-hero-inner">
@@ -238,29 +266,29 @@ p{line-height:1.8;color:#4a5568}
       <p>Zinc Ash Fine is a high-value zinc-bearing material with 65–70% metallic zinc content, produced as a by-product from galvanizing and zinc processing operations. Bhatti Chemicals Industry supplies Zinc Ash Fine as its primary export product to international buyers including zinc smelters, refineries, brass producers, and chemical manufacturers.</p>
       <p>Each shipment is accompanied by full laboratory analysis reports confirming zinc content, moisture, particle size, and other key parameters. We provide complete export documentation and work with buyers to meet their logistics and compliance requirements.</p>
       <div class="export-highlights">
-        <div class="export-highlight"><div class="export-highlight-icon"><i class="fa-solid fa-clipboard-list"></i></div><div><strong>Full Lab Reports</strong><span>Certificate of analysis with every batch</span></div></div>
-        <div class="export-highlight"><div class="export-highlight-icon"><i class="fa-solid fa-earth-americas"></i></div><div><strong>15+ Export Countries</strong><span>Established international supply relationships</span></div></div>
-        <div class="export-highlight"><div class="export-highlight-icon"><i class="fa-solid fa-box"></i></div><div><strong>Flexible Packaging</strong><span>25–50 kg bags, bulk options available</span></div></div>
-        <div class="export-highlight"><div class="export-highlight-icon"><i class="fa-solid fa-medal"></i></div><div><strong>ISO 9001:2015</strong><span>Certified quality management system</span></div></div>
+        <div class="export-highlight"><div class="export-highlight-icon" aria-hidden="true">✓</div><div><strong>Full Lab Reports</strong><span>Certificate of analysis with every batch</span></div></div>
+        <div class="export-highlight"><div class="export-highlight-icon" aria-hidden="true">◎</div><div><strong>15+ Export Countries</strong><span>Established international supply relationships</span></div></div>
+        <div class="export-highlight"><div class="export-highlight-icon" aria-hidden="true">□</div><div><strong>Flexible Packaging</strong><span>25–50 kg bags, bulk options available</span></div></div>
+        <div class="export-highlight"><div class="export-highlight-icon" aria-hidden="true">★</div><div><strong>ISO 9001:2015</strong><span>Certified quality management system</span></div></div>
       </div>
     </div>
     <div class="export-img-block reveal">
       <figure class="export-img-card export-img-full">
-        <img src="<?php echo site_url('/assets/images/products/zinc-ash-fine.jpg'); ?>" alt="Zinc Ash Fine physical appearance — brownish powder and flakes" loading="lazy">
+        <img src="<?php echo site_url('/assets/images/products/zinc-ash-fine.webp'); ?>" alt="Zinc Ash Fine physical appearance — brownish powder and flakes" width="480" height="360" loading="lazy" decoding="async">
         <figcaption>Physical appearance — brownish powder/flakes</figcaption>
       </figure>
       <figure class="export-img-card">
-        <img src="<?php echo site_url('/assets/images/products/zinc-ash-fine-bag.png'); ?>" alt="Zinc Ash Fine 25kg bag packaging — Bhatti Chemicals Industry" loading="lazy">
+        <img src="<?php echo site_url('/assets/images/products/zinc-ash-fine-bag.webp'); ?>" alt="Zinc Ash Fine 25kg bag packaging — Bhatti Chemicals Industry" width="480" height="360" loading="lazy" decoding="async">
         <figcaption>Standard 25–50 kg bag packaging</figcaption>
       </figure>
       <figure class="export-img-card">
-        <img src="<?php echo site_url('/assets/images/products/zinc-product-bg.jpg'); ?>" alt="Zinc Ash Fine storage area" loading="lazy">
+        <img src="<?php echo site_url('/assets/images/products/zinc-product-bg.webp'); ?>" alt="Zinc Ash Fine storage area" width="640" height="280" loading="lazy" decoding="async">
         <figcaption>Zinc product warehouse</figcaption>
       </figure>
-      <div class="lab-report-card zoomable-card" data-img="<?php echo site_url('/assets/images/products/zinc-ash-fine-lab-report.png'); ?>">
-        <img src="<?php echo site_url('/assets/images/products/zinc-ash-fine-lab-report.png'); ?>" alt="Lab Report" class="lab-report-thumb">
+      <div class="lab-report-card zoomable-card" data-img="<?php echo site_url('/assets/lab-reports/zinc-ash-fine-lab-report.png'); ?>" data-download="<?php echo site_url('/assets/lab-reports/zinc-ash-fine-lab-report.png'); ?>">
+        <img src="<?php echo site_url('/assets/lab-reports/zinc-ash-fine-lab-report.webp'); ?>" alt="Zinc Ash Fine laboratory analysis report" class="lab-report-thumb" width="160" height="160" loading="lazy" decoding="async">
         <div class="lab-report-info"><strong>Laboratory Analysis Report</strong><span>Click to view full screen</span></div>
-        <div class="lab-report-icon"><i class="fa-solid fa-expand"></i></div>
+        <div class="lab-report-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4Zm10 0h6v6h-2V6h-4ZM4 14h2v4h4v2H4Zm14 0h2v6h-6v-2h4Z"/></svg></div>
       </div>
     </div>
   </div>
@@ -291,7 +319,7 @@ p{line-height:1.8;color:#4a5568}
       <h2 style="font-size:1.5rem;color:#1a1a1a;margin-bottom:1rem">Destinations We Supply To</h2>
       <p style="margin-bottom:1.5rem;font-size:.95rem">Bhatti Chemicals Industry exports Zinc Ash Fine to buyers across Asia, the Middle East, Europe, and beyond. Current and historical export relationships include:</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-        <?php foreach(['<i class="fa-solid fa-location-dot"></i> India','<i class="fa-solid fa-location-dot"></i> UAE','<i class="fa-solid fa-location-dot"></i> Saudi Arabia','<i class="fa-solid fa-location-dot"></i> China','<i class="fa-solid fa-location-dot"></i> United Kingdom','<i class="fa-solid fa-location-dot"></i> United States','<i class="fa-solid fa-location-dot"></i> Russia','<i class="fa-solid fa-location-dot"></i> Turkey'] as $c): ?>
+        <?php foreach(['● India','● UAE','● Saudi Arabia','● China','● United Kingdom','● United States','● Russia','● Turkey'] as $c): ?>
         <div style="background:#fff;border:1px solid #e2e8e0;border-radius:8px;padding:10px 14px;font-size:.9rem;font-weight:500;color:#374151"><?= $c ?></div>
         <?php endforeach; ?>
       </div>
@@ -323,12 +351,12 @@ p{line-height:1.8;color:#4a5568}
     <p class="section-desc">Zinc Ash Fine is a valuable input material in multiple industrial processes, primarily those involving zinc recovery, refining, and compound manufacturing.</p>
   </div>
   <div class="app-grid">
-    <div class="app-card reveal"><div class="app-icon" aria-hidden="true"><i class="fa-solid fa-gear"></i></div><h3>Metallic Zinc Recovery</h3><p>The primary use of Zinc Ash Fine — processed in smelters and refineries to recover and recycle high-purity metallic zinc for reuse in industrial applications.</p></div>
-    <div class="app-card reveal"><div class="app-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></div><h3>Zinc Compound Manufacturing</h3><p>Used as a raw material for producing zinc sulfate, zinc chloride, zinc carbonate, and other zinc chemicals for agriculture, pharmaceuticals, and industrial applications.</p></div>
-    <div class="app-card reveal"><div class="app-icon" aria-hidden="true"><i class="fa-solid fa-nut"></i></div><h3>Galvanizing Industry</h3><p>Recycled into the hot-dip galvanizing process as a zinc feedstock material, supporting efficient use of zinc resources in corrosion-protection coatings.</p></div>
-    <div class="app-card reveal"><div class="app-icon" aria-hidden="true"><i class="fa-solid fa-coins"></i></div><h3>Brass &amp; Alloy Production</h3><p>Used by brass manufacturers and alloy producers as a cost-effective zinc source in the production of copper-zinc and other zinc-based alloys.</p></div>
-    <div class="app-card reveal"><div class="app-icon" aria-hidden="true"><i class="fa-solid fa-wheat-awn"></i></div><h3>Chemical &amp; Fertilizer Industry</h3><p>Processed for use in zinc-enriched fertilisers and soil amendments that correct zinc deficiency in agricultural soils to improve crop yields.</p></div>
-    <div class="app-card reveal"><div class="app-icon" aria-hidden="true"><i class="fa-solid fa-recycle"></i></div><h3>Secondary Zinc Production</h3><p>A key feedstock in secondary zinc smelting operations, where it is refined into commercial-grade zinc products through pyrometallurgical or hydrometallurgical processes.</p></div>
+    <div class="app-card reveal"><div class="app-icon" aria-hidden="true">⚙</div><h3>Metallic Zinc Recovery</h3><p>The primary use of Zinc Ash Fine — processed in smelters and refineries to recover and recycle high-purity metallic zinc for reuse in industrial applications.</p></div>
+    <div class="app-card reveal"><div class="app-icon" aria-hidden="true">⚗</div><h3>Zinc Compound Manufacturing</h3><p>Used as a raw material for producing zinc sulfate, zinc chloride, zinc carbonate, and other zinc chemicals for agriculture, pharmaceuticals, and industrial applications.</p></div>
+    <div class="app-card reveal"><div class="app-icon" aria-hidden="true">◇</div><h3>Galvanizing Industry</h3><p>Recycled into the hot-dip galvanizing process as a zinc feedstock material, supporting efficient use of zinc resources in corrosion-protection coatings.</p></div>
+    <div class="app-card reveal"><div class="app-icon" aria-hidden="true">◎</div><h3>Brass &amp; Alloy Production</h3><p>Used by brass manufacturers and alloy producers as a cost-effective zinc source in the production of copper-zinc and other zinc-based alloys.</p></div>
+    <div class="app-card reveal"><div class="app-icon" aria-hidden="true">✿</div><h3>Chemical &amp; Fertilizer Industry</h3><p>Processed for use in zinc-enriched fertilisers and soil amendments that correct zinc deficiency in agricultural soils to improve crop yields.</p></div>
+    <div class="app-card reveal"><div class="app-icon" aria-hidden="true">↻</div><h3>Secondary Zinc Production</h3><p>A key feedstock in secondary zinc smelting operations, where it is refined into commercial-grade zinc products through pyrometallurgical or hydrometallurgical processes.</p></div>
   </div>
 </section>
 
@@ -338,10 +366,10 @@ p{line-height:1.8;color:#4a5568}
     <h2>Why International Buyers Choose Bhatti Chemicals</h2>
   </div>
   <div class="why-grid">
-    <div class="why-card reveal"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-chart-column"></i></div><h3>Consistent Analysis</h3><p>Every shipment is backed by full laboratory reports confirming zinc content, moisture, and chemical composition — giving buyers confidence in every order.</p></div>
-    <div class="why-card reveal"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-lock"></i></div><h3>Reliable Supply</h3><p>Established sourcing relationships and consistent inventory allow us to fulfil international orders on agreed schedules without disruption.</p></div>
-    <div class="why-card reveal"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-earth-americas"></i></div><h3>Export Experience</h3><p>With 15+ export markets served, we provide complete export documentation, customs compliance support, and logistics coordination.</p></div>
-    <div class="why-card reveal"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></div><h3>Responsive Team</h3><p>Our trade team responds promptly to inquiries, quotes, and order updates — maintaining clear communication from first contact to delivery.</p></div>
+    <div class="why-card reveal"><div class="why-icon" aria-hidden="true">▥</div><h3>Consistent Analysis</h3><p>Every shipment is backed by full laboratory reports confirming zinc content, moisture, and chemical composition — giving buyers confidence in every order.</p></div>
+    <div class="why-card reveal"><div class="why-icon" aria-hidden="true">◆</div><h3>Reliable Supply</h3><p>Established sourcing relationships and consistent inventory allow us to fulfil international orders on agreed schedules without disruption.</p></div>
+    <div class="why-card reveal"><div class="why-icon" aria-hidden="true">◎</div><h3>Export Experience</h3><p>With 15+ export markets served, we provide complete export documentation, customs compliance support, and logistics coordination.</p></div>
+    <div class="why-card reveal"><div class="why-icon" aria-hidden="true">◇</div><h3>Responsive Team</h3><p>Our trade team responds promptly to inquiries, quotes, and order updates — maintaining clear communication from first contact to delivery.</p></div>
   </div>
 </section>
 
@@ -385,20 +413,31 @@ p{line-height:1.8;color:#4a5568}
 </section>
 
 
+</main>
 <?php include __DIR__ . '/../includes/footer.php'; ?>
 
 <div id="imgModal" role="dialog" aria-modal="true" aria-label="Full-screen image">
-  <button onclick="document.getElementById('imgModal').classList.remove('open')" aria-label="Close">&times;</button>
+  <div class="modal-actions">
+    <a id="modalDownload" class="modal-download" href="#" download="bhatti-chemicals-zinc-ash-lab-report.png" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v10.2l3.6-3.6L18 11l-6 6-6-6 1.4-1.4 3.6 3.6V3ZM5 19h14v2H5v-2Z"/></svg>
+      <span>Download Lab Report</span>
+    </a>
+    <button type="button" class="modal-close" onclick="document.getElementById('imgModal').classList.remove('open')" aria-label="Close">&times;</button>
+  </div>
   <img id="modalImg" src="" alt="Full screen view">
 </div>
 <script>
-document.querySelectorAll('.zoomable').forEach(img=>{img.addEventListener('click',function(){document.getElementById('modalImg').src=this.src;document.getElementById('imgModal').classList.add('open');});});
-document.querySelectorAll('.zoomable-card').forEach(card=>{card.addEventListener('click',function(){document.getElementById('modalImg').src=this.dataset.img;document.getElementById('imgModal').classList.add('open');});});
-document.getElementById('imgModal').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('imgModal').classList.remove('open');});
+const modal=document.getElementById('imgModal');
+const modalImg=document.getElementById('modalImg');
+const modalDownload=document.getElementById('modalDownload');
+function openImageModal(src,downloadUrl=''){modalImg.src=src;if(downloadUrl){modalDownload.href=downloadUrl;modalDownload.hidden=false;}else{modalDownload.href='#';modalDownload.hidden=true;}modal.classList.add('open');}
+function closeImageModal(){modal.classList.remove('open');}
+document.querySelectorAll('.zoomable').forEach(img=>{img.addEventListener('click',function(){openImageModal(this.src);});});
+document.querySelectorAll('.zoomable-card').forEach(card=>{card.addEventListener('click',function(){openImageModal(this.dataset.img,this.dataset.download||'');});});
+modal.addEventListener('click',function(e){if(e.target===this)closeImageModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeImageModal();});
 (function(){const els=document.querySelectorAll('.reveal');const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.08});els.forEach(el=>io.observe(el));})();
 (function(){document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',function(){const expanded=this.getAttribute('aria-expanded')==='true';document.querySelectorAll('.faq-q').forEach(b=>{b.setAttribute('aria-expanded','false');const a=b.nextElementSibling;a.classList.remove('open');a.hidden=true;});if(!expanded){this.setAttribute('aria-expanded','true');const ans=this.nextElementSibling;ans.hidden=false;requestAnimationFrame(()=>ans.classList.add('open'));}});});})();
-window.onload=function(){window.scrollTo(0,0);};
 </script>
 </body>
 </html>

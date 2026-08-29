@@ -27,7 +27,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
   <div class="header-inner">
 
     <a href="<?php echo site_url('/'); ?>" class="logo-link" aria-label="Bhatti Chemicals Industry — Home">
-      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry" class="logo">
+      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry" class="logo" width="955" height="240">
     </a>
 
     <nav class="main-nav" aria-label="Primary navigation">
@@ -43,7 +43,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
           </a>
           <div class="dropdown products-dropdown">
             <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="dropdown-featured">
-              <img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>" alt="Zinc Oxide — flagship product">
+              <img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>" alt="Zinc Oxide — flagship product" width="500" height="427" loading="lazy" decoding="async">
               <div class="dropdown-featured-body">
                 <span class="dropdown-tag">Flagship Product</span>
                 <strong>Zinc Oxide (ZnO)</strong>
@@ -99,7 +99,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
 
 <aside class="mobile-sidebar" id="mobileSidebar" aria-label="Mobile navigation">
   <div class="mobile-sidebar-header">
-    <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry">
+    <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry" width="955" height="240">
     <button class="mobile-sidebar-close" id="mobileSidebarClose" aria-label="Close menu">&times;</button>
   </div>
 

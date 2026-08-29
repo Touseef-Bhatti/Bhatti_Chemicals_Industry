@@ -8,7 +8,7 @@
 
     <!-- Brand -->
     <div class="footer-brand">
-      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry" class="footer-logo">
+      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry" class="footer-logo" width="955" height="240" loading="lazy" decoding="async">
       <p>ISO 9001:2015 certified manufacturer of Zinc Oxide and exporter of Zinc Ash, based in Gujranwala, Pakistan. Serving industrial buyers across rubber, ceramics, pharmaceutical, paint, and agriculture industries worldwide.</p>
       <div class="footer-badges">
         <span class="footer-badge">

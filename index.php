@@ -1,4 +1,7 @@
 <?php
+if (!headers_sent() && extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
+    ob_start('ob_gzhandler');
+}
 require_once __DIR__ . '/includes/helpers.php';
 define('BCI_HEADER_ASSETS_LOADED', true);
 define('BCI_FOOTER_ASSETS_LOADED', true);
@@ -17,6 +20,9 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="Zinc Oxide manufacturer Pakistan, Zinc Oxide supplier, Zinc Ash exporter, Bhatti Chemicals Industry, Gujranwala chemical manufacturer, industrial Zinc Oxide, ISO 9001 certified Zinc Oxide">
     <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/">
+    <link rel="preload" as="image" type="image/webp"
+          href="<?php echo site_url('/assets/images/products/hero-zinc-oxide-bag.webp'); ?>"
+          fetchpriority="high">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -42,7 +48,6 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
 
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.css'); ?>">
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>">
-    <script src="<?php echo site_url('/assets/js/lazy-bg.js'); ?>" defer></script>
     <script>document.documentElement.classList.add('js');</script>
 
     <!-- Google Analytics -->
@@ -311,7 +316,47 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
     .hero-inner {
       position: relative;
       z-index: 2;
-      max-width: 720px;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+      grid-template-areas:
+        "copy visual"
+        "details visual";
+      align-items: center;
+      column-gap: clamp(40px, 6vw, 96px);
+    }
+
+    .hero-copy { grid-area: copy; max-width: 720px; }
+    .hero-details { grid-area: details; max-width: 720px; }
+
+    .hero-product-visual {
+      grid-area: visual;
+      position: relative;
+      width: min(100%, 460px);
+      margin-left: auto;
+      isolation: isolate;
+      margin-bottom: 10pc;
+    }
+    .hero-product-visual::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 8% -8% -5% 8%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(74,222,158,0.2) 0%, rgba(0,123,94,0.08) 48%, transparent 72%);
+      filter: blur(10px);
+    }
+    .hero-product-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: min(68vh, 680px);
+      object-fit: contain;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.13);
+      box-shadow: 0 28px 70px rgba(0,0,0,0.38);
     }
 
     .hero-eyebrow {
@@ -699,8 +744,13 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
        RESPONSIVE
     ============================================================ */
     @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+        column-gap: 36px;
+      }
+      .hero-product-visual { width: min(100%, 380px); }
       .about-grid { grid-template-columns: 1fr; }
-      .about-ceo-img { max-width: 320px; aspect-ratio: auto; }
+      .about-ceo-img { max-width: 320px; margin-inline: auto; aspect-ratio: auto; }
       .featured-product { grid-template-columns: 1fr; gap: 32px; }
       .products-grid { grid-template-columns: 1fr 1fr; }
       .why-grid { grid-template-columns: 1fr 1fr; }
@@ -708,6 +758,30 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
     }
     @media (max-width: 768px) {
       h1 { font-size: 2rem; }
+      .hero-section {
+        min-height: auto;
+        padding: 112px 20px 64px;
+      }
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+          "copy"
+          "visual"
+          "details";
+        row-gap: 28px;
+      }
+      .hero-copy,
+      .hero-details { width: 100%; max-width: none; }
+      .hero-tagline { margin-bottom: 0; }
+      .hero-product-visual {
+        width: min(76vw, 340px);
+        margin: 0 auto;
+      }
+      .hero-product-visual img {
+        max-height: none;
+        border-radius: 16px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.32);
+      }
       .hero-molecule { font-size: 160px; right: -15%; }
       .hero-eyebrow { flex-wrap: wrap; line-height: 1.45; }
       .hero-section h1 em { display: block; }
@@ -729,9 +803,12 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
       .feature-list { grid-template-columns: 1fr; }
       .hero-ctas { flex-direction: column; }
       .hero-ctas a { text-align: center; }
+      .hero-ctas { margin-bottom: 2.2rem; }
     }
     @media (max-width: 480px) {
       .hero-section h1 { font-size: 1.9rem; }
+      .hero-section { padding: 104px 16px 52px; }
+      .hero-product-visual { width: min(82vw, 300px); }
       .industries-grid { grid-template-columns: 1fr; }
       .hero-molecule { display: none; }
     }
@@ -749,6 +826,8 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
 <body>
 
 <?php include __DIR__ . '/includes/header.php'; ?>
+
+<main id="main-content">
 <?php include __DIR__ . '/includes/whatsapp-widget.php'; ?>
 
 <!-- ════════════════════════════════════════════════
@@ -758,36 +837,46 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
   <div class="hero-molecule" aria-hidden="true">ZnO</div>
 
   <div class="hero-inner">
-    <p class="hero-eyebrow">ISO 9001:2015 Certified &nbsp;·&nbsp; Gujranwala, Pakistan</p>
+    <div class="hero-copy">
+      <p class="hero-eyebrow">ISO 9001:2015 Certified &nbsp;·&nbsp; Gujranwala, Pakistan</p>
 
-    <h1>Pakistan's Trusted<br><em>Zinc Oxide</em> Manufacturer<br>& Zinc Ash Exporter</h1>
+      <h1>Pakistan's Trusted<br><em>Zinc Oxide</em> Manufacturer<br>& Zinc Ash Exporter</h1>
 
-    <p class="hero-tagline">
-      Bhatti Chemicals Industry produces high-purity Zinc Oxide (99.9%) and supplies Zinc Ash, Zinc Ingot, and Zinc Dross to manufacturers, processors, and distributors across Pakistan and 15+ countries worldwide.
-    </p>
-
-    <div class="hero-ctas">
-      <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="btn-primary">Explore Zinc Oxide</a>
-      <a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="btn-secondary" style="color:#4ade9e;border-color:#4ade9e;">Zinc Ash Export</a>
-      <a href="<?php echo site_url('/contact-us.php#quote'); ?>" class="btn-ghost">Request a Quote</a>
+      <p class="hero-tagline">
+        Bhatti Chemicals Industry produces high-purity Zinc Oxide (99.9%) and supplies Zinc Ash, Zinc Ingot, and Zinc Dross to manufacturers, processors, and distributors across Pakistan and 15+ countries worldwide.
+      </p>
     </div>
 
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <span class="hero-stat-value">99.9%</span>
-        <span class="hero-stat-label">ZnO Purity</span>
+    <figure class="hero-product-visual">
+      <img src="<?php echo site_url('/assets/images/products/hero-zinc-oxide-bag.webp'); ?>"
+           alt="25 kg bag of 99.9% Zinc Oxide manufactured by Bhatti Chemicals Industry in Pakistan"
+           width="720" height="1080" fetchpriority="high" decoding="async">
+    </figure>
+
+    <div class="hero-details">
+      <div class="hero-ctas">
+        <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="btn-primary">Explore Zinc Oxide</a>
+        <a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="btn-secondary" style="color:#4ade9e;border-color:#4ade9e;">Zinc Ash Export</a>
+        <a href="<?php echo site_url('/contact-us.php#quote'); ?>" class="btn-ghost">Request a Quote</a>
       </div>
-      <div class="hero-stat">
-        <span class="hero-stat-value">50+</span>
-        <span class="hero-stat-label">Years in Zinc</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-value">15+</span>
-        <span class="hero-stat-label">Export Countries</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-value">ISO</span>
-        <span class="hero-stat-label">9001:2015 Certified</span>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">99.9%</span>
+          <span class="hero-stat-label">ZnO Purity</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">50+</span>
+          <span class="hero-stat-label">Years in Zinc</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">15+</span>
+          <span class="hero-stat-label">Export Countries</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">ISO</span>
+          <span class="hero-stat-label">9001:2015 Certified</span>
+        </div>
       </div>
     </div>
   </div>
@@ -1067,6 +1156,8 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
 <!-- ════════════════════════════════════════════════
      CONTACT
 ════════════════════════════════════════════════ -->
+
+</main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
 

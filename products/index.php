@@ -164,7 +164,7 @@ p{line-height:1.8;color:#4a5568}
       </div>
     </a>
     <a href="<?php echo site_url('/products/zinc-dust.php'); ?>" class="product-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-dust-apcd-lab-report.png'); ?>" alt="Zinc Dust APCD" loading="lazy">
+      <img src="<?php echo site_url('/assets/lab-reports/zinc-dust-apcd-lab-report.png'); ?>" alt="Zinc Dust APCD" loading="lazy">
       <div class="product-card-body">
         <span class="product-tag tag-recovery">Zinc Recovery Material</span>
         <h3>Zinc Dust (APCD)</h3>

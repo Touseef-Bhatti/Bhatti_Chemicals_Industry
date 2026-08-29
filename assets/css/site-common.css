@@ -1,0 +1,194 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal,
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.specs-table,
+.comparison-table {
+  min-width: 680px;
+}
+
+.specs-table-wrap,
+.comparison-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.specs-table-wrap .specs-table,
+.comparison-table-wrap .comparison-table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.responsive-scroll-hint {
+  display: none;
+  margin: 0 auto 10px;
+  max-width: 900px;
+  font-size: .78rem;
+  color: #6b7280;
+}
+
+.lab-report-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.lab-report-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  font-size: .78rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lab-report-download:hover {
+  border-color: currentColor;
+}
+
+.lab-report-card {
+  min-width: 0;
+}
+
+.lab-report-info {
+  min-width: 0;
+}
+
+.lab-report-info strong,
+.lab-report-info span {
+  overflow-wrap: anywhere;
+}
+
+.fa-solid,
+.fa-brands {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+  font-style: normal;
+  line-height: 1;
+}
+
+.fa-solid::before,
+.fa-brands::before {
+  content: "";
+  display: block;
+  width: .78em;
+  height: .78em;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+.fa-whatsapp::before { border-radius: 50%; }
+.fa-envelope::before { clip-path: polygon(0 18%,100% 18%,100% 82%,0 82%,0 18%,50% 56%,100% 18%,100% 30%,50% 68%,0 30%); }
+.fa-phone::before { clip-path: polygon(18% 0,42% 0,48% 28%,37% 38%,62% 63%,73% 52%,100% 58%,100% 82%,86% 100%,67% 96%,39% 78%,18% 55%,4% 27%,0 10%); }
+.fa-location-dot::before { border-radius: 50% 50% 50% 0; transform: rotate(-45deg); }
+.fa-flask::before,
+.fa-flask-vial::before { clip-path: polygon(32% 0,68% 0,68% 16%,60% 16%,60% 44%,92% 100%,8% 100%,40% 44%,40% 16%,32% 16%); }
+.fa-box::before { clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%); }
+.fa-earth-americas::before { border-radius: 50%; }
+.fa-medal::before { clip-path: polygon(24% 0,43% 0,50% 18%,57% 0,76% 0,62% 34%,82% 100%,50% 78%,18% 100%,38% 34%); }
+.fa-expand::before { clip-path: polygon(0 0,42% 0,42% 16%,16% 16%,16% 42%,0 42%,0 0,58% 0,100% 0,100% 42%,84% 42%,84% 16%,58% 16%,58% 0,0 58%,16% 58%,16% 84%,42% 84%,42% 100%,0 100%,0 58%,58% 84%,84% 84%,84% 58%,100% 58%,100% 100%,58% 100%); }
+.fa-recycle::before { clip-path: polygon(47% 0,74% 18%,61% 24%,78% 53%,100% 53%,86% 78%,70% 53%,80% 53%,57% 15%,47% 21%,47% 0,20% 37%,5% 62%,18% 62%,0 94%,36% 94%,28% 80%,17% 80%,31% 53%,43% 53%,20% 37%,47% 0); }
+.fa-industry::before { clip-path: polygon(0 100%,0 38%,28% 54%,28% 38%,58% 55%,58% 12%,84% 12%,84% 100%); }
+.fa-car::before { clip-path: polygon(12% 52%,22% 24%,76% 24%,88% 52%,100% 52%,100% 78%,86% 78%,82% 100%,66% 100%,62% 78%,38% 78%,34% 100%,18% 100%,14% 78%,0 78%,0 52%); }
+.fa-gear::before,
+.fa-nut::before { clip-path: polygon(50% 0,62% 18%,84% 16%,82% 38%,100% 50%,82% 62%,84% 84%,62% 82%,50% 100%,38% 82%,16% 84%,18% 62%,0 50%,18% 38%,16% 16%,38% 18%); }
+.fa-coins::before { border-radius: 50%; box-shadow: .18em .18em 0 currentColor, .36em .36em 0 currentColor; }
+.fa-wheat-awn::before { clip-path: polygon(46% 100%,46% 48%,14% 18%,24% 8%,46% 30%,46% 0,54% 0,54% 30%,76% 8%,86% 18%,54% 48%,54% 100%); }
+.fa-shield::before { clip-path: polygon(50% 0,92% 18%,84% 72%,50% 100%,16% 72%,8% 18%); }
+.fa-lock::before { clip-path: polygon(18% 44%,18% 100%,82% 100%,82% 44%,70% 44%,70% 30%,60% 16%,40% 16%,30% 30%,30% 44%); }
+.fa-handshake::before { clip-path: polygon(0 46%,24% 28%,42% 42%,58% 28%,100% 54%,88% 74%,68% 62%,58% 74%,46% 74%,36% 84%,22% 70%,12% 76%); }
+.fa-clipboard-list::before,
+.fa-file-circle-check::before { clip-path: polygon(22% 0,78% 0,78% 18%,90% 18%,90% 100%,10% 100%,10% 18%,22% 18%); }
+.fa-chart-column::before { clip-path: polygon(6% 100%,6% 58%,24% 58%,24% 100%,32% 100%,32% 34%,50% 34%,50% 100%,58% 100%,58% 10%,76% 10%,76% 100%); }
+.fa-fire::before { clip-path: polygon(52% 0,78% 32%,70% 56%,90% 44%,86% 82%,62% 100%,36% 96%,16% 76%,22% 42%,42% 58%,34% 30%); }
+.fa-wind::before { clip-path: polygon(0 28%,70% 28%,82% 18%,72% 8%,60% 18%,50% 18%,50% 4%,76% 4%,100% 26%,76% 48%,0 48%,0 28%,0 68%,58% 68%,70% 58%,82% 70%,62% 88%,0 88%); }
+.fa-warehouse::before { clip-path: polygon(0 42%,50% 0,100% 42%,90% 42%,90% 100%,10% 100%,10% 42%); }
+.fa-magnifying-glass::before { border-radius: 50%; box-shadow: .45em .45em 0 -.1em currentColor; }
+.fa-battery-full::before { clip-path: polygon(0 24%,86% 24%,86% 38%,100% 38%,100% 62%,86% 62%,86% 76%,0 76%); }
+.fa-microscope::before { clip-path: polygon(36% 0,58% 0,58% 14%,48% 14%,70% 52%,86% 52%,86% 66%,60% 66%,60% 78%,88% 78%,88% 100%,16% 100%,16% 84%,44% 84%,44% 66%,28% 66%,28% 52%,50% 52%,36% 26%); }
+.fa-mortar-pestle::before { clip-path: polygon(72% 0,84% 12%,48% 48%,36% 36%,72% 0,10% 42%,90% 42%,82% 88%,18% 88%); }
+.fa-lightbulb::before { clip-path: polygon(50% 0,74% 14%,82% 40%,66% 66%,66% 82%,34% 82%,34% 66%,18% 40%,26% 14%); }
+.fa-cart-shopping::before { clip-path: polygon(0 0,16% 0,22% 16%,100% 16%,88% 62%,30% 62%,34% 74%,88% 74%,88% 88%,26% 88%,12% 14%,0 14%); }
+.fa-building::before { clip-path: polygon(12% 100%,12% 0,88% 0,88% 100%,68% 100%,68% 78%,56% 78%,56% 100%,44% 100%,44% 78%,32% 78%,32% 100%); }
+
+@media (max-width: 768px) {
+  .responsive-scroll-hint {
+    display: block;
+  }
+
+  .specs-table,
+  .comparison-table {
+    min-width: 640px;
+  }
+
+  .lab-report-card {
+    align-items: flex-start;
+  }
+
+  .lab-report-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lab-report-download {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: .74rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .lab-report-card {
+    flex-wrap: wrap;
+  }
+
+  .lab-report-actions {
+    width: 100%;
+    margin-left: 84px;
+    flex-direction: row;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

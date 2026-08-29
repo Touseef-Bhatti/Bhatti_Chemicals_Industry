@@ -19,7 +19,7 @@
 .btn-amber{display:inline-block;padding:13px 28px;background:#b45309;color:#fff;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s,transform .15s;font-family:'Inter',sans-serif}.btn-amber:hover{background:#92400e;transform:translateY(-1px)}.btn-ghost{display:inline-block;padding:13px 28px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s;font-family:'Inter',sans-serif}.btn-ghost:hover{background:rgba(255,255,255,.18)}.btn-primary{display:inline-block;padding:13px 28px;background:#007b5e;color:#fff;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s,transform .15s;font-family:'Inter',sans-serif}.btn-primary:hover{background:#005a45;transform:translateY(-1px)}
 .overview-strip{background:#fff;border-top:3px solid #b45309;border-bottom:1px solid #e2e8e0}.overview-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}.overview-item{padding:26px 24px;border-right:1px solid #e2e8e0;display:flex;flex-direction:column}.overview-item:last-child{border-right:none}.overview-label{font-size:.73rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#9ca3af;margin-bottom:4px}.overview-value{font-family:'Sora',sans-serif;font-size:1.3rem;font-weight:700;color:#b45309;line-height:1.1;margin-bottom:3px}.overview-note{font-size:.8rem;color:#6b7280}
 .detail-section{padding:90px 24px;background:#fff}.detail-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 440px;gap:60px;align-items:start}.detail-text h2{color:#1a1a1a;margin-bottom:1rem}.detail-text p{margin-bottom:1rem;font-size:1rem}
-.detail-img > img{width:100%;border-radius:12px;display:block;object-fit:cover;box-shadow:0 8px 32px rgba(0,0,0,.12)}
+.appearance-image{width:100%;height:300px;border-radius:12px;display:block;object-fit:cover;object-position:center;cursor:zoom-in;box-shadow:0 8px 32px rgba(0,0,0,.12)}
 .detail-img figure{border-radius:10px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.09);border:1px solid #e2e8e0;background:#fff;margin-bottom:14px}
 .detail-img figure img{cursor:zoom-in;transition:transform .3s}.detail-img figure img:hover{transform:scale(1.02)}
 .detail-img figcaption{padding:8px 12px;font-size:.78rem;color:#6b7280;font-weight:500}
@@ -35,8 +35,8 @@
 .related-section{padding:80px 24px;background:#f0f2f0}.related-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.related-card{background:#fff;border:1px solid #e2e8e0;border-radius:12px;overflow:hidden;transition:box-shadow .2s,transform .2s;text-decoration:none}.related-card:hover{box-shadow:0 6px 22px rgba(0,0,0,.09);transform:translateY(-2px)}.related-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.related-card-body{padding:18px 20px}.related-card-body h3{color:#1a1a1a;font-size:1rem;margin-bottom:4px}.related-card-body p{font-size:.86rem;color:#6b7280}
 .faq-section{padding:90px 24px;background:#fafafa}.faq-list{max-width:820px;margin:0 auto}.faq-item{border:1px solid #e2e8e0;border-radius:10px;margin-bottom:12px;background:#fff;overflow:hidden}.faq-q{width:100%;background:none;border:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;text-align:left;cursor:pointer;font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;color:#1a1a1a;transition:background .15s}.faq-q:hover{background:#f0f2f0}.faq-q[aria-expanded="true"]{background:#f0f2f0;color:#b45309}.faq-chevron{flex-shrink:0;width:22px;height:22px;border:2px solid #b45309;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#b45309;font-size:.85rem;transition:transform .25s}.faq-q[aria-expanded="true"] .faq-chevron{transform:rotate(180deg)}.faq-a{padding:0 24px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s}.faq-a.open{max-height:300px;padding:0 24px 20px}.faq-a p{font-size:.95rem;color:#4a5568;line-height:1.75}.faq-a a{color:#007b5e}
 .cta-strip{background:#007b5e;padding:70px 24px;text-align:center}.cta-strip h2{color:#fff;margin-bottom:.75rem}.cta-strip p{color:rgba(255,255,255,.85);font-size:1rem;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}.cta-btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.btn-white{display:inline-block;padding:14px 30px;background:#fff;color:#007b5e;border-radius:6px;font-weight:700;font-size:.95rem;text-decoration:none;transition:transform .15s,box-shadow .15s;font-family:'Inter',sans-serif}.btn-white:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.15)}.btn-ghost-white{display:inline-block;padding:14px 30px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55);border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s;font-family:'Inter',sans-serif}.btn-ghost-white:hover{background:rgba(255,255,255,.12)}
-#imgModal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.88);align-items:center;justify-content:center}#imgModal.open{display:flex}#imgModal img{max-width:90vw;max-height:90vh;border-radius:8px}#imgModal button{position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1}
-@media(max-width:1024px){.detail-grid{grid-template-columns:1fr}.overview-inner{grid-template-columns:1fr 1fr}.apps-grid{grid-template-columns:1fr 1fr}.related-grid{grid-template-columns:1fr 1fr}}@media(max-width:768px){.apps-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.overview-item{border-right:none;border-bottom:1px solid #e2e8e0}.overview-item:last-child{border-bottom:none}.hero-bg-text{display:none}}
+#imgModal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.88);align-items:center;justify-content:center}#imgModal.open{display:flex}#imgModal img{max-width:90vw;max-height:90vh;border-radius:8px}.modal-actions{position:absolute;top:20px;right:24px;display:flex;align-items:center;gap:12px}.modal-download{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:9px 14px;border-radius:6px;background:#b45309;color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;transition:background .2s,transform .15s}.modal-download:hover{background:#92400e;transform:translateY(-1px)}.modal-download[hidden]{display:none}.modal-download svg{width:16px;height:16px;fill:currentColor}.modal-close{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:1.8rem;cursor:pointer;line-height:1}
+@media(max-width:1024px){.detail-grid{grid-template-columns:1fr}.overview-inner{grid-template-columns:1fr 1fr}.apps-grid{grid-template-columns:1fr 1fr}.related-grid{grid-template-columns:1fr 1fr}}@media(max-width:768px){.appearance-image{height:230px}.modal-actions{top:14px;right:14px;left:14px;justify-content:space-between}.modal-download{min-height:36px;padding:8px 11px;font-size:.78rem}.modal-close{width:36px;height:36px;font-size:1.5rem}.apps-grid{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.overview-item{border-right:none;border-bottom:1px solid #e2e8e0}.overview-item:last-child{border-bottom:none}.hero-bg-text{display:none}}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 </style>
 </head>
@@ -77,9 +77,9 @@
       <a href="#contact" class="btn-primary" style="margin-top:.5rem">Request a Quote</a>
     </div>
     <div class="detail-img reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-dross.jpg'); ?>" alt="Zinc Dross physical appearance — dense metallic pieces — Bhatti Chemicals Industry" loading="lazy">
-      <div class="lab-report-card zoomable-card" data-img="<?php echo site_url('/assets/images/products/zinc-dross-lab-report.png'); ?>">
-        <img src="<?php echo site_url('/assets/images/products/zinc-dross-lab-report.png'); ?>" alt="Lab Report" class="lab-report-thumb">
+      <img src="<?php echo site_url('/assets/images/products/zinc-dross.jpg'); ?>" alt="Zinc Dross physical appearance — dense metallic pieces — Bhatti Chemicals Industry" class="appearance-image zoomable" width="960" height="1280" loading="lazy" decoding="async">
+      <div class="lab-report-card zoomable-card" data-img="<?php echo site_url('/assets/lab-reports/zinc-dross-lab-report.png'); ?>" data-download="<?php echo site_url('/assets/lab-reports/zinc-dross-lab-report.png'); ?>">
+        <img src="<?php echo site_url('/assets/lab-reports/zinc-dross-lab-report.png'); ?>" alt="Zinc Dross laboratory analysis report" class="lab-report-thumb" width="2048" height="2048" loading="lazy" decoding="async">
         <div class="lab-report-info"><strong>Lab Analysis Report</strong><span>Click to view full screen</span></div>
         <div class="lab-report-icon"><i class="fa-solid fa-expand"></i></div>
       </div>
@@ -117,7 +117,7 @@
   <div class="related-grid">
     <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>" alt="Zinc Oxide" loading="lazy"><div class="related-card-body"><h3>Zinc Oxide (99.9%)</h3><p>Our flagship manufactured product for rubber, ceramics, pharmaceuticals, and more.</p></div></a>
     <a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-ash-fine.jpg'); ?>" alt="Zinc Ash Fine" loading="lazy"><div class="related-card-body"><h3>Zinc Ash Fine (65–70%)</h3><p>Primary export product with consistent zinc content and full lab analysis.</p></div></a>
-    <a href="<?php echo site_url('/products/zinc-dust.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-dust-apcd-lab-report.png'); ?>" alt="Zinc Dust APCD" loading="lazy"><div class="related-card-body"><h3>Zinc Dust (APCD)</h3><p>50–60% metallic zinc, fine powder for chemical and anti-corrosion applications.</p></div></a>
+    <a href="<?php echo site_url('/products/zinc-dust.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-dust.jpg'); ?>" alt="Zinc Dust APCD" loading="lazy"><div class="related-card-body"><h3>Zinc Dust (APCD)</h3><p>50–60% metallic zinc, fine powder for chemical and anti-corrosion applications.</p></div></a>
   </div>
 </section>
 <section class="faq-section">
@@ -131,12 +131,26 @@
 <section class="cta-strip"><h2>Request a Zinc Dross Quote</h2><p>Contact our team with your required quantity and destination.</p><div class="cta-btn-row"><a href="#contact" class="btn-white">Get in Touch</a><a href="<?php echo site_url('/products/'); ?>" class="btn-ghost-white">View All Products →</a></div></section>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
-<div id="imgModal" role="dialog" aria-modal="true" aria-label="Full-screen image"><button onclick="document.getElementById('imgModal').classList.remove('open')" aria-label="Close">&times;</button><img id="modalImg" src="" alt="Full screen view"></div>
+<div id="imgModal" role="dialog" aria-modal="true" aria-label="Full-screen image">
+  <div class="modal-actions">
+    <a id="modalDownload" class="modal-download" href="#" download="bhatti-chemicals-zinc-dross-lab-report.png" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v10.2l3.6-3.6L18 11l-6 6-6-6 1.4-1.4 3.6 3.6V3ZM5 19h14v2H5v-2Z"/></svg>
+      <span>Download Lab Report</span>
+    </a>
+    <button type="button" class="modal-close" onclick="document.getElementById('imgModal').classList.remove('open')" aria-label="Close">&times;</button>
+  </div>
+  <img id="modalImg" src="" alt="Full screen view">
+</div>
 <script>
-document.querySelectorAll('.zoomable').forEach(img=>{img.addEventListener('click',function(){document.getElementById('modalImg').src=this.src;document.getElementById('imgModal').classList.add('open');});});
-document.querySelectorAll('.zoomable-card').forEach(card=>{card.addEventListener('click',function(){document.getElementById('modalImg').src=this.dataset.img;document.getElementById('imgModal').classList.add('open');});});
-document.getElementById('imgModal').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('imgModal').classList.remove('open');});
+const modal=document.getElementById('imgModal');
+const modalImg=document.getElementById('modalImg');
+const modalDownload=document.getElementById('modalDownload');
+function openImageModal(src,downloadUrl=''){modalImg.src=src;if(downloadUrl){modalDownload.href=downloadUrl;modalDownload.hidden=false;}else{modalDownload.href='#';modalDownload.hidden=true;}modal.classList.add('open');}
+function closeImageModal(){modal.classList.remove('open');}
+document.querySelectorAll('.zoomable').forEach(img=>{img.addEventListener('click',function(){openImageModal(this.src);});});
+document.querySelectorAll('.zoomable-card').forEach(card=>{card.addEventListener('click',function(){openImageModal(this.dataset.img,this.dataset.download||'');});});
+modal.addEventListener('click',function(e){if(e.target===this)closeImageModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeImageModal();});
 (function(){const els=document.querySelectorAll('.reveal');const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.08});els.forEach(el=>io.observe(el));})();
 (function(){document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',function(){const expanded=this.getAttribute('aria-expanded')==='true';document.querySelectorAll('.faq-q').forEach(b=>{b.setAttribute('aria-expanded','false');const a=b.nextElementSibling;a.classList.remove('open');a.hidden=true;});if(!expanded){this.setAttribute('aria-expanded','true');const ans=this.nextElementSibling;ans.hidden=false;requestAnimationFrame(()=>ans.classList.add('open'));}});});})();
 window.onload=function(){window.scrollTo(0,0);};

@@ -1,5 +1,7 @@
 RewriteOptions inherit
 
+AddType text/vtt .vtt
+
 # ✅ Add Browser Caching
 <IfModule mod_expires.c>
   ExpiresActive On

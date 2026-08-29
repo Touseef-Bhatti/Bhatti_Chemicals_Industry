@@ -1,4 +1,11 @@
-<?php require_once __DIR__ . '/includes/helpers.php'; ?>
+<?php
+if (!headers_sent() && extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
+    ob_start('ob_gzhandler');
+}
+define('BCI_HEADER_ASSETS_LOADED', true);
+define('BCI_FOOTER_ASSETS_LOADED', true);
+require_once __DIR__ . '/includes/helpers.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +27,11 @@
   <meta property="og:title" content="Chemical Laboratory Services in Pakistan | Bhatti Chemicals Industry">
   <meta property="og:description" content="In-house laboratory services for zinc, metals recycling and chemical manufacturing in Gujranwala, Pakistan, with SGS Pakistan certification and specialist collaboration.">
   <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/services.php">
-  <meta property="og:image" content="https://www.bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-lab-report.jpg">
+  <meta property="og:image" content="https://www.bhattichemicalsindustry.com.pk/assets/lab-reports/zinc-oxide-lab-report.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Industrial Chemical Laboratory Services | Bhatti Chemicals Industry">
   <meta name="twitter:description" content="Chemical testing, zinc analysis, metals recycling research and batch quality control from Gujranwala, Pakistan.">
-  <meta name="twitter:image" content="https://www.bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-lab-report.jpg">
+  <meta name="twitter:image" content="https://www.bhattichemicalsindustry.com.pk/assets/lab-reports/zinc-oxide-lab-report.jpg">
 
   <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
   <link rel="icon" type="image/svg+xml" href="<?php echo site_url('/assets/favicon/favicon.svg'); ?>">
@@ -32,17 +39,27 @@
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
   <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.css'); ?>">
   <link rel="stylesheet" href="<?php echo site_url('/assets/css/services.css'); ?>">
+  <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-F1BD95KL8M');
+  (function(){
+    if(location.hostname!=='www.bhattichemicalsindustry.com.pk')return;
+    function loadAnalytics(){
+      window.dataLayer=window.dataLayer||[];
+      window.gtag=function(){dataLayer.push(arguments);};
+      gtag('js',new Date());gtag('config','G-F1BD95KL8M');
+      var script=document.createElement('script');
+      script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M';
+      document.head.appendChild(script);
+    }
+    window.addEventListener('load',function(){
+      if('requestIdleCallback' in window){requestIdleCallback(loadAnalytics,{timeout:3000});}
+      else{setTimeout(loadAnalytics,1500);}
+    });
+  })();
   </script>
 
   <script type="application/ld+json">
@@ -188,19 +205,19 @@
   <section class="proof-strip" aria-label="Laboratory credentials">
     <div class="proof-grid">
       <div class="proof-item">
-        <i class="fa-solid fa-building-circle-check" aria-hidden="true"></i>
+        <span class="proof-symbol" aria-hidden="true">◆</span>
         <div><strong>Company-owned laboratory</strong><span>Integrated with manufacturing operations</span></div>
       </div>
       <div class="proof-item">
-        <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+        <span class="proof-symbol" aria-hidden="true">✓</span>
         <div><strong>SGS Pakistan certified</strong><span>Documentation available for review</span></div>
       </div>
       <div class="proof-item">
-        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+        <span class="proof-symbol" aria-hidden="true">◎</span>
         <div><strong>Specialist network</strong><span>Labs, experts and researchers</span></div>
       </div>
       <div class="proof-item">
-        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <span class="proof-symbol" aria-hidden="true">●</span>
         <div><strong>Gujranwala, Pakistan</strong><span>Serving local and international industry</span></div>
       </div>
     </div>
@@ -233,37 +250,37 @@
     <div class="capabilities-grid">
       <article class="capability-card">
         <span class="card-number">01</span>
-        <div class="capability-icon"><i class="fa-solid fa-flask-vial" aria-hidden="true"></i></div>
+        <div class="capability-icon" aria-hidden="true">⚗</div>
         <h3>Chemical &amp; Material Analysis</h3>
         <p>Analysis of zinc oxide, zinc ash, zinc dross, zinc dust, zinc ingot, alloys, raw materials and other zinc-bearing industrial samples.</p>
       </article>
       <article class="capability-card">
         <span class="card-number">02</span>
-        <div class="capability-icon"><i class="fa-solid fa-recycle" aria-hidden="true"></i></div>
+        <div class="capability-icon" aria-hidden="true">↻</div>
         <h3>Metals Recycling Evaluation</h3>
         <p>Technical evaluation of recyclable zinc materials to support recovery decisions, process planning, grading and responsible industrial reuse.</p>
       </article>
       <article class="capability-card">
         <span class="card-number">03</span>
-        <div class="capability-icon"><i class="fa-solid fa-microscope" aria-hidden="true"></i></div>
+        <div class="capability-icon" aria-hidden="true">◉</div>
         <h3>Batch Quality Control</h3>
         <p>Raw-material, in-process and finished-product checks to monitor composition, purity, consistency and key physical characteristics.</p>
       </article>
       <article class="capability-card">
         <span class="card-number">04</span>
-        <div class="capability-icon"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i></div>
+        <div class="capability-icon" aria-hidden="true">✓</div>
         <h3>Reports &amp; Verification</h3>
         <p>Laboratory findings, certificates of analysis and coordination with trusted external laboratories when third-party verification is required.</p>
       </article>
       <article class="capability-card">
         <span class="card-number">05</span>
-        <div class="capability-icon"><i class="fa-solid fa-atom" aria-hidden="true"></i></div>
+        <div class="capability-icon" aria-hidden="true">✦</div>
         <h3>Research &amp; Development</h3>
         <p>Collaborative work on chemical formulations, zinc products, process improvement, recovery efficiency and new industrial applications.</p>
       </article>
       <article class="capability-card">
         <span class="card-number">06</span>
-        <div class="capability-icon"><i class="fa-solid fa-user-gear" aria-hidden="true"></i></div>
+        <div class="capability-icon" aria-hidden="true">◇</div>
         <h3>Technical Consultation</h3>
         <p>Practical guidance from chemical manufacturing and metals recycling professionals for sourcing, production and material-use decisions.</p>
       </article>
@@ -291,14 +308,14 @@
 
       <div class="collaboration-visual">
         <div class="network-center">
-          <i class="fa-solid fa-flask" aria-hidden="true"></i>
+          <span class="network-symbol" aria-hidden="true">⚗</span>
           <strong>BCI Lab</strong>
           <span>Gujranwala</span>
         </div>
-        <div class="network-node node-one"><i class="fa-solid fa-industry"></i><span>Manufacturing</span></div>
-        <div class="network-node node-two"><i class="fa-solid fa-recycle"></i><span>Recycling</span></div>
-        <div class="network-node node-three"><i class="fa-solid fa-user-graduate"></i><span>Researchers</span></div>
-        <div class="network-node node-four"><i class="fa-solid fa-vials"></i><span>Trusted Labs</span></div>
+        <div class="network-node node-one"><span class="network-symbol" aria-hidden="true">▥</span><span>Manufacturing</span></div>
+        <div class="network-node node-two"><span class="network-symbol" aria-hidden="true">↻</span><span>Recycling</span></div>
+        <div class="network-node node-three"><span class="network-symbol" aria-hidden="true">◎</span><span>Researchers</span></div>
+        <div class="network-node node-four"><span class="network-symbol" aria-hidden="true">⚗</span><span>Trusted Labs</span></div>
       </div>
     </div>
   </section>

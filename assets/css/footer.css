@@ -34,6 +34,7 @@
 
 /* ── Brand column ── */
 .footer-brand img.footer-logo {
+  width: auto;
   height: 40px;
   margin-bottom: 18px;
   filter: brightness(0) invert(1);
