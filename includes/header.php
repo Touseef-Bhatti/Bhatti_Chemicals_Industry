@@ -43,7 +43,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
           </a>
           <div class="dropdown products-dropdown">
             <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="dropdown-featured">
-              <img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>" alt="Zinc Oxide — flagship product" width="500" height="427" loading="lazy" decoding="async">
+              <img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>" alt="Zinc Oxide — flagship product" class="dropdown-featured-thumb" width="500" height="427" loading="lazy" decoding="async">
               <div class="dropdown-featured-body">
                 <span class="dropdown-tag">Flagship Product</span>
                 <strong>Zinc Oxide (ZnO)</strong>

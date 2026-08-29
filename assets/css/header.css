@@ -187,11 +187,11 @@ body {
 
 /* Products megamenu */
 .products-dropdown {
-  width: 560px;
-  padding: 20px;
+  width: 520px;
+  padding: 16px;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 20px;
+  grid-template-columns: minmax(170px, 190px) minmax(0, 1fr);
+  gap: 14px;
 }
 
 .dropdown-featured {
@@ -202,28 +202,35 @@ body {
   flex-direction: column;
   text-decoration: none;
   position: relative;
+  min-height: 180px;
 }
 
-.dropdown-featured img {
+.dropdown-featured-thumb {
   width: 100%;
-  aspect-ratio: 4/3;
+  height: 120px;
   object-fit: cover;
+  object-position: center;
   display: block;
+  background: #edf5f0;
 }
 
 .dropdown-featured-body {
-  padding: 12px 14px 14px;
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 
 .dropdown-tag {
   display: inline-block;
   background: rgba(200, 146, 42, 0.25);
   color: #f4c85a;
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 3px 8px;
+  padding: 3px 7px;
   border-radius: 4px;
   margin-bottom: 6px;
 }
@@ -232,15 +239,15 @@ body {
   display: block;
   font-family: 'Sora', sans-serif;
   color: #ffffff;
-  font-size: 0.95rem;
-  margin-bottom: 3px;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
 }
 
 .dropdown-featured span.dropdown-desc {
   display: block;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.78rem;
-  line-height: 1.5;
+  font-size: 0.74rem;
+  line-height: 1.4;
 }
 
 .dropdown-list {
@@ -248,7 +255,7 @@ body {
   margin: 0; padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4px;
+  gap: 3px;
   align-content: start;
 }
 
@@ -256,11 +263,11 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 12px;
+  padding: 9px 10px;
   border-radius: 8px;
   text-decoration: none;
   color: #1a1a1a;
-  font-size: 0.87rem;
+  font-size: 0.82rem;
   font-weight: 600;
   transition: background 0.15s, color 0.15s;
 }

@@ -79,12 +79,6 @@ require_once __DIR__ . '/../includes/helpers.php';
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
         "address": { "@type": "PostalAddress", "addressLocality": "Gujranwala", "addressCountry": "PK" }
-      },
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "areaServed": "Worldwide",
-        "priceCurrency": "USD"
       }
     }
     </script>

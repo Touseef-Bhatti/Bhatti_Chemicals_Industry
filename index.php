@@ -967,17 +967,17 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
   </div>
 
   <!-- Zinc Oxide — flagship -->
-  <article class="featured-product reveal" itemscope itemtype="https://schema.org/Product">
+  <article class="featured-product reveal">
     <div class="featured-product-img">
       <img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>"
            alt="High-purity Zinc Oxide white powder manufactured by Bhatti Chemicals Industry"
-           loading="lazy" itemprop="image">
+           loading="lazy">
       <span class="flagship-badge">Flagship Product</span>
     </div>
     <div class="featured-product-info">
       <p class="eyebrow">Manufactured In-House · Gujranwala, Pakistan</p>
-      <h3 itemprop="name">Zinc Oxide (ZnO) — 99.9% Purity</h3>
-      <p itemprop="description">
+      <h3>Zinc Oxide (ZnO) — 99.9% Purity</h3>
+      <p>
         Our primary manufactured product. Bhatti Chemicals Industry produces high-purity Zinc Oxide through a controlled roasting and oxidation process. The result is a fine white powder that meets the demanding quality requirements of rubber vulcanization, ceramics glazing, pharmaceutical formulations, and beyond.
       </p>
       <ul class="feature-list">
@@ -994,34 +994,34 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
 
   <!-- Secondary products -->
   <div class="products-grid">
-    <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
+    <article class="product-card reveal">
       <img src="<?php echo site_url('/assets/images/products/zinc-ash-fine.jpg'); ?>"
            alt="Zinc Ash Fine 65-70% exported by Bhatti Chemicals Industry"
-           loading="lazy" itemprop="image">
+           loading="lazy">
       <div class="product-card-info">
         <span class="product-badge">Export Product</span>
-        <h3 itemprop="name">Zinc Ash Fine (65–70%)</h3>
-        <p itemprop="description">A high-value zinc recovery material with 65–70% metallic zinc content. Consistent analysis, low moisture, supplied in 25–50 kg bags for international export.</p>
+        <h3>Zinc Ash Fine (65–70%)</h3>
+        <p>A high-value zinc recovery material with 65–70% metallic zinc content. Consistent analysis, low moisture, supplied in 25–50 kg bags for international export.</p>
         <a href="<?php echo site_url('/products/zinc-ash.php'); ?>">View Specifications →</a>
       </div>
     </article>
-    <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
+    <article class="product-card reveal">
       <img src="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>"
            alt="Zinc Ingot by Bhatti Chemicals Industry"
-           loading="lazy" itemprop="image">
+           loading="lazy">
       <div class="product-card-info">
-        <h3 itemprop="name">Zinc Ingot</h3>
-        <p itemprop="description">Industrial-grade zinc ingots for galvanizing, die casting, alloy production, and further zinc processing applications.</p>
+        <h3>Zinc Ingot</h3>
+        <p>Industrial-grade zinc ingots for galvanizing, die casting, alloy production, and further zinc processing applications.</p>
         <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>">View Product →</a>
       </div>
     </article>
-    <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
+    <article class="product-card reveal">
       <img src="<?php echo site_url('/assets/images/products/zinc-dross.jpg'); ?>"
            alt="Zinc Dross by Bhatti Chemicals Industry"
-           loading="lazy" itemprop="image">
+           loading="lazy">
       <div class="product-card-info">
-        <h3 itemprop="name">Zinc Dross</h3>
-        <p itemprop="description">Consistent-grade zinc dross from our Gujranwala facility, suitable for recycling, refining, and zinc recovery workflows.</p>
+        <h3>Zinc Dross</h3>
+        <p>Consistent-grade zinc dross from our Gujranwala facility, suitable for recycling, refining, and zinc recovery workflows.</p>
         <a href="<?php echo site_url('/products/zinc-dross.php'); ?>">View Product →</a>
       </div>
     </article>
