@@ -144,7 +144,7 @@ p{line-height:1.8;color:#4a5568}
       </div>
     </a>
     <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="product-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>" alt="Zinc Ingot" loading="lazy">
+      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Ingot" loading="lazy">
       <div class="product-card-body">
         <span class="product-tag tag-industrial">Industrial Zinc Metal</span>
         <h3>Zinc Ingot</h3>
@@ -174,7 +174,7 @@ p{line-height:1.8;color:#4a5568}
       </div>
     </a>
     <a href="<?php echo site_url('/products/zinc-alloy.php'); ?>" class="product-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>" alt="Zinc Alloy" loading="lazy">
+      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Alloy" loading="lazy">
       <div class="product-card-body">
         <span class="product-tag tag-industrial">Industrial Zinc Metal</span>
         <h3>Zinc Alloy</h3>

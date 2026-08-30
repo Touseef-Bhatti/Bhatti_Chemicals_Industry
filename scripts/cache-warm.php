@@ -21,7 +21,7 @@ $assets = [
     'assets/videos/contact.mp4',
     'assets/images/products/zinc-oxide-bg.jpg',
     'assets/images/products/zinc-dross.jpg',
-    'assets/images/products/zinc-ingot.png',
+    'assets/images/products/zinc-ingot.webp',
     'assets/images/products/zinc-ash-fine-bg.png',
     // External example used in products/zinc-dust.php
     'https://marjanpolymer.com/wp-content/uploads/2024/07/Z1-1.jpg'

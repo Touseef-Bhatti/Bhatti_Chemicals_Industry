@@ -300,7 +300,7 @@
   <div class="section-header reveal"><p class="eyebrow">Also From Bhatti Chemicals</p><h2>Related Zinc Products</h2></div>
   <div class="related-grid">
     <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>" alt="Zinc Oxide" loading="lazy"><div class="related-card-body"><h3>Zinc Oxide (99.9%)</h3><p>Flagship manufactured product for rubber, ceramics, pharma, coatings, and more.</p></div></a>
-    <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>" alt="Zinc Ingot" loading="lazy"><div class="related-card-body"><h3>Zinc Ingot (≥99.95%)</h3><p>The primary zinc metal feedstock for galvanizing, casting, and alloy production.</p></div></a>
+    <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Ingot" loading="lazy"><div class="related-card-body"><h3>Zinc Ingot (≥99.95%)</h3><p>The primary zinc metal feedstock for galvanizing, casting, and alloy production.</p></div></a>
     <a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-ash-fine.jpg'); ?>" alt="Zinc Ash Fine" loading="lazy"><div class="related-card-body"><h3>Zinc Ash Fine (65–70%)</h3><p>Primary export product — consistent zinc content with full lab documentation.</p></div></a>
   </div>
 </section>

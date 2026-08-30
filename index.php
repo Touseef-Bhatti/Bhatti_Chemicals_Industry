@@ -1006,7 +1006,7 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
       </div>
     </article>
     <article class="product-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>"
+      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>"
            alt="Zinc Ingot by Bhatti Chemicals Industry"
            loading="lazy">
       <div class="product-card-info">

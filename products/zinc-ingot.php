@@ -101,7 +101,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       <a href="#contact" class="btn-primary" style="margin-top:.5rem">Request a Quote</a>
     </div>
     <div class="detail-img reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ingot-660.webp'); ?>" data-full="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>" alt="Zinc Ingot appearance supplied by Bhatti Chemicals Industry, Gujranwala Pakistan" class="appearance-image zoomable" width="660" height="405" loading="lazy" decoding="async">
+      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" data-full="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Ingot appearance supplied by Bhatti Chemicals Industry, Gujranwala Pakistan" class="appearance-image zoomable" width="660" height="405" loading="lazy" decoding="async">
       <div class="lab-report-card zoomable-card" data-img="<?php echo site_url('/assets/lab-reports/zinc-ingot-lab-report.png'); ?>" data-download="<?php echo site_url('/assets/lab-reports/zinc-ingot-lab-report.png'); ?>">
         <img src="<?php echo site_url('/assets/lab-reports/zinc-ingot-lab-report.webp'); ?>" alt="Zinc Ingot laboratory certificate of analysis" class="lab-report-thumb" width="160" height="160" loading="lazy" decoding="async">
         <div class="lab-report-info"><strong>Zinc Ingot Lab Report</strong><span>Click to view full screen</span></div>

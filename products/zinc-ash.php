@@ -377,7 +377,7 @@ p{line-height:1.8;color:#4a5568}
   <div class="section-header reveal"><p class="eyebrow">Also From Bhatti Chemicals</p><h2>Related Zinc Products</h2></div>
   <div class="related-grid">
     <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-oxide-appearance.webp'); ?>" alt="Zinc Oxide 99.9% — Bhatti Chemicals Industry" loading="lazy"><div class="related-card-body"><h3>Zinc Oxide (ZnO) — 99.9%</h3><p>Our flagship manufactured product. High-purity ZnO for rubber, ceramics, paint, pharma, and more.</p></div></a>
-    <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>" alt="Zinc Ingot — Bhatti Chemicals Industry" loading="lazy"><div class="related-card-body"><h3>Zinc Ingot</h3><p>Industrial-grade zinc ingots for galvanizing, die casting, and alloy production.</p></div></a>
+    <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Ingot — Bhatti Chemicals Industry" loading="lazy"><div class="related-card-body"><h3>Zinc Ingot</h3><p>Industrial-grade zinc ingots for galvanizing, die casting, and alloy production.</p></div></a>
     <a href="<?php echo site_url('/products/zinc-dross.php'); ?>" class="related-card reveal"><img src="<?php echo site_url('/assets/images/products/zinc-dross.jpg'); ?>" alt="Zinc Dross — Bhatti Chemicals Industry" loading="lazy"><div class="related-card-body"><h3>Zinc Dross</h3><p>High zinc-content dross (85–95%) for recycling and refining workflows.</p></div></a>
   </div>
 </section>

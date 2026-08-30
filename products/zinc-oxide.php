@@ -1079,7 +1079,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
     </a>
     <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="related-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.png'); ?>" alt="Zinc Ingot — Bhatti Chemicals Industry" width="1536" height="1024" loading="lazy" decoding="async">
+      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Ingot — Bhatti Chemicals Industry" width="1536" height="1024" loading="lazy" decoding="async">
       <div class="related-card-body">
         <h3>Zinc Ingot</h3>
         <p>Industrial-grade zinc ingots for galvanizing, die casting, and alloy production.</p>
