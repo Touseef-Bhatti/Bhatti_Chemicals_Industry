@@ -32,7 +32,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
-    <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.css'); ?>">
+    <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
     <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
@@ -527,7 +527,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       padding: 32px 36px;
       display: grid;
       grid-template-columns: 180px 1fr;
-      gap: 36px; align-items: start;
+      gap: 36px; align-items: center;
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
       overflow: hidden;
       transition: box-shadow 0.25s, transform 0.22s, border-color 0.22s;
@@ -537,9 +537,13 @@ require_once __DIR__ . '/../includes/helpers.php';
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       transform: translateY(-4px);
     }
-    .application-img {
+    .application-media {
       width: 100%; aspect-ratio: 1;
-      object-fit: cover; border-radius: 10px; display: block;
+      border-radius: 10px; overflow: hidden;
+    }
+    .application-img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
       transition: transform 0.32s ease, filter 0.32s ease;
     }
     .application-card:hover .application-img {
@@ -581,11 +585,12 @@ require_once __DIR__ . '/../includes/helpers.php';
       background: #f0f2f0; border: 1px solid #e2e8e0;
       border-radius: 12px; overflow: hidden;
       transition: box-shadow 0.2s, transform 0.2s;
-      text-decoration: none;
+      text-decoration: none; display: flex; flex-direction: column;
     }
     .related-card:hover { box-shadow: 0 6px 22px rgba(0,0,0,0.09); transform: translateY(-2px); }
-    .related-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
-    .related-card-body { padding: 18px 20px; }
+    .related-card-media { display: block; aspect-ratio: 16/9; overflow: hidden; }
+    .related-card-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .related-card-body { padding: 18px 20px; flex: 1; }
     .related-card-body h3 { color: #1a1a1a; font-size: 1rem; margin-bottom: 4px; }
     .related-card-body p { font-size: 0.86rem; color: #6b7280; }
 
@@ -682,8 +687,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       .overview-inner { grid-template-columns: 1fr 1fr; }
       .process-steps { grid-template-columns: 1fr 1fr; }
       .related-grid { grid-template-columns: 1fr 1fr; }
-      .application-card { grid-template-columns: 1fr; gap: 20px; padding: 24px; }
-      .application-img { max-width: 220px; aspect-ratio: auto; }
+      .application-card { grid-template-columns: 160px 1fr; gap: 24px; padding: 24px; }
     }
     @media (max-width: 768px) {
       .overview-inner { grid-template-columns: 1fr 1fr; }
@@ -694,6 +698,8 @@ require_once __DIR__ . '/../includes/helpers.php';
       .lab-report-card { grid-column: auto; }
       .process-steps { grid-template-columns: 1fr; }
       .related-grid { grid-template-columns: 1fr; }
+      .application-card { grid-template-columns: 1fr; gap: 18px; padding: 18px; }
+      .application-media { aspect-ratio: 16/9; }
     }
     @media (max-width: 480px) {
       .overview-inner { grid-template-columns: 1fr; }
@@ -1020,7 +1026,7 @@ require_once __DIR__ . '/../includes/helpers.php';
   </div>
   <div class="applications-list">
     <article class="application-card reveal">
-      <img src="<?php echo site_url('/assets/images/icons/applications/tire.jpg'); ?>" alt="Zinc Oxide used in rubber and tyre manufacturing" class="application-img" width="400" height="400" loading="lazy" decoding="async">
+      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/tire.jpg'); ?>" alt="Zinc Oxide used in rubber and tyre manufacturing" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Rubber &amp; Tyres</span>
         <h3>Rubber and Tyre Manufacturing</h3>
@@ -1028,7 +1034,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
     </article>
     <article class="application-card reveal">
-      <img src="<?php echo site_url('/assets/images/icons/applications/cosmatic.jpg'); ?>" alt="Zinc Oxide used in cosmetics and skincare" class="application-img" width="400" height="400" loading="lazy" decoding="async">
+      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/cosmatic.jpg'); ?>" alt="Zinc Oxide used in cosmetics and skincare" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Cosmetics &amp; Skincare</span>
         <h3>Cosmetics and Skincare Products</h3>
@@ -1036,7 +1042,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
     </article>
     <article class="application-card reveal">
-      <img src="<?php echo site_url('/assets/images/icons/applications/medicine.avif'); ?>" alt="Zinc Oxide used in pharmaceuticals and ointments" class="application-img" width="400" height="400" loading="lazy" decoding="async">
+      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/medicine.avif'); ?>" alt="Zinc Oxide used in pharmaceuticals and ointments" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Pharmaceuticals</span>
         <h3>Pharmaceuticals and Ointments</h3>
@@ -1044,7 +1050,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
     </article>
     <article class="application-card reveal">
-      <img src="<?php echo site_url('/assets/images/icons/applications/paints.jpg'); ?>" alt="Zinc Oxide used in paints and coatings" class="application-img" width="400" height="400" loading="lazy" decoding="async">
+      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/paints.jpg'); ?>" alt="Zinc Oxide used in paints and coatings" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Paints &amp; Coatings</span>
         <h3>Paints and Protective Coatings</h3>
@@ -1052,7 +1058,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
     </article>
     <article class="application-card reveal">
-      <img src="<?php echo site_url('/assets/images/icons/applications/feed.jpg'); ?>" alt="Zinc Oxide used in animal feed and agriculture" class="application-img" width="400" height="400" loading="lazy" decoding="async">
+      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/feed.jpg'); ?>" alt="Zinc Oxide used in animal feed and agriculture" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Agriculture &amp; Animal Feed</span>
         <h3>Animal Feed and Agricultural Fertilizers</h3>
@@ -1072,21 +1078,21 @@ require_once __DIR__ . '/../includes/helpers.php';
   </div>
   <div class="related-grid">
     <a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="related-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ash-fine.jpg'); ?>" alt="Zinc Ash Fine 65-70% — Bhatti Chemicals Industry" width="960" height="1280" loading="lazy" decoding="async">
+      <span class="related-card-media"><img src="<?php echo site_url('/assets/images/products/zinc-ash-fine.webp'); ?>" alt="Zinc Ash Fine 65-70% — Bhatti Chemicals Industry" width="480" height="360" loading="lazy" decoding="async"></span>
       <div class="related-card-body">
         <h3>Zinc Ash Fine (65–70%)</h3>
         <p>High-value zinc recovery material for export. Consistent analysis, 25–50 kg bags.</p>
       </div>
     </a>
     <a href="<?php echo site_url('/products/zinc-ingot.php'); ?>" class="related-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Ingot — Bhatti Chemicals Industry" width="1536" height="1024" loading="lazy" decoding="async">
+      <span class="related-card-media"><img src="<?php echo site_url('/assets/images/products/zinc-ingot.webp'); ?>" alt="Zinc Ingot — Bhatti Chemicals Industry" width="660" height="405" loading="lazy" decoding="async"></span>
       <div class="related-card-body">
         <h3>Zinc Ingot</h3>
         <p>Industrial-grade zinc ingots for galvanizing, die casting, and alloy production.</p>
       </div>
     </a>
     <a href="<?php echo site_url('/products/zinc-dross.php'); ?>" class="related-card reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-dross.jpg'); ?>" alt="Zinc Dross — Bhatti Chemicals Industry" width="960" height="1280" loading="lazy" decoding="async">
+      <span class="related-card-media"><img src="<?php echo site_url('/assets/images/products/zinc-dross.jpg'); ?>" alt="Zinc Dross — Bhatti Chemicals Industry" width="960" height="1280" loading="lazy" decoding="async"></span>
       <div class="related-card-body">
         <h3>Zinc Dross</h3>
         <p>Consistent-grade zinc dross for recycling and refining workflows.</p>

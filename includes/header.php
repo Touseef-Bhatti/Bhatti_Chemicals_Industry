@@ -27,7 +27,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
   <div class="header-inner">
 
     <a href="<?php echo site_url('/'); ?>" class="logo-link" aria-label="Bhatti Chemicals Industry — Home">
-      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-512.webp'); ?>" alt="Bhatti Chemicals Industry" class="logo" width="512" height="129" fetchpriority="high">
+      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-512.webp'); ?>" srcset="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-320.webp'); ?> 320w, <?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-512.webp'); ?> 512w" sizes="167px" alt="Bhatti Chemicals Industry" class="logo" width="512" height="129" fetchpriority="high">
     </a>
 
     <nav class="main-nav" aria-label="Primary navigation">
@@ -99,7 +99,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
 
 <aside class="mobile-sidebar" id="mobileSidebar" aria-label="Mobile navigation">
   <div class="mobile-sidebar-header">
-    <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-512.webp'); ?>" alt="Bhatti Chemicals Industry" width="512" height="129">
+    <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-320.webp'); ?>" alt="Bhatti Chemicals Industry" width="320" height="80">
     <button class="mobile-sidebar-close" id="mobileSidebarClose" aria-label="Close menu">&times;</button>
   </div>
 
