@@ -68,9 +68,11 @@ require_once __DIR__ . '/../includes/helpers.php';
     {
       "@context": "https://schema.org",
       "@type": "Product",
+      "@id": "https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php#product",
       "name": "Zinc Oxide (ZnO)",
       "description": "High-purity Zinc Oxide manufactured by Bhatti Chemicals Industry in Gujranwala, Pakistan. 99.9% purity, fine white powder, ISO 9001:2015 certified, packed in 25 kg bags. Used in rubber vulcanization, ceramics, paints, pharmaceuticals, cosmetics, agriculture, and animal feed.",
       "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-appearance.webp",
+      "url": "https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php",
       "brand": {
         "@type": "Brand",
         "name": "Bhatti Chemicals Industry"
@@ -79,6 +81,24 @@ require_once __DIR__ . '/../includes/helpers.php';
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
         "address": { "@type": "PostalAddress", "addressLocality": "Gujranwala", "addressCountry": "PK" }
+      },
+      "category": "Zinc Oxide",
+      "material": "Zinc Oxide",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bhattichemicalsindustry.com.pk/contact-us.php",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "0.00",
+          "priceCurrency": "PKR",
+          "description": "Quote-based price confirmed after quantity and destination review; contact our team for current pricing."
+        },
+        "seller": {
+          "@type": "Organization",
+          "name": "Bhatti Chemicals Industry"
+        }
       }
     }
     </script>

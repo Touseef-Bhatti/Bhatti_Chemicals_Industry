@@ -33,6 +33,9 @@ AddType text/vtt .vtt
 
 # Cache-Control headers for video and static assets
 <IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|woff|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
   <FilesMatch "\.(mp4|webm|ogg)$">
     Header set Cache-Control "public, max-age=604800, immutable"
   </FilesMatch>

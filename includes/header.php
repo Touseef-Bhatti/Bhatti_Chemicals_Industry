@@ -27,7 +27,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
   <div class="header-inner">
 
     <a href="<?php echo site_url('/'); ?>" class="logo-link" aria-label="Bhatti Chemicals Industry — Home">
-      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry" class="logo" width="955" height="240">
+      <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-512.webp'); ?>" alt="Bhatti Chemicals Industry" class="logo" width="512" height="129" fetchpriority="high">
     </a>
 
     <nav class="main-nav" aria-label="Primary navigation">
@@ -99,7 +99,7 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
 
 <aside class="mobile-sidebar" id="mobileSidebar" aria-label="Mobile navigation">
   <div class="mobile-sidebar-header">
-    <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo.gif'); ?>" alt="Bhatti Chemicals Industry" width="955" height="240">
+    <img src="<?php echo site_url('/assets/images/logo/bhatti-chemicals-logo-512.webp'); ?>" alt="Bhatti Chemicals Industry" width="512" height="129">
     <button class="mobile-sidebar-close" id="mobileSidebarClose" aria-label="Close menu">&times;</button>
   </div>
 
@@ -171,8 +171,8 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
       header.classList.remove('scrolled');
     }
   }
-  onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('load', () => requestAnimationFrame(onScroll), { once: true });
 
   /* Mobile sidebar open/close */
   function openSidebar() {
