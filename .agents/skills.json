@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/google-deepmind/antigravity/main/schemas/skills.json",
+  "entries": [
+    {
+      "path": "C:/Users/touse/.agents/skills",
+      "include_only": [
+        "^seo$",
+        "^seo-.*",
+        "^geo-.*",
+        "^ai-seo$",
+        "^frontend-seo$",
+        "^programmatic-seo$",
+        "^developer-seo$",
+        "^clarvia-aeo-check$",
+        "^antigravity-design-expert$",
+        "^frontend-design$",
+        "^design-system$",
+        "^design-taste-frontend$",
+        "^design-ux$",
+        "^high-end-visual-design$",
+        "^web-design-guidelines$",
+        "^ui-ux-designer$",
+        "^stitch-ui-design$",
+        "^stitch-design-taste$",
+        "^styleseed-design-review$",
+        "^tailwind-design-system$",
+        "^design-spells$",
+        "^canvas-design$"
+      ]
+    }
+  ]
+}

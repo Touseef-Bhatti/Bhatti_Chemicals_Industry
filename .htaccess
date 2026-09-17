@@ -1,5 +1,11 @@
 RewriteOptions inherit
 
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Canonicalize any spaced or alternate folder access to standard kebab-case URL
+  RewriteRule ^zincOxide[_\s\-]+applications/?(.*)$ /zinc-oxide-applications/$1 [R=301,L,NC]
+</IfModule>
+
 AddType text/vtt .vtt
 
 # ✅ Add Browser Caching

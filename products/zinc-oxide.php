@@ -569,6 +569,25 @@ require_once __DIR__ . '/../includes/helpers.php';
       background: #007b5e;
       color: #fff;
     }
+    .app-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      color: #007b5e;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      transition: transform 0.18s ease, color 0.18s ease;
+    }
+    .app-link:hover {
+      color: #005a45;
+      transform: translateX(4px);
+    }
+    .apps-hub-cta {
+      text-align: center;
+      margin-top: 36px;
+    }
 
     /* ── RELATED PRODUCTS ── */
     .related-section {
@@ -1031,6 +1050,9 @@ require_once __DIR__ . '/../includes/helpers.php';
         <span class="app-badge">Rubber &amp; Tyres</span>
         <h3>Rubber and Tyre Manufacturing</h3>
         <p>Zinc Oxide is a key activator in the rubber vulcanization process, enhancing elasticity, tensile strength, and durability of rubber compounds. It improves heat dissipation in tyres, preventing overheating during use, and extends the service life of tyre and industrial rubber products through its anti-aging properties.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/rubber-and-tyres.php'); ?>" class="app-link">
+          Explore Rubber &amp; Tyre Applications &rarr;
+        </a>
       </div>
     </article>
     <article class="application-card reveal">
@@ -1039,6 +1061,9 @@ require_once __DIR__ . '/../includes/helpers.php';
         <span class="app-badge">Cosmetics &amp; Skincare</span>
         <h3>Cosmetics and Skincare Products</h3>
         <p>Zinc Oxide serves as a physical UV blocker in sunscreens and is widely used in foundations, lotions, and baby powders for its skin-soothing, anti-inflammatory, and antibacterial properties. Its non-toxic and gentle nature makes it suitable for sensitive skin formulations.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/cosmetics-and-skincare.php'); ?>" class="app-link">
+          Explore Cosmetics &amp; Skincare Applications &rarr;
+        </a>
       </div>
     </article>
     <article class="application-card reveal">
@@ -1047,6 +1072,9 @@ require_once __DIR__ . '/../includes/helpers.php';
         <span class="app-badge">Pharmaceuticals</span>
         <h3>Pharmaceuticals and Ointments</h3>
         <p>Used extensively in diaper rash creams, wound dressings, medicated powders, and anti-inflammatory formulations. Zinc Oxide's antibacterial and antifungal properties promote faster recovery from burns, cuts, and skin conditions, making it an established ingredient in both prescription and over-the-counter medicines.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/pharmaceuticals-and-ointments.php'); ?>" class="app-link">
+          Explore Pharmaceutical Applications &rarr;
+        </a>
       </div>
     </article>
     <article class="application-card reveal">
@@ -1055,6 +1083,9 @@ require_once __DIR__ . '/../includes/helpers.php';
         <span class="app-badge">Paints &amp; Coatings</span>
         <h3>Paints and Protective Coatings</h3>
         <p>As a protective additive in paints and coatings, Zinc Oxide improves mildew and mold resistance, enhances UV stability, and acts as a corrosion inhibitor that extends the life of metal structures. Widely used in automotive, marine, and architectural coatings.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/paints-and-coatings.php'); ?>" class="app-link">
+          Explore Paints &amp; Coatings Applications &rarr;
+        </a>
       </div>
     </article>
     <article class="application-card reveal">
@@ -1063,8 +1094,16 @@ require_once __DIR__ . '/../includes/helpers.php';
         <span class="app-badge">Agriculture &amp; Animal Feed</span>
         <h3>Animal Feed and Agricultural Fertilizers</h3>
         <p>Zinc Oxide is an essential micronutrient in animal feed, supporting immune function, growth, and reproductive health in livestock and poultry. In agricultural fertilizers, it corrects zinc deficiency in soils, improving plant metabolism and increasing crop yields.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/agriculture-and-animal-feed.php'); ?>" class="app-link">
+          Explore Agriculture &amp; Feed Applications &rarr;
+        </a>
       </div>
     </article>
+  </div>
+  <div class="apps-hub-cta reveal">
+    <a href="<?php echo site_url('/zinc-oxide-applications/'); ?>" class="btn-primary">
+      View All Industrial Applications &amp; Specifications Hub &rarr;
+    </a>
   </div>
 </section>
 
