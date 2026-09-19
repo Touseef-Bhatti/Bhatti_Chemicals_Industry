@@ -128,7 +128,7 @@ require_once __DIR__ . '/../includes/helpers.php';
 <section class="stock-section" id="availability" aria-labelledby="stock-heading">
   <div class="stock-grid">
     <figure class="stock-visual reveal">
-      <img src="<?php echo site_url('/assets/images/products/zinc-ingot-stock.webp'); ?>" data-full="<?php echo site_url('/assets/images/products/zinc-ingot-stock.png'); ?>" alt="Zinc Ingot stock arranged in bundles and ready for industrial supply" class="zoomable" width="800" height="450" loading="lazy" decoding="async">
+      <img src="<?php echo site_url('/assets/images/products/zinc-ingot-stock.webp'); ?>" data-full="<?php echo site_url('/assets/images/products/zinc-ingot-stock.webp'); ?>" alt="Zinc Ingot stock arranged in bundles and ready for industrial supply" class="zoomable" width="800" height="450" loading="lazy" decoding="async">
       <figcaption>Bundled Zinc Ingot stock prepared for industrial orders</figcaption>
     </figure>
     <div class="stock-copy reveal">

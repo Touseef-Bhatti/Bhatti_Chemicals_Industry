@@ -13,15 +13,15 @@ require_once __DIR__ . '/../includes/helpers.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="description" content="Zinc Oxide manufacturer and supplier in Pakistan. Buy high-purity ZnO from Bhatti Chemicals Industry in Gujranwala: 99.9% purity, ISO 9001:2015 certified, 25 kg bags, local supply and export-ready orders.">
+    <meta name="description" content="Buy 99.9% Zinc Oxide (ZnO) from a manufacturer in Pakistan. 25 kg bags, bulk supply and quality documentation for rubber, tyres, ceramics, paints and other industries.">
     <meta name="keywords" content="Zinc Oxide Pakistan, Zinc Oxide manufacturer Pakistan, Zinc Oxide supplier Pakistan, Zinc Oxide exporter Pakistan, buy zinc oxide, high purity zinc oxide, zinc oxide for rubber, zinc oxide for ceramics, zinc oxide 99.9%, zinc oxide Gujranwala, ZnO supplier Pakistan, ISO certified zinc oxide">
     <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="product">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
-    <meta property="og:title" content="Zinc Oxide (ZnO) — 99.9% Purity | Bhatti Chemicals Industry, Pakistan">
-    <meta property="og:description" content="High-purity Zinc Oxide manufactured in Gujranwala, Pakistan. 99.9% purity, ISO 9001:2015 certified, 25 kg bags. Serving rubber, ceramics, paint, pharmaceutical & agriculture industries.">
+    <meta property="og:title" content="Zinc Oxide Manufacturer in Pakistan | 99.9% ZnO | Bhatti Chemicals">
+    <meta property="og:description" content="Buy 99.9% Zinc Oxide (ZnO) from a manufacturer in Pakistan. 25 kg bags, bulk supply and quality documentation for rubber, tyres, ceramics, paints and other industries.">
     <meta property="og:image" content="https://www.bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-appearance.webp">
     <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php">
 
@@ -61,7 +61,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       })();
     </script>
 
-    <title>Zinc Oxide (ZnO) — 99.9% Purity | Bhatti Chemicals Industry, Gujranwala Pakistan</title>
+    <title>Zinc Oxide Manufacturer in Pakistan | 99.9% ZnO | Bhatti Chemicals</title>
 
     <!-- Product Schema -->
     <script type="application/ld+json">
@@ -70,7 +70,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@type": "Product",
       "@id": "https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php#product",
       "name": "Zinc Oxide (ZnO)",
-      "description": "High-purity Zinc Oxide manufactured by Bhatti Chemicals Industry in Gujranwala, Pakistan. 99.9% purity, fine white powder, ISO 9001:2015 certified, packed in 25 kg bags. Used in rubber vulcanization, ceramics, paints, pharmaceuticals, cosmetics, agriculture, and animal feed.",
+      "description": "High-purity Zinc Oxide manufactured by Bhatti Chemicals Industry in Gujranwala, Pakistan. 99.9% purity, fine white powder, packed in 25 kg bags. Used in rubber vulcanization, ceramics, paints, pharmaceuticals, cosmetics, agriculture, and animal feed.",
       "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-appearance.webp",
       "url": "https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php",
       "brand": {
@@ -80,10 +80,28 @@ require_once __DIR__ . '/../includes/helpers.php';
       "manufacturer": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
-        "address": { "@type": "PostalAddress", "addressLocality": "Gujranwala", "addressCountry": "PK" }
+        "url": "https://www.bhattichemicalsindustry.com.pk/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gujranwala",
+          "addressCountry": "PK"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+92-304-1462460",
+          "contactType": "sales",
+          "email": "info@bhattichemicalsindustry.com.pk"
+        }
       },
       "category": "Zinc Oxide",
       "material": "Zinc Oxide",
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Purity", "value": "≥ 99.9%" },
+        { "@type": "PropertyValue", "name": "Physical Form", "value": "Fine white powder" },
+        { "@type": "PropertyValue", "name": "Pack Size", "value": "25 kg bags" },
+        { "@type": "PropertyValue", "name": "CAS Number", "value": "1314-13-2" },
+        { "@type": "PropertyValue", "name": "Molecular Formula", "value": "ZnO" }
+      ],
       "offers": {
         "@type": "Offer",
         "url": "https://www.bhattichemicalsindustry.com.pk/contact-us.php",
@@ -93,47 +111,13 @@ require_once __DIR__ . '/../includes/helpers.php';
           "@type": "UnitPriceSpecification",
           "price": "0.00",
           "priceCurrency": "PKR",
-          "description": "Quote-based price confirmed after quantity and destination review; contact our team for current pricing."
+          "description": "Quote-based pricing confirmed after quantity and destination review; contact our team for current pricing."
         },
         "seller": {
           "@type": "Organization",
           "name": "Bhatti Chemicals Industry"
         }
       }
-    }
-    </script>
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the purity of Bhatti Chemicals Industry's Zinc Oxide?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Bhatti Chemicals Industry produces Zinc Oxide at 99.9% purity. It is presented as a fine white powder, free from visible contaminants, and packed in 25 kg bags." }
-        },
-        {
-          "@type": "Question",
-          "name": "What industries use Zinc Oxide from Bhatti Chemicals Industry?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Zinc Oxide from Bhatti Chemicals Industry is used in rubber and tyre manufacturing, paints and coatings, ceramics and glass, pharmaceuticals and ointments, cosmetics and sunscreens, animal feed, agricultural fertilizers, and battery manufacturing." }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the minimum order quantity for Zinc Oxide?",
-          "acceptedAnswer": { "@type": "Answer", "text": "The minimum order quantity for Zinc Oxide from Bhatti Chemicals Industry is 25 kg — equivalent to one standard bag." }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Bhatti Chemicals Industry's Zinc Oxide ISO certified?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Bhatti Chemicals Industry is ISO 9001:2015 certified. Zinc Oxide undergoes third-party laboratory testing on every batch to verify purity and quality." }
-        },
-        {
-          "@type": "Question",
-          "name": "How is Zinc Oxide manufactured by Bhatti Chemicals Industry?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Bhatti Chemicals Industry manufactures Zinc Oxide through a roasting and oxidation process: high-grade zinc is heated in a furnace, reacting with oxygen to produce zinc oxide vapour, which is then cooled and collected as fine white powder, quality-tested, and packed in 25 kg bags." }
-        }
-      ]
     }
     </script>
     <!-- Breadcrumb Schema -->
@@ -148,47 +132,80 @@ require_once __DIR__ . '/../includes/helpers.php';
       ]
     }
     </script>
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php#webpage",
+      "name": "Zinc Oxide Manufacturer in Pakistan",
+      "description": "Buy 99.9% Zinc Oxide (ZnO) from a manufacturer in Pakistan. 25 kg bags, bulk supply and quality documentation for rubber, tyres, ceramics, paints and other industries.",
+      "url": "https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php",
+      "dateModified": "2026-09-19",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bhatti Chemicals Industry",
+        "url": "https://www.bhattichemicalsindustry.com.pk/"
+      }
+    }
+    </script>
 
     <style>
-    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; scroll-padding-top: 82px; }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
       color: #1a1a1a; background: #fafafa;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
-    h1,h2,h3 { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.15; }
+    h1, h2, h3 {
+      font-family: 'Sora', system-ui, -apple-system, sans-serif;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
     h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800; }
     h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); font-weight: 700; }
     h3 { font-size: 1.12rem; font-weight: 600; }
-    p  { line-height: 1.8; color: #4a5568; }
+    p  { line-height: 1.78; color: #4a5568; }
 
     .eyebrow {
-      font-size: 0.76rem; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      color: #007b5e; margin-bottom: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #007b5e;
+      background: rgba(0, 123, 94, 0.08);
+      border: 1px solid rgba(0, 123, 94, 0.16);
+      padding: 4px 14px;
+      border-radius: 9999px;
+      margin-bottom: 0.85rem;
     }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    .section-header { text-align: center; margin-bottom: 3rem; }
-    .section-header h2 { color: #1a1a1a; margin-bottom: 0.6rem; }
-    .section-desc { font-size: 1rem; max-width: 660px; margin: 0 auto; color: #4a5568; }
+    .section-header { text-align: center; margin-bottom: 3.2rem; }
+    .section-header h2 { color: #0f172a; margin-bottom: 0.75rem; }
+    .section-desc { font-size: 1.02rem; max-width: 680px; margin: 0 auto; color: #4a5568; line-height: 1.75; }
 
     /* ── HERO ── */
     .page-hero {
       position: relative;
-      min-height: 58vh;
+      min-height: 60vh;
       background: #0d1f19;
       display: flex; align-items: flex-end;
-      padding: 120px 24px 60px;
+      padding: 124px 24px 64px;
       overflow: hidden;
     }
     .page-hero::before {
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 65% 60% at 80% 30%, rgba(0,123,94,0.3) 0%, transparent 65%),
-        radial-gradient(ellipse 40% 50% at 5% 85%, rgba(0,90,69,0.18) 0%, transparent 60%);
+        radial-gradient(ellipse 70% 65% at 85% 25%, rgba(0,123,94,0.32) 0%, transparent 65%),
+        radial-gradient(ellipse 45% 55% at 5% 85%, rgba(0,90,69,0.22) 0%, transparent 60%);
+      pointer-events: none;
     }
     .hero-zno {
       position: absolute; right: 2%; top: 50%;
@@ -198,6 +215,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       font-weight: 800;
       color: rgba(255,255,255,0.04);
       pointer-events: none; user-select: none;
+      letter-spacing: -0.05em;
     }
     .page-hero-inner { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; width: 100%; }
     .breadcrumb {
@@ -205,147 +223,146 @@ require_once __DIR__ . '/../includes/helpers.php';
       margin-bottom: 1.2rem;
       font-size: 0.8rem; color: rgba(255,255,255,0.45);
     }
-    .breadcrumb a { color: rgba(255,255,255,0.55); text-decoration: none; }
+    .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
     .breadcrumb a:hover { color: #4ade9e; }
     .breadcrumb span { color: rgba(255,255,255,0.25); }
-    .page-hero-inner h1 { color: #fff; margin-bottom: 1rem; }
+    .page-hero-inner h1 { color: #fff; margin-bottom: 0.5rem; }
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 500;
+      color: rgba(255,255,255,0.72); margin-bottom: 1.3rem;
+      letter-spacing: 0.01em;
+    }
     .hero-tag-row {
-      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem;
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.6rem;
     }
     .hero-tag {
-      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-      color: rgba(255,255,255,0.85); border-radius: 999px;
-      padding: 5px 14px; font-size: 0.82rem; font-weight: 500;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.9); border-radius: 9999px;
+      padding: 6px 16px; font-size: 0.82rem; font-weight: 500;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .hero-tag:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.32);
     }
     .hero-tag.highlight {
-      background: rgba(0,123,94,0.4); border-color: rgba(0,200,130,0.4);
+      background: rgba(0,123,94,0.45); border-color: rgba(74,222,158,0.45);
       color: #4ade9e;
+      box-shadow: 0 0 16px rgba(0,123,94,0.28);
     }
     .page-hero-inner .hero-desc {
-      color: rgba(255,255,255,0.7); font-size: 1.05rem;
-      max-width: 580px; line-height: 1.75; margin-bottom: 2rem;
+      color: rgba(255,255,255,0.72); font-size: 1.05rem;
+      max-width: 600px; line-height: 1.75; margin-bottom: 2.2rem;
     }
     .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
     .btn-primary {
-      display: inline-block; padding: 13px 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 28px;
       background: #007b5e; color: #fff;
-      border-radius: 6px; font-weight: 600; font-size: 0.95rem;
-      text-decoration: none; transition: background 0.2s, transform 0.15s;
+      border-radius: 8px; font-weight: 600; font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s;
       font-family: 'Inter', sans-serif;
+      box-shadow: 0 2px 8px rgba(0, 123, 94, 0.24);
     }
-    .btn-primary:hover { background: #005a45; transform: translateY(-1px); }
+    .btn-primary:hover {
+      background: #00634b;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 123, 94, 0.35);
+    }
+    .btn-primary:active, .btn-ghost:active, .btn-white:active {
+      transform: scale(0.98);
+    }
     .btn-ghost {
-      display: inline-block; padding: 13px 28px;
-      background: rgba(255,255,255,0.1); color: #fff;
-      border: 1px solid rgba(255,255,255,0.35); border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 28px;
+      background: rgba(255,255,255,0.08); color: #fff;
+      border: 1px solid rgba(255,255,255,0.3); border-radius: 8px;
       font-weight: 600; font-size: 0.95rem;
-      text-decoration: none; transition: background 0.2s;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: background 0.25s, border-color 0.25s, transform 0.2s;
       font-family: 'Inter', sans-serif;
     }
-    .btn-ghost:hover { background: rgba(255,255,255,0.18); }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.16);
+      border-color: rgba(255,255,255,0.45);
+      transform: translateY(-2px);
+    }
+    .last-updated {
+      font-size: 0.75rem; color: rgba(255,255,255,0.45);
+      margin-top: 1.3rem;
+    }
 
     /* ── OVERVIEW STRIP ── */
     .overview-strip {
-      background: #fff;
+      background: #ffffff;
       border-top: 3px solid #007b5e;
-      border-bottom: 1px solid #e2e8e0;
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 4px 20px -4px rgba(0,0,0,0.03);
     }
     .overview-inner {
       max-width: 1200px; margin: 0 auto;
       display: grid; grid-template-columns: repeat(4, 1fr);
     }
     .overview-item {
-      padding: 26px 24px;
-      border-right: 1px solid #e2e8e0;
+      padding: 28px 24px;
+      border-right: 1px solid #edf2f0;
       display: flex; flex-direction: column;
+      transition: background 0.2s;
     }
+    .overview-item:hover { background: #fafcfb; }
     .overview-item:last-child { border-right: none; }
     .overview-label {
-      font-size: 0.73rem; font-weight: 600; letter-spacing: 0.1em;
-      text-transform: uppercase; color: #4b5563; margin-bottom: 4px;
+      font-size: 0.73rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #4b5563; margin-bottom: 6px;
     }
     .overview-value {
-      font-family: 'Sora', sans-serif; font-size: 1.3rem; font-weight: 700;
-      color: #007b5e; line-height: 1.1; margin-bottom: 3px;
+      font-family: 'Sora', sans-serif; font-size: 1.35rem; font-weight: 700;
+      color: #007b5e; line-height: 1.1; margin-bottom: 4px;
     }
     .overview-note { font-size: 0.8rem; color: #6b7280; }
 
-    /* Pakistan SEO Section */
-    .market-section {
-      padding: 82px 24px;
-      background: #fafafa;
+    /* ── WHY CHOOSE ── */
+    .why-section { padding: 96px 24px; background: #fff; }
+    .why-intro {
+      max-width: 820px; margin: 0 auto 2.8rem;
     }
-    .market-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-      gap: 40px;
-      align-items: start;
+    .why-intro p { font-size: 1.02rem; margin-bottom: 1rem; line-height: 1.75; }
+    .why-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
     }
-    .market-copy h2 {
-      color: #1a1a1a;
-      margin-bottom: 1rem;
+    .why-card {
+      background: #ffffff; border: 1px solid rgba(0, 123, 94, 0.12);
+      border-radius: 14px; padding: 30px 24px;
+      box-shadow: 0 4px 18px -2px rgba(0,0,0,0.04), 0 2px 6px -1px rgba(0,0,0,0.02);
+      transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s;
     }
-    .market-copy p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
+    .why-card:hover {
+      box-shadow: 0 14px 34px -4px rgba(0, 123, 94, 0.14);
+      border-color: rgba(0, 123, 94, 0.32);
+      transform: translateY(-4px);
     }
-    .market-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 1.4rem;
-    }
-    .market-chip {
-      display: inline-flex;
-      align-items: center;
-      min-height: 34px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(0,123,94,0.08);
-      color: #00634c;
-      border: 1px solid rgba(0,123,94,0.18);
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .market-panel {
-      background: #fff;
-      border: 1px solid #e2e8e0;
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-    }
-    .market-panel h3 {
-      color: #1a1a1a;
-      margin-bottom: 14px;
-    }
-    .market-list {
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-    .market-list li {
-      display: grid;
-      grid-template-columns: 22px 1fr;
-      gap: 10px;
-      color: #4a5568;
-      font-size: 0.94rem;
-      line-height: 1.6;
-    }
-    .market-list svg {
-      color: #007b5e;
-      margin-top: 4px;
-      width: 17px;
-      height: 17px;
-      fill: currentColor;
-    }
+    .why-icon { color: #007b5e; margin-bottom: 14px; }
+    .why-icon svg { width: 30px; height: 30px; fill: currentColor; display: block; }
+    .why-card h3 { color: #1a1a1a; margin-bottom: 0.6rem; font-size: 1.05rem; }
+    .why-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.65; }
 
-    /* ── QUALITY SECTION ── */
+    /* ── QUALITY & SPECIFICATIONS ── */
     .quality-section {
-      padding: 90px 24px;
-      background: #f0f2f0;
+      padding: 96px 24px;
+      background: #f4f6f4;
     }
     .quality-grid {
       max-width: 1200px; margin: 0 auto;
@@ -353,28 +370,29 @@ require_once __DIR__ . '/../includes/helpers.php';
       grid-template-columns: 1fr 1fr;
       gap: 48px; align-items: start;
     }
-    .quality-text h2 { color: #1a1a1a; margin-bottom: 1rem; }
-    .quality-text p { margin-bottom: 1rem; font-size: 1rem; }
+    .quality-text h2 { color: #0f172a; margin-bottom: 1.1rem; }
+    .quality-text p { margin-bottom: 1.1rem; font-size: 1rem; line-height: 1.75; }
 
     .specs-table {
       width: 100%; border-collapse: collapse;
-      background: #fff; border-radius: 10px; overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      background: #fff; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 20px -2px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0, 123, 94, 0.12);
     }
     .specs-table th {
       background: #007b5e; color: #fff;
       font-family: 'Sora', sans-serif; font-size: 0.82rem;
       font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
-      padding: 12px 16px; text-align: left;
+      padding: 14px 18px; text-align: left;
     }
     .specs-table td {
-      padding: 13px 16px; font-size: 0.92rem;
-      border-bottom: 1px solid #e2e8e0; color: #374151;
+      padding: 13px 18px; font-size: 0.92rem;
+      border-bottom: 1px solid #edf2f0; color: #374151;
     }
     .specs-table tr:last-child td { border-bottom: none; }
-    .specs-table tr:nth-child(even) td { background: #f9fafb; }
+    .specs-table tr:nth-child(even) td { background: #fafbfa; }
     .specs-table td:first-child { font-weight: 600; color: #1a1a1a; }
-    .specs-table td.good { color: #007b5e; font-weight: 500; }
+    .specs-table td.good { color: #007b5e; font-weight: 600; }
 
     .quality-visuals {
       display: grid;
@@ -385,21 +403,26 @@ require_once __DIR__ . '/../includes/helpers.php';
     .quality-img-card {
       display: flex;
       flex-direction: column;
-      background: #fff; border-radius: 10px;
-      border: 1px solid #e2e8e0;
+      background: #fff; border-radius: 12px;
+      border: 1px solid rgba(0, 123, 94, 0.12);
       overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 16px -2px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .quality-img-card:hover {
+      box-shadow: 0 12px 30px -4px rgba(0, 123, 94, 0.12);
+      transform: translateY(-3px);
     }
     .quality-img-card img {
       width: 100%; display: block;
       height: auto;
       aspect-ratio: 4 / 3; object-fit: cover;
-      cursor: pointer; transition: transform 0.3s;
+      cursor: pointer; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .quality-img-card img:hover { transform: scale(1.02); }
+    .quality-img-card img:hover { transform: scale(1.03); }
     .quality-img-card figcaption {
-      padding: 10px 14px;
-      font-size: 0.8rem; color: #6b7280; font-weight: 500;
+      padding: 11px 16px;
+      font-size: 0.82rem; color: #4b5563; font-weight: 500;
     }
     .quality-img-full {
       grid-column: 1 / -1;
@@ -424,15 +447,15 @@ require_once __DIR__ . '/../includes/helpers.php';
     .production-video-frame {
       position: relative;
       max-width: 1200px;
-      margin: 60px auto 0;
+      margin: 64px auto 0;
       padding: 10px;
-      border: 1px solid rgba(0,123,94,0.16);
+      border: 1px solid rgba(0,123,94,0.18);
       border-radius: 24px;
       background: linear-gradient(145deg, #ffffff 0%, #edf3f0 100%);
       overflow: hidden;
       box-shadow:
-        0 24px 60px rgba(20,45,37,0.16),
-        0 6px 18px rgba(0,0,0,0.08);
+        0 24px 60px rgba(20,45,37,0.14),
+        0 6px 18px rgba(0,0,0,0.06);
     }
     .production-video-frame::before {
       content: '';
@@ -451,11 +474,10 @@ require_once __DIR__ . '/../includes/helpers.php';
       display: block;
       aspect-ratio: 16 / 6;
       object-fit: cover;
-      border-radius: 15px;
+      border-radius: 16px;
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12);
     }
 
-    /* Desktop-only production video dimensions */
     @media (min-width: 1025px) {
       .production-video-frame {
         max-width: 960px;
@@ -467,118 +489,168 @@ require_once __DIR__ . '/../includes/helpers.php';
     }
 
     /* Lab Report Card */
-    .lab-report-card{display:flex;align-items:center;gap:14px;background:#f9fafb;border:1px solid #e2e8e0;border-radius:10px;padding:12px 16px;margin-top:16px;cursor:pointer;transition:box-shadow .2s,transform .15s;text-decoration:none;grid-column:1/-1}
-    .lab-report-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-1px)}
-    .lab-report-thumb{width:70px;height:70px;border-radius:8px;object-fit:cover;border:1px solid #e2e8e0;flex-shrink:0}
-    .lab-report-info{display:flex;flex-direction:column;gap:2px}
-    .lab-report-info strong{font-size:.88rem;color:#1a1a1a;font-family:'Sora',sans-serif}
-    .lab-report-info span{font-size:.78rem;color:#6b7280}
-    .lab-report-icon{margin-left:auto;flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#007b5e;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.85rem}
-    .lab-report-icon svg{width:17px;height:17px;fill:currentColor}
+    .lab-report-card {
+      display: flex; align-items: center; gap: 16px;
+      background: #ffffff; border: 1px solid rgba(0, 123, 94, 0.14);
+      border-radius: 12px; padding: 14px 18px; margin-top: 16px;
+      cursor: pointer;
+      transition: box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s;
+      text-decoration: none; grid-column: 1 / -1;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .lab-report-card:hover {
+      box-shadow: 0 10px 24px -2px rgba(0, 123, 94, 0.12);
+      border-color: rgba(0, 123, 94, 0.35);
+      transform: translateY(-2px);
+    }
+    .lab-report-thumb { width: 72px; height: 72px; border-radius: 8px; object-fit: cover; border: 1px solid #e2e8e0; flex-shrink: 0; }
+    .lab-report-info { display: flex; flex-direction: column; gap: 3px; }
+    .lab-report-info strong { font-size: 0.9rem; color: #1a1a1a; font-family: 'Sora', sans-serif; }
+    .lab-report-info span { font-size: 0.8rem; color: #6b7280; }
+    .lab-report-icon {
+      margin-left: auto; flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%;
+      background: #007b5e; color: #fff; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 8px rgba(0, 123, 94, 0.3);
+    }
+    .lab-report-icon svg { width: 17px; height: 17px; fill: currentColor; }
 
     /* ── PROCESS SECTION ── */
     .process-section {
-      padding: 90px 24px;
+      padding: 96px 24px;
       background: #fff;
     }
     .process-steps {
-      max-width: 1100px; margin: 0 auto;
+      max-width: 1200px; margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      gap: 26px;
     }
     .process-step {
-      background: #f0f2f0;
-      border: 1px solid #e2e8e0;
-      border-radius: 12px;
-      padding: 28px 24px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 123, 94, 0.12);
+      border-radius: 14px;
+      padding: 30px 26px;
       position: relative;
-      transition: box-shadow 0.25s, transform 0.2s;
+      box-shadow: 0 4px 18px -2px rgba(0,0,0,0.04);
+      transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s;
     }
     .process-step:hover {
-      box-shadow: 0 8px 28px rgba(0,0,0,0.09);
-      transform: translateY(-2px);
+      box-shadow: 0 14px 34px -4px rgba(0, 123, 94, 0.14);
+      border-color: rgba(0, 123, 94, 0.32);
+      transform: translateY(-4px);
     }
     .step-num {
       display: inline-flex; align-items: center; justify-content: center;
-      width: 36px; height: 36px; border-radius: 50%;
+      width: 40px; height: 40px; border-radius: 50%;
       background: #007b5e; color: #fff;
-      font-family: 'Sora', sans-serif; font-size: 0.85rem; font-weight: 700;
-      margin-bottom: 14px;
+      font-family: 'Sora', sans-serif; font-size: 0.88rem; font-weight: 700;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 12px rgba(0, 123, 94, 0.28);
     }
-    .process-icon { color:#007b5e; margin-bottom:12px; }
-    .process-icon svg { width:28px; height:28px; fill:currentColor; }
-    .process-step h3 { color: #1a1a1a; margin-bottom: 0.5rem; font-size: 1rem; }
-    .process-step p { font-size: 0.9rem; color: #4a5568; }
+    .process-icon { color: #007b5e; margin-bottom: 12px; }
+    .process-icon svg { width: 28px; height: 28px; fill: currentColor; }
+    .process-step h3 { color: #1a1a1a; margin-bottom: 0.6rem; font-size: 1.05rem; }
+    .process-step p { font-size: 0.92rem; color: #4a5568; line-height: 1.7; }
 
-    /* ── APPLICATIONS SECTION ── */
+    /* ── APPLICATIONS SECTION (Agency-Grade 3-Col Showcase Grid) ── */
     .applications-section {
-      padding: 90px 24px;
-      background: #f0f2f0;
+      padding: 96px 24px;
+      background: #f4f6f4;
     }
     .applications-list {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; flex-direction: column; gap: 28px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
     }
     .application-card {
-      background: #fff;
-      border: 1px solid #e2e8e0;
-      border-radius: 14px;
-      padding: 32px 36px;
-      display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 36px; align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      background: #ffffff;
+      border: 1px solid rgba(0, 123, 94, 0.12);
+      border-radius: 16px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
       overflow: hidden;
-      transition: box-shadow 0.25s, transform 0.22s, border-color 0.22s;
+      transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .application-card:hover {
-      border-color: rgba(0,123,94,0.35);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      transform: translateY(-4px);
+      border-color: rgba(0, 123, 94, 0.35);
+      box-shadow: 0 16px 36px -4px rgba(0, 123, 94, 0.12), 0 6px 16px -2px rgba(0, 0, 0, 0.04);
+      transform: translateY(-5px);
     }
     .application-media {
-      width: 100%; aspect-ratio: 1;
-      border-radius: 10px; overflow: hidden;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #eef3f0;
+      position: relative;
     }
     .application-img {
-      width: 100%; height: 100%;
-      object-fit: cover; display: block;
-      transition: transform 0.32s ease, filter 0.32s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
     }
     .application-card:hover .application-img {
-      filter: saturate(1.08) contrast(1.04);
-      transform: scale(1.04);
+      transform: scale(1.05);
+      filter: saturate(1.08) contrast(1.03);
+    }
+    .application-body {
+      padding: 24px 26px 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
     .application-body h3 {
-      color: #1a1a1a; margin-bottom: 0.5rem; font-size: 1.15rem;
+      color: #1a1a1a;
+      margin-bottom: 0.6rem;
+      font-size: 1.15rem;
+      font-family: 'Sora', sans-serif;
       transition: color 0.22s;
     }
     .application-card:hover .application-body h3 {
       color: #007b5e;
     }
-    .application-body p { font-size: 0.97rem; color: #4a5568; line-height: 1.75; }
+    .application-body p {
+      font-size: 0.93rem;
+      color: #4a5568;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+      flex: 1;
+    }
     .app-badge {
-      display: inline-block; margin-bottom: 8px;
-      background: rgba(0,123,94,0.1); color: #007b5e;
-      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
-      text-transform: uppercase; padding: 3px 10px; border-radius: 4px;
-      transition: background 0.22s, color 0.22s;
+      align-self: flex-start;
+      display: inline-block;
+      margin-bottom: 12px;
+      background: rgba(0, 123, 94, 0.08);
+      color: #007b5e;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      border: 1px solid rgba(0, 123, 94, 0.14);
+      transition: background 0.22s, color 0.22s, border-color 0.22s;
     }
     .application-card:hover .app-badge {
       background: #007b5e;
       color: #fff;
+      border-color: #007b5e;
     }
     .app-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      margin-top: 10px;
       color: #007b5e;
       font-weight: 700;
       font-size: 0.92rem;
       text-decoration: none;
-      transition: transform 0.18s ease, color 0.18s ease;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+      margin-top: auto;
     }
     .app-link:hover {
       color: #005a45;
@@ -586,78 +658,261 @@ require_once __DIR__ . '/../includes/helpers.php';
     }
     .apps-hub-cta {
       text-align: center;
-      margin-top: 36px;
+      margin-top: 40px;
     }
+
+    /* ── PACKAGING ── */
+    .packaging-section { padding: 84px 24px; background: #fff; }
+    .packaging-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+      gap: 48px; align-items: center;
+    }
+    .packaging-content h2 { color: #0f172a; margin-bottom: 1rem; }
+    .packaging-content p { font-size: 1.02rem; margin-bottom: 1rem; line-height: 1.75; }
+    .packaging-list { list-style: none; margin-top: 1.2rem; }
+    .packaging-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      color: #4a5568; font-size: 0.95rem; line-height: 1.65;
+      margin-bottom: 12px;
+    }
+    .packaging-list svg { color: #007b5e; width: 18px; height: 18px; fill: currentColor; margin-top: 4px; flex-shrink: 0; }
+    .packaging-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .packaging-visual figure {
+      width: 100%;
+      max-width: 290px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px -4px rgba(13, 31, 25, 0.16);
+      border: 1px solid rgba(0, 123, 94, 0.2);
+      background: #252827;
+      padding: 14px 14px 12px;
+      text-align: center;
+    }
+    .packaging-visual img {
+      width: 100%;
+      height: 280px;
+      max-height: 280px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+    .packaging-visual figcaption {
+      padding-top: 10px;
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── PAKISTAN SUPPLY ── */
+    .market-section {
+      padding: 90px 24px;
+      background: #fafafa;
+    }
+    .market-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 44px;
+      align-items: start;
+    }
+    .market-copy h2 {
+      color: #0f172a;
+      margin-bottom: 1.1rem;
+    }
+    .market-copy p {
+      font-size: 1.02rem;
+      margin-bottom: 1.1rem;
+      line-height: 1.75;
+    }
+    .market-panel {
+      background: #ffffff;
+      border: 1px solid rgba(0, 123, 94, 0.14);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+    }
+    .market-panel h3 {
+      color: #1a1a1a;
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+    .market-list {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+    .market-list li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      color: #4a5568;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .market-list svg {
+      color: #007b5e;
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* ── EXPORT ── */
+    .export-section { padding: 80px 24px; background: #f4f6f4; }
+    .export-inner {
+      max-width: 900px; margin: 0 auto; text-align: center;
+    }
+    .export-inner h2 { color: #0f172a; margin-bottom: 1rem; }
+    .export-inner p { font-size: 1.02rem; max-width: 640px; margin: 0 auto 1.8rem; line-height: 1.75; }
+
+    /* ── QUALITY ASSURANCE ── */
+    .qa-section { padding: 96px 24px; background: #fafafa; }
+    .qa-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+    .qa-card {
+      background: #ffffff; border: 1px solid rgba(0, 123, 94, 0.12);
+      border-radius: 14px; padding: 32px 26px;
+      text-align: center;
+      box-shadow: 0 4px 18px -2px rgba(0,0,0,0.04);
+      transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s;
+    }
+    .qa-card:hover {
+      box-shadow: 0 14px 34px -4px rgba(0, 123, 94, 0.14);
+      border-color: rgba(0, 123, 94, 0.32);
+      transform: translateY(-4px);
+    }
+    .qa-icon { color: #007b5e; margin-bottom: 14px; }
+    .qa-icon svg { width: 34px; height: 34px; fill: currentColor; display: block; margin: 0 auto; }
+    .qa-card h3 { color: #1a1a1a; margin-bottom: 0.6rem; font-size: 1.05rem; }
+    .qa-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.65; }
+
+    /* ── FAQ ── */
+    .faq-section {
+      padding: 96px 24px;
+      background: #fff;
+    }
+    .faq-list { max-width: 860px; margin: 0 auto; }
+    .faq-item {
+      border: 1px solid rgba(0, 123, 94, 0.12); border-radius: 12px;
+      margin-bottom: 14px; background: #ffffff; overflow: hidden;
+      transition: border-color 0.25s, box-shadow 0.25s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .faq-item:hover {
+      border-color: rgba(0, 123, 94, 0.28);
+      box-shadow: 0 6px 18px rgba(0, 123, 94, 0.08);
+    }
+    .faq-q {
+      width: 100%; background: none; border: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      padding: 22px 26px; text-align: left; cursor: pointer;
+      font-family: 'Sora', sans-serif; font-size: 1.02rem; font-weight: 600;
+      color: #1a1a1a; transition: background 0.2s, color 0.2s;
+    }
+    .faq-q:hover { background: #f4f8f6; color: #007b5e; }
+    .faq-q[aria-expanded="true"] { background: #f0f6f3; color: #007b5e; }
+    .faq-chevron {
+      flex-shrink: 0; width: 24px; height: 24px;
+      border: 2px solid #007b5e; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #007b5e; font-size: 0.85rem;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-q[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); }
+    .faq-a {
+      padding: 0 26px; max-height: 0; overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.25s;
+    }
+    .faq-a.open { max-height: 340px; padding: 0 26px 22px; }
+    .faq-a p { font-size: 0.95rem; color: #4a5568; line-height: 1.75; }
+    .faq-a a { color: #007b5e; font-weight: 600; }
+
+    /* ── CTA STRIP ── */
+    .cta-strip {
+      background: linear-gradient(135deg, #007b5e 0%, #005a45 100%);
+      padding: 76px 24px; text-align: center; position: relative;
+    }
+    .cta-strip h2 { color: #fff; margin-bottom: 0.85rem; }
+    .cta-strip p { color: rgba(255,255,255,0.88); font-size: 1.05rem; margin-bottom: 2.2rem; max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+    .cta-btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 32px;
+      background: #fff; color: #007b5e;
+      border-radius: 8px; font-weight: 700; font-size: 0.95rem;
+      text-decoration: none; transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s;
+      font-family: 'Inter', sans-serif;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.22); }
+    .btn-ghost-white {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 32px;
+      background: rgba(255,255,255,0.08); color: #fff;
+      border: 2px solid rgba(255,255,255,0.6); border-radius: 8px;
+      font-weight: 600; font-size: 0.95rem;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .btn-ghost-white:hover { background: rgba(255,255,255,0.18); border-color: #fff; transform: translateY(-2px); }
 
     /* ── RELATED PRODUCTS ── */
     .related-section {
-      padding: 80px 24px;
-      background: #fff;
+      padding: 86px 24px;
+      background: #fafafa;
     }
     .related-grid {
       max-width: 1100px; margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 24px;
     }
     .related-card {
-      background: #f0f2f0; border: 1px solid #e2e8e0;
-      border-radius: 12px; overflow: hidden;
-      transition: box-shadow 0.2s, transform 0.2s;
+      background: #fff; border: 1px solid rgba(0, 123, 94, 0.12);
+      border-radius: 14px; overflow: hidden;
+      box-shadow: 0 4px 16px -2px rgba(0,0,0,0.04);
+      transition: box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s;
       text-decoration: none; display: flex; flex-direction: column;
     }
-    .related-card:hover { box-shadow: 0 6px 22px rgba(0,0,0,0.09); transform: translateY(-2px); }
+    .related-card:hover {
+      box-shadow: 0 12px 28px -4px rgba(0, 123, 94, 0.12);
+      border-color: rgba(0, 123, 94, 0.32);
+      transform: translateY(-3px);
+    }
     .related-card-media { display: block; aspect-ratio: 16/9; overflow: hidden; }
-    .related-card-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .related-card-body { padding: 18px 20px; flex: 1; }
-    .related-card-body h3 { color: #1a1a1a; font-size: 1rem; margin-bottom: 4px; }
-    .related-card-body p { font-size: 0.86rem; color: #6b7280; }
-
-    /* ── FAQ ── */
-    .faq-section {
-      padding: 90px 24px;
-      background: #fafafa;
-    }
-    .faq-list { max-width: 820px; margin: 0 auto; }
-    .faq-item {
-      border: 1px solid #e2e8e0; border-radius: 10px;
-      margin-bottom: 12px; background: #fff; overflow: hidden;
-    }
-    .faq-q {
-      width: 100%; background: none; border: none;
-      display: flex; justify-content: space-between; align-items: center; gap: 16px;
-      padding: 20px 24px; text-align: left; cursor: pointer;
-      font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600;
-      color: #1a1a1a; transition: background 0.15s;
-    }
-    .faq-q:hover { background: #f0f2f0; }
-    .faq-q[aria-expanded="true"] { background: #f0f2f0; color: #007b5e; }
-    .faq-chevron {
-      flex-shrink: 0; width: 22px; height: 22px;
-      border: 2px solid #007b5e; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      color: #007b5e; font-size: 0.85rem;
-      transition: transform 0.25s;
-    }
-    .faq-q[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); }
-    .faq-a {
-      padding: 0 24px; max-height: 0; overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.25s;
-    }
-    .faq-a.open { max-height: 320px; padding: 0 24px 20px; }
-    .faq-a p { font-size: 0.95rem; color: #4a5568; line-height: 1.75; }
-    .faq-a a { color: #007b5e; }
+    .related-card-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.35s ease; }
+    .related-card:hover .related-card-media img { transform: scale(1.04); }
+    .related-card-body { padding: 20px 22px; flex: 1; }
+    .related-card-body h3 { color: #1a1a1a; font-size: 1.02rem; margin-bottom: 6px; font-family: 'Sora', sans-serif; }
+    .related-card-body p { font-size: 0.88rem; color: #6b7280; line-height: 1.6; }
 
     /* ── MODAL (full-screen image) ── */
     #imgModal {
       display: none; position: fixed; inset: 0; z-index: 9999;
-      background: rgba(0,0,0,0.88);
+      background: rgba(13, 31, 25, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       align-items: center; justify-content: center;
     }
     #imgModal.open { display: flex; }
     #imgModal img {
       max-width: 90vw; max-height: 90vh;
-      border-radius: 8px; box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,255,255,0.12);
     }
     .modal-actions {
       position: absolute;
@@ -672,8 +927,8 @@ require_once __DIR__ . '/../includes/helpers.php';
       align-items: center;
       gap: 8px;
       min-height: 40px;
-      padding: 9px 14px;
-      border-radius: 6px;
+      padding: 9px 16px;
+      border-radius: 8px;
       background: #007b5e;
       color: #fff;
       text-decoration: none;
@@ -685,19 +940,22 @@ require_once __DIR__ . '/../includes/helpers.php';
       background: #005a45;
       transform: translateY(-1px);
     }
-    .modal-download svg { width:16px; height:16px; fill:currentColor; }
+    .modal-download svg { width: 16px; height: 16px; fill: currentColor; }
     .modal-download[hidden] { display: none; }
     .modal-close {
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.28);
       color: #fff;
       font-size: 1.8rem;
       cursor: pointer;
       line-height: 1;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
     }
+    .modal-close:hover { background: rgba(255,255,255,0.25); }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
@@ -706,26 +964,29 @@ require_once __DIR__ . '/../includes/helpers.php';
       .overview-inner { grid-template-columns: 1fr 1fr; }
       .process-steps { grid-template-columns: 1fr 1fr; }
       .related-grid { grid-template-columns: 1fr 1fr; }
-      .application-card { grid-template-columns: 160px 1fr; gap: 24px; padding: 24px; }
+      .applications-list { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .packaging-grid { grid-template-columns: 1fr; }
+      .qa-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 768px) {
       .overview-inner { grid-template-columns: 1fr 1fr; }
-      .overview-item { border-right: none; border-bottom: 1px solid #e2e8e0; }
+      .overview-item { border-right: none; border-bottom: 1px solid #edf2f0; }
       .quality-visuals { grid-template-columns: 1fr; }
       .quality-img-full,
       .quality-img-featured,
       .lab-report-card { grid-column: auto; }
       .process-steps { grid-template-columns: 1fr; }
       .related-grid { grid-template-columns: 1fr; }
-      .application-card { grid-template-columns: 1fr; gap: 18px; padding: 18px; }
-      .application-media { aspect-ratio: 16/9; }
+      .applications-list { grid-template-columns: 1fr; gap: 20px; }
+      .why-grid { grid-template-columns: 1fr; }
+      .qa-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) {
       .overview-inner { grid-template-columns: 1fr; }
       .hero-zno { display: none; }
       .market-section { padding: 58px 18px; }
       .market-panel { padding: 20px; }
-      .market-chip { width: 100%; justify-content: center; }
       .modal-actions {
         top: 14px;
         right: 14px;
@@ -743,7 +1004,7 @@ require_once __DIR__ . '/../includes/helpers.php';
         font-size: 1.5rem;
       }
       .quality-visuals { gap: 12px; }
-      .quality-img-card { border-radius: 8px; }
+      .quality-img-card { border-radius: 10px; }
       .quality-img-card figcaption { padding: 9px 12px; }
       .quality-img-card img,
       .quality-img-product img { aspect-ratio: 4 / 3; }
@@ -757,10 +1018,10 @@ require_once __DIR__ . '/../includes/helpers.php';
     }
 
     /* Reveal */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
     .reveal.visible { opacity: 1; transform: none; }
     @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity:1; transform:none; transition:none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
       .application-card,
       .application-img,
       .application-body h3,
@@ -771,18 +1032,22 @@ require_once __DIR__ . '/../includes/helpers.php';
 
     /* overflow guard */
     html, body { max-width: 100%; overflow-x: hidden; }
-    header { left:0; right:0; max-width:100%; box-sizing:border-box; }
+    header { left: 0; right: 0; max-width: 100%; box-sizing: border-box; }
 
     /* Skip layout and paint work for sections well below the initial viewport. */
-    .market-section,
+    .why-section,
     .quality-section,
     .process-section,
     .applications-section,
-    .related-section,
-    .faq-section {
+    .packaging-section,
+    .market-section,
+    .export-section,
+    .qa-section,
+    .faq-section,
+    .cta-strip,
+    .related-section {
       content-visibility: auto;
-      contain-intrinsic-size: auto 1000px;
-    }
+      contain-intrinsic-size: auto 900px;
     </style>
 </head>
 <body>
@@ -806,21 +1071,22 @@ require_once __DIR__ . '/../includes/helpers.php';
       <span aria-current="page">Zinc Oxide</span>
     </nav>
     <p class="eyebrow" style="color:#4ade9e;">Flagship Manufactured Product</p>
-    <h1>Zinc Oxide (ZnO)<br>99.9% Purity</h1>
+    <h1>Zinc Oxide Manufacturer in Pakistan</h1>
+    <p class="hero-subtitle">99.9% High-Purity Zinc Oxide (ZnO) | 25 KG Bags | Bulk &amp; Export Supply</p>
     <div class="hero-tag-row">
       <span class="hero-tag highlight">ISO 9001:2015 Certified</span>
       <span class="hero-tag">25 kg Bags</span>
-      <span class="hero-tag">MOQ: 25 kg</span>
       <span class="hero-tag">Third-Party Lab Tested</span>
       <span class="hero-tag">Made in Gujranwala, Pakistan</span>
     </div>
     <p class="hero-desc">
-      Bhatti Chemicals Industry manufactures high-purity Zinc Oxide through a controlled roasting and oxidation process. Consistent quality across every batch, backed by ISO 9001:2015 certification and third-party laboratory testing.
+      Bhatti Chemicals Industry manufactures high-purity Zinc Oxide through a controlled roasting and oxidation process at our facility in Gujranwala, Pakistan. Consistent quality across every batch, backed by quality documentation and third-party laboratory testing.
     </p>
     <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">Request a Quote</a>
-      <a href="#specifications" class="btn-ghost">View Specifications</a>
+      <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-primary" id="hero-cta-quote">Request a Quote</a>
+      <a href="#specifications" class="btn-ghost" id="hero-cta-specs">View Specifications</a>
     </div>
+    <p class="last-updated">Last updated: <time datetime="2026-09-19">September 2026</time></p>
   </div>
 </section>
 
@@ -853,51 +1119,55 @@ require_once __DIR__ . '/../includes/helpers.php';
 </div>
 
 <!-- ════════════════════════════════════════════════
-     PAKISTAN SUPPLY & EXPORT
+     WHY CHOOSE A PAKISTANI ZINC OXIDE MANUFACTURER
 ════════════════════════════════════════════════ -->
-<section class="market-section" aria-labelledby="zinc-oxide-pakistan">
-  <div class="market-wrap">
-    <div class="market-copy reveal">
-      <p class="eyebrow">Pakistan Manufacturer &amp; Export Supplier</p>
-      <h2 id="zinc-oxide-pakistan">Zinc Oxide Manufacturer in Pakistan for Local and Export Orders</h2>
-      <p>
-        Bhatti Chemicals Industry supplies high-purity Zinc Oxide from Gujranwala, Pakistan for industrial buyers searching for reliable zinc oxide Pakistan, ZnO supplier Pakistan, and zinc oxide manufacturer in Pakistan options. Our product is made for consistent performance in rubber, tyres, ceramics, paints, coatings, pharmaceuticals, cosmetics, agriculture, and animal feed applications.
-      </p>
-      <p>
-        We serve manufacturers, traders, distributors, and export customers who require stable quality, 25 kg bag packing, batch traceability, laboratory reports, and responsive quotation support. Whether you need Zinc Oxide for Lahore, Karachi, Faisalabad, Sialkot, Gujranwala, Islamabad, Rawalpindi, Multan, Peshawar, Quetta, or export shipment planning, our team can support regular supply requirements.
-      </p>
-      <div class="market-links" aria-label="Common Zinc Oxide search terms">
-        <span class="market-chip">Zinc Oxide Pakistan</span>
-        <span class="market-chip">Zinc Oxide Manufacturer Pakistan</span>
-        <span class="market-chip">ZnO Supplier Pakistan</span>
-        <span class="market-chip">Zinc Oxide Exporter Pakistan</span>
-      </div>
+<section class="why-section" id="why-choose" aria-labelledby="why-choose-heading">
+  <div class="section-header reveal">
+    <p class="eyebrow">Direct from the Manufacturer</p>
+    <h2 id="why-choose-heading">Why Choose a Pakistani Zinc Oxide Manufacturer?</h2>
+  </div>
+  <div class="why-intro reveal">
+    <p>
+      Bhatti Chemicals Industry is a Zinc Oxide manufacturer based in Gujranwala, Pakistan. As a direct manufacturer, we control production quality from raw material intake through to final packaging and dispatch. Industrial buyers work directly with our production and sales teams for quotations, quality documentation, and supply scheduling.
+    </p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 10 5v15h-2V8.2l-8-4-8 4V22H2V7l10-5Zm-6 9h12v11h-2v-3H8v3H6V11Zm2 2v4h8v-4H8Z"/></svg></div>
+      <h3>Direct Manufacturer</h3>
+      <p>Buy Zinc Oxide directly from our production facility in Gujranwala, Pakistan. No middlemen — direct communication with the manufacturing team.</p>
     </div>
-    <aside class="market-panel reveal" aria-label="Pakistan supply strengths">
-      <h3>Supply Capabilities</h3>
-      <ul class="market-list">
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>99.9% purity Zinc Oxide with third-party laboratory testing.</span></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Standard 25 kg bag packing for local distribution and bulk orders.</span></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>ISO 9001:2015 certified manufacturing and documented batch quality.</span></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Export-ready order support for buyers outside Pakistan.</span></li>
-      </ul>
-    </aside>
+    <div class="why-card reveal">
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2h6v2h-1v5l5 8.7A2.9 2.9 0 0 1 16.5 22h-9A2.9 2.9 0 0 1 5 17.7L10 9V4H9V2Zm2.8 8-5 8.7c-.3.6.1 1.3.7 1.3h9c.6 0 1-.7.7-1.3l-5-8.7h-.4Z"/></svg></div>
+      <h3>Quality Documentation</h3>
+      <p>Every batch is tested before dispatch. Certificate of Analysis (COA) and Technical Data Sheet (TDS) documents are available on request.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 9 4.5v11L12 22l-9-4.5v-11L12 2Zm0 2.2L6.2 7.1 12 10l5.8-2.9L12 4.2ZM5 8.7v7.6l6 3v-7.6l-6-3Zm8 10.6 6-3V8.7l-6 3v7.6Z"/></svg></div>
+      <h3>Flexible Supply</h3>
+      <p>Available in standard 25 kg bags with a minimum order of 25 kg. Bulk-order quantities are supported for ongoing industrial procurement.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm-1-6h2v2h-2v-2Zm0-8h2v6h-2V6Z"/></svg></div>
+      <h3>Export Inquiry Support</h3>
+      <p>Zinc Oxide is available for export inquiries. Contact our team for destination-specific quotation, packaging, and logistics information.</p>
+    </div>
   </div>
 </section>
 
 <!-- ════════════════════════════════════════════════
-     QUALITY & SPECIFICATIONS
+     SPECIFICATIONS & QUALITY
 ════════════════════════════════════════════════ -->
-<section class="quality-section" id="specifications">
+<section class="quality-section" id="specifications" aria-labelledby="specs-heading">
   <div class="quality-grid">
     <div class="quality-text reveal">
       <p class="eyebrow">Product Quality</p>
-      <h2>Zinc Oxide Specifications</h2>
+      <h2 id="specs-heading">Zinc Oxide Specifications</h2>
       <p>
-        Our Zinc Oxide meets the rigorous quality requirements of industrial buyers in rubber, ceramics, pharmaceuticals, and paint manufacturing. Every batch is manufactured to consistent purity, then tested before dispatch.
+        Zinc Oxide (ZnO) is a white, fine powder with ≥ 99.9% purity manufactured by Bhatti Chemicals Industry. Our Zinc Oxide meets the quality requirements of industrial buyers in rubber, ceramics, pharmaceuticals, and paint manufacturing. Every batch is manufactured to consistent purity, then tested before dispatch.
       </p>
       <p>
-        The table below reflects the standard quality parameters for our Zinc Oxide. Buyers requiring specific technical data sheets or certificate of analysis documents can request them directly from our team.
+        The table below reflects the standard quality parameters for our Zinc Oxide. Buyers requiring specific technical data sheets or certificate of analysis documents can <a href="<?php echo site_url('/contact-us.php'); ?>">request them directly</a> from our team.
       </p>
 
       <table class="specs-table" aria-label="Zinc Oxide quality specifications">
@@ -915,6 +1185,16 @@ require_once __DIR__ . '/../includes/helpers.php';
             <td>Highest grade for industrial use</td>
           </tr>
           <tr>
+            <td>CAS Number</td>
+            <td>1314-13-2</td>
+            <td>Standard chemical identifier</td>
+          </tr>
+          <tr>
+            <td>Molecular Formula</td>
+            <td>ZnO</td>
+            <td>Zinc Oxide</td>
+          </tr>
+          <tr>
             <td>Physical Appearance</td>
             <td>Fine white powder</td>
             <td>Uniform dispersion in formulations</td>
@@ -927,7 +1207,7 @@ require_once __DIR__ . '/../includes/helpers.php';
           <tr>
             <td>Lead (Pb)</td>
             <td>≤ 50 ppm</td>
-            <td>Pharmaceutical and food-grade safe</td>
+            <td>Heavy-metal compliance</td>
           </tr>
           <tr>
             <td>Iron (Fe)</td>
@@ -968,7 +1248,7 @@ require_once __DIR__ . '/../includes/helpers.php';
         <figcaption>Zinc Oxide production and packaging facility</figcaption>
       </figure>
       <div class="lab-report-card zoomable-card" data-img="<?php echo site_url('/assets/lab-reports/zinc-oxide-lab-report.jpg'); ?>" data-download="<?php echo site_url('/assets/lab-reports/zinc-oxide-lab-report.jpg'); ?>">
-        <img src="<?php echo site_url('/assets/lab-reports/zinc-oxide-lab-report-thumb.webp'); ?>" alt="Lab Report" class="lab-report-thumb" width="160" height="122" loading="lazy" decoding="async">
+        <img src="<?php echo site_url('/assets/lab-reports/zinc-oxide-lab-report-thumb.webp'); ?>" alt="Zinc Oxide laboratory quality report — Bhatti Chemicals Industry" class="lab-report-thumb" width="160" height="122" loading="lazy" decoding="async">
         <div class="lab-report-info"><strong>Laboratory Quality Report</strong><span>Click to view full screen</span></div>
         <div class="lab-report-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4Zm10 0h6v6h-2V6h-4ZM4 14h2v4h4v2H4Zm14 0h2v6h-6v-2h4Z"/></svg></div>
       </div>
@@ -988,10 +1268,10 @@ require_once __DIR__ . '/../includes/helpers.php';
 <!-- ════════════════════════════════════════════════
      MANUFACTURING PROCESS
 ════════════════════════════════════════════════ -->
-<section class="process-section">
+<section class="process-section" id="manufacturing" aria-labelledby="process-heading">
   <div class="section-header reveal">
     <p class="eyebrow">How We Make It</p>
-    <h2>Zinc Oxide Manufacturing Process</h2>
+    <h2 id="process-heading">Zinc Oxide Manufacturing Process</h2>
     <p class="section-desc">A controlled six-step production process converts high-grade zinc into consistently pure Zinc Oxide powder, ready for industrial use.</p>
   </div>
   <div class="process-steps">
@@ -1035,67 +1315,78 @@ require_once __DIR__ . '/../includes/helpers.php';
 </section>
 
 <!-- ════════════════════════════════════════════════
-     APPLICATIONS
+     INDUSTRIAL APPLICATIONS
 ════════════════════════════════════════════════ -->
-<section class="applications-section" id="applications">
+<section class="applications-section" id="applications" aria-labelledby="applications-heading">
   <div class="section-header reveal">
-    <p class="eyebrow">Where It's Used</p>
-    <h2>Industrial Applications of Zinc Oxide</h2>
+    <p class="eyebrow">Industries Served</p>
+    <h2 id="applications-heading">Industrial Applications of Zinc Oxide</h2>
     <p class="section-desc">Zinc Oxide is a critical input material across diverse manufacturing industries, each depending on its specific chemical and physical properties.</p>
   </div>
   <div class="applications-list">
     <article class="application-card reveal">
-      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/tire.jpg'); ?>" alt="Zinc Oxide used in rubber and tyre manufacturing" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
+      <div class="application-media"><img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=800&q=80" alt="Zinc Oxide used in rubber and tyre manufacturing" class="application-img" width="800" height="500" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Rubber &amp; Tyres</span>
         <h3>Rubber and Tyre Manufacturing</h3>
         <p>Zinc Oxide is a key activator in the rubber vulcanization process, enhancing elasticity, tensile strength, and durability of rubber compounds. It improves heat dissipation in tyres, preventing overheating during use, and extends the service life of tyre and industrial rubber products through its anti-aging properties.</p>
         <a href="<?php echo site_url('/zinc-oxide-applications/rubber-and-tyres.php'); ?>" class="app-link">
-          Explore Rubber &amp; Tyre Applications &rarr;
+          Zinc Oxide for Rubber &amp; Tyre Applications &rarr;
         </a>
       </div>
     </article>
     <article class="application-card reveal">
-      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/cosmatic.jpg'); ?>" alt="Zinc Oxide used in cosmetics and skincare" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
-      <div class="application-body">
-        <span class="app-badge">Cosmetics &amp; Skincare</span>
-        <h3>Cosmetics and Skincare Products</h3>
-        <p>Zinc Oxide serves as a physical UV blocker in sunscreens and is widely used in foundations, lotions, and baby powders for its skin-soothing, anti-inflammatory, and antibacterial properties. Its non-toxic and gentle nature makes it suitable for sensitive skin formulations.</p>
-        <a href="<?php echo site_url('/zinc-oxide-applications/cosmetics-and-skincare.php'); ?>" class="app-link">
-          Explore Cosmetics &amp; Skincare Applications &rarr;
-        </a>
-      </div>
-    </article>
-    <article class="application-card reveal">
-      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/medicine.avif'); ?>" alt="Zinc Oxide used in pharmaceuticals and ointments" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
-      <div class="application-body">
-        <span class="app-badge">Pharmaceuticals</span>
-        <h3>Pharmaceuticals and Ointments</h3>
-        <p>Used extensively in diaper rash creams, wound dressings, medicated powders, and anti-inflammatory formulations. Zinc Oxide's antibacterial and antifungal properties promote faster recovery from burns, cuts, and skin conditions, making it an established ingredient in both prescription and over-the-counter medicines.</p>
-        <a href="<?php echo site_url('/zinc-oxide-applications/pharmaceuticals-and-ointments.php'); ?>" class="app-link">
-          Explore Pharmaceutical Applications &rarr;
-        </a>
-      </div>
-    </article>
-    <article class="application-card reveal">
-      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/paints.jpg'); ?>" alt="Zinc Oxide used in paints and coatings" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
+      <div class="application-media"><img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" alt="Zinc Oxide used in paints and coatings" class="application-img" width="800" height="500" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Paints &amp; Coatings</span>
         <h3>Paints and Protective Coatings</h3>
         <p>As a protective additive in paints and coatings, Zinc Oxide improves mildew and mold resistance, enhances UV stability, and acts as a corrosion inhibitor that extends the life of metal structures. Widely used in automotive, marine, and architectural coatings.</p>
         <a href="<?php echo site_url('/zinc-oxide-applications/paints-and-coatings.php'); ?>" class="app-link">
-          Explore Paints &amp; Coatings Applications &rarr;
+          Zinc Oxide for Paints &amp; Coatings Applications &rarr;
         </a>
       </div>
     </article>
     <article class="application-card reveal">
-      <div class="application-media"><img src="<?php echo site_url('/assets/images/icons/applications/feed.jpg'); ?>" alt="Zinc Oxide used in animal feed and agriculture" class="application-img" width="400" height="400" loading="lazy" decoding="async"></div>
+      <div class="application-media"><img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80" alt="Zinc Oxide used in ceramics and glass manufacturing" class="application-img" width="800" height="500" loading="lazy" decoding="async"></div>
+      <div class="application-body">
+        <span class="app-badge">Ceramics &amp; Glass</span>
+        <h3>Ceramics and Glass Manufacturing</h3>
+        <p>In ceramic production, Zinc Oxide is used as a flux that lowers melting temperatures in glazes and improves surface finish, colour brightness, and thermal stability. In glass manufacturing, it enhances chemical durability and optical clarity.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/ceramics-and-glass.php'); ?>" class="app-link">
+          Zinc Oxide for Ceramics &amp; Glass Applications &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="application-card reveal">
+      <div class="application-media"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80" alt="Zinc Oxide used in pharmaceuticals and ointments" class="application-img" width="800" height="500" loading="lazy" decoding="async"></div>
+      <div class="application-body">
+        <span class="app-badge">Pharmaceuticals</span>
+        <h3>Pharmaceuticals and Ointments</h3>
+        <p>Used extensively in diaper rash creams, wound dressings, medicated powders, and anti-inflammatory formulations. Zinc Oxide's antibacterial and antifungal properties promote faster recovery from burns, cuts, and skin conditions, making it an established ingredient in both prescription and over-the-counter medicines.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/pharmaceuticals-and-ointments.php'); ?>" class="app-link">
+          Zinc Oxide for Pharmaceutical Applications &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="application-card reveal">
+      <div class="application-media"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="Zinc Oxide used in cosmetics and skincare" class="application-img" width="800" height="500" loading="lazy" decoding="async"></div>
+      <div class="application-body">
+        <span class="app-badge">Cosmetics &amp; Skincare</span>
+        <h3>Cosmetics and Skincare Products</h3>
+        <p>Zinc Oxide serves as a physical UV blocker in sunscreens and is widely used in foundations, lotions, and baby powders for its skin-soothing, anti-inflammatory, and antibacterial properties. Its non-toxic and gentle nature makes it suitable for sensitive skin formulations.</p>
+        <a href="<?php echo site_url('/zinc-oxide-applications/cosmetics-and-skincare.php'); ?>" class="app-link">
+          Zinc Oxide for Cosmetics &amp; Skincare Applications &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="application-card reveal">
+      <div class="application-media"><img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80" alt="Zinc Oxide used in animal feed and agriculture" class="application-img" width="800" height="500" loading="lazy" decoding="async"></div>
       <div class="application-body">
         <span class="app-badge">Agriculture &amp; Animal Feed</span>
         <h3>Animal Feed and Agricultural Fertilizers</h3>
         <p>Zinc Oxide is an essential micronutrient in animal feed, supporting immune function, growth, and reproductive health in livestock and poultry. In agricultural fertilizers, it corrects zinc deficiency in soils, improving plant metabolism and increasing crop yields.</p>
         <a href="<?php echo site_url('/zinc-oxide-applications/agriculture-and-animal-feed.php'); ?>" class="app-link">
-          Explore Agriculture &amp; Feed Applications &rarr;
+          Zinc Oxide for Agriculture &amp; Feed Applications &rarr;
         </a>
       </div>
     </article>
@@ -1108,12 +1399,229 @@ require_once __DIR__ . '/../includes/helpers.php';
 </section>
 
 <!-- ════════════════════════════════════════════════
+     PACKAGING
+════════════════════════════════════════════════ -->
+<section class="packaging-section" id="packaging" aria-labelledby="packaging-heading">
+  <div class="packaging-grid">
+    <div class="packaging-content reveal">
+      <p class="eyebrow">Packaging &amp; Bulk Supply</p>
+      <h2 id="packaging-heading">Zinc Oxide Packaging</h2>
+      <p>
+        Bhatti Chemicals Industry supplies Zinc Oxide in standard 25 kg bags, designed for efficient handling, storage, and transport. Bags are sealed to protect the product from moisture and contamination during transit and warehouse storage.
+      </p>
+      <p>
+        Bulk orders are available for manufacturers and distributors with ongoing Zinc Oxide requirements. Contact our team to discuss quantity-based quotations and delivery scheduling.
+      </p>
+      <ul class="packaging-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Standard 25 kg bag packaging</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Minimum order quantity: 25 kg (1 bag)</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Bulk supply available for industrial procurement</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Sealed bags for moisture protection</span></li>
+      </ul>
+      <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-primary" style="margin-top:1rem;">Request Bulk Quotation</a>
+    </div>
+    <div class="packaging-visual reveal">
+      <figure>
+        <img src="<?php echo site_url('/assets/images/products/zinc-oxide-bag.jpg'); ?>"
+             alt="Bhatti Chemicals Industry Zinc Oxide 25 kg bag packaging — sealed for moisture protection"
+             width="853" height="1316" loading="lazy" decoding="async">
+        <figcaption>Zinc Oxide — 25 kg sealed bag</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     PAKISTAN SUPPLY
+════════════════════════════════════════════════ -->
+<section class="market-section" id="pakistan-supply" aria-labelledby="zinc-oxide-pakistan">
+  <div class="market-wrap">
+    <div class="market-copy reveal">
+      <p class="eyebrow">Pakistan Supply</p>
+      <h2 id="zinc-oxide-pakistan">Zinc Oxide Supply Across Pakistan</h2>
+      <p>
+        We supply Zinc Oxide from our manufacturing facility in Gujranwala to industrial customers across Pakistan. Our product serves manufacturers, traders, and distributors who require stable quality, 25 kg bag packaging, batch traceability, and laboratory reports.
+      </p>
+      <p>
+        Whether you need Zinc Oxide for rubber manufacturing, tyre production, ceramics, paints, coatings, pharmaceuticals, or agricultural applications, our team can support regular supply requirements with responsive quotation support.
+      </p>
+      <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-primary" style="margin-top:0.5rem;">Contact for Pakistan Supply</a>
+    </div>
+    <aside class="market-panel reveal" aria-label="Pakistan supply strengths">
+      <h3>Supply Capabilities</h3>
+      <ul class="market-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>99.9% purity Zinc Oxide with third-party laboratory testing.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Standard 25 kg bag packing for local distribution and bulk orders.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>ISO 9001:2015 certified manufacturing and documented batch quality.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-4.2-4.2-1.4 1.4L9 19 21 7l-1.4-1.4Z"/></svg><span>Direct manufacturer communication and quotation support.</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     INTERNATIONAL EXPORT
+════════════════════════════════════════════════ -->
+<section class="export-section" id="export" aria-labelledby="export-heading">
+  <div class="export-inner reveal">
+    <p class="eyebrow">International Supply</p>
+    <h2 id="export-heading">Zinc Oxide Export Inquiries</h2>
+    <p>
+      Bulk Zinc Oxide is available for export inquiries. Contact Bhatti Chemicals Industry for destination-specific quotation, packaging specifications, and logistics information. We support export documentation including certificate of analysis, technical data sheets, and shipping paperwork.
+    </p>
+    <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-primary">Contact for Export Inquiry</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     QUALITY ASSURANCE
+════════════════════════════════════════════════ -->
+<section class="qa-section" id="quality" aria-labelledby="qa-heading">
+  <div class="section-header reveal">
+    <p class="eyebrow">Quality Assurance</p>
+    <h2 id="qa-heading">Quality Standards &amp; Testing</h2>
+    <p class="section-desc">Our Zinc Oxide manufacturing operates under a documented quality management system, with every batch tested before dispatch.</p>
+  </div>
+  <div class="qa-grid">
+    <div class="qa-card reveal">
+      <div class="qa-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4Zm0 2.18 7 3.12v4.7c0 4.67-3.13 9.06-7 10.17-3.87-1.11-7-5.5-7-10.17V6.3l7-3.12Zm-1 5.82v6h2v-6h-2Zm0 8v2h2v-2h-2Z"/></svg></div>
+      <h3>ISO 9001:2015</h3>
+      <p>Bhatti Chemicals Industry operates under ISO 9001:2015 certified quality management across production, packaging, and dispatch.</p>
+    </div>
+    <div class="qa-card reveal">
+      <div class="qa-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2h6v2h-1v5l5 8.7A2.9 2.9 0 0 1 16.5 22h-9A2.9 2.9 0 0 1 5 17.7L10 9V4H9V2Zm2.8 8-5 8.7c-.3.6.1 1.3.7 1.3h9c.6 0 1-.7.7-1.3l-5-8.7h-.4Z"/></svg></div>
+      <h3>Third-Party Lab Testing</h3>
+      <p>Zinc Oxide batches are tested by accredited third-party laboratories to independently verify purity, composition, and physical properties.</p>
+    </div>
+    <div class="qa-card reveal">
+      <div class="qa-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6Zm-1 7V3.5L18.5 9H13ZM6 20V4h5v7h7v9H6Zm2-7h8v2H8v-2Zm0 4h5v2H8v-2Z"/></svg></div>
+      <h3>Batch Documentation</h3>
+      <p>Certificate of Analysis (COA) and Technical Data Sheet (TDS) documents are available for every batch. Buyers can request documentation with their order.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════════ -->
+<section class="faq-section" id="faq" aria-labelledby="faq-heading">
+  <div class="section-header reveal">
+    <p class="eyebrow">Common Questions</p>
+    <h2 id="faq-heading">Zinc Oxide — Frequently Asked Questions</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        What is Zinc Oxide?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Zinc Oxide (ZnO) is a white, fine powder produced by oxidizing zinc metal. It has the CAS number 1314-13-2 and the molecular formula ZnO. Zinc Oxide is used as a functional additive across many industries including rubber vulcanization, ceramics, paints, pharmaceuticals, cosmetics, agriculture, and animal feed.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        What purity of Zinc Oxide does Bhatti Chemicals Industry supply?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Bhatti Chemicals Industry produces Zinc Oxide at ≥ 99.9% purity. It is presented as a fine white powder, free from visible contaminants, and undergoes third-party laboratory analysis before dispatch. Full certificates of analysis are available on request.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        Where is your Zinc Oxide manufactured?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Our Zinc Oxide is manufactured at our production facility in Gujranwala, Pakistan. The manufacturing process involves controlled roasting and oxidation of high-grade zinc to produce fine Zinc Oxide powder.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        What industries use Zinc Oxide?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Zinc Oxide from Bhatti Chemicals Industry is used in <a href="<?php echo site_url('/zinc-oxide-applications/rubber-and-tyres.php'); ?>">rubber and tyre manufacturing</a>, <a href="<?php echo site_url('/zinc-oxide-applications/paints-and-coatings.php'); ?>">paints and protective coatings</a>, ceramics and glass, <a href="<?php echo site_url('/zinc-oxide-applications/pharmaceuticals-and-ointments.php'); ?>">pharmaceuticals and ointments</a>, <a href="<?php echo site_url('/zinc-oxide-applications/cosmetics-and-skincare.php'); ?>">cosmetics and sunscreens</a>, and <a href="<?php echo site_url('/zinc-oxide-applications/agriculture-and-animal-feed.php'); ?>">animal feed and agricultural fertilizers</a>.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        Is Zinc Oxide available in 25 kg bags?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Yes. Bhatti Chemicals Industry supplies Zinc Oxide in standard 25 kg sealed bags. The minimum order quantity is 25 kg (one bag), making it accessible for both trial orders and ongoing industrial procurement.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        Do you supply bulk quantities of Zinc Oxide?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Yes. Bulk supply is available for manufacturers and distributors with ongoing requirements. Contact our team with your required quantity for a quotation. We support regular supply scheduling for industrial customers.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        Do you provide a Certificate of Analysis (COA)?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Yes. A Certificate of Analysis (COA) is available for every batch of Zinc Oxide we produce. The COA includes purity assay results and key quality parameters. <a href="<?php echo site_url('/contact-us.php'); ?>">Contact us</a> to request a sample COA or to receive documentation with your order.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        Do you provide a Technical Data Sheet (TDS)?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Yes. A Technical Data Sheet (TDS) containing product specifications, physical properties, and handling information is available on request. <a href="<?php echo site_url('/contact-us.php'); ?>">Contact our team</a> to receive the current TDS for our Zinc Oxide.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        What is the CAS number of Zinc Oxide?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>The CAS number for Zinc Oxide is 1314-13-2. Its molecular formula is ZnO and its molecular weight is 81.38 g/mol. These identifiers are standard across all industrial and commercial applications of Zinc Oxide.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">
+        How can I request a Zinc Oxide quotation?
+        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
+      </button>
+      <div class="faq-a" hidden>
+        <p>Contact us by email at <a href="mailto:info@bhattichemicalsindustry.com.pk">info@bhattichemicalsindustry.com.pk</a> or via WhatsApp at <a href="https://wa.me/923041462460">+92 304 1462460</a>. Please specify the product, required quantity, and your location. We respond to all trade inquiries promptly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     CTA STRIP
+════════════════════════════════════════════════ -->
+<section class="cta-strip" id="contact" aria-labelledby="cta-heading">
+  <h2 id="cta-heading">Request a Zinc Oxide Quotation</h2>
+  <p>Specify your required quantity, application, and destination. Our team will respond with pricing and documentation.</p>
+  <div class="cta-btn-row">
+    <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-white">Request a Quote</a>
+    <a href="https://wa.me/923041462460" class="btn-ghost-white" target="_blank" rel="noopener">WhatsApp +92 304 1462460</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
      RELATED PRODUCTS
 ════════════════════════════════════════════════ -->
-<section class="related-section">
+<section class="related-section" aria-labelledby="related-heading">
   <div class="section-header reveal">
     <p class="eyebrow">Also From Bhatti Chemicals</p>
-    <h2>Related Zinc Products</h2>
+    <h2 id="related-heading">Related Zinc Products</h2>
   </div>
   <div class="related-grid">
     <a href="<?php echo site_url('/products/zinc-ash.php'); ?>" class="related-card reveal">
@@ -1139,76 +1647,6 @@ require_once __DIR__ . '/../includes/helpers.php';
     </a>
   </div>
 </section>
-
-<!-- ════════════════════════════════════════════════
-     FAQ
-════════════════════════════════════════════════ -->
-<section class="faq-section">
-  <div class="section-header reveal">
-    <p class="eyebrow">Common Questions</p>
-    <h2>Zinc Oxide — Frequently Asked Questions</h2>
-  </div>
-  <div class="faq-list">
-    <div class="faq-item reveal">
-      <button class="faq-q" aria-expanded="false">
-        What is the purity level of your Zinc Oxide?
-        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="faq-a" hidden>
-        <p>Our Zinc Oxide is produced at ≥ 99.9% purity. It is presented as a fine white powder, free from visible contaminants, and undergoes third-party laboratory analysis before dispatch. Full certificates of analysis are available on request.</p>
-      </div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-q" aria-expanded="false">
-        What industries use your Zinc Oxide?
-        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="faq-a" hidden>
-        <p>Our Zinc Oxide is used in rubber and tyre manufacturing, ceramics and glass, paints and protective coatings, pharmaceuticals and ointments, cosmetics and sunscreens, animal feed, agricultural fertilizers, and battery manufacturing.</p>
-      </div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-q" aria-expanded="false">
-        What is the minimum order quantity?
-        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="faq-a" hidden>
-        <p>The minimum order quantity for our Zinc Oxide is 25 kg — equivalent to one standard bag. This allows buyers to trial the product before placing larger orders. Bulk supply is available for ongoing industrial procurement.</p>
-      </div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-q" aria-expanded="false">
-        Is your Zinc Oxide ISO 9001:2015 certified?
-        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="faq-a" hidden>
-        <p>Yes. Bhatti Chemicals Industry is ISO 9001:2015 certified. All production, packaging, and dispatch processes operate under this certified quality management system. Each batch is also tested by accredited third-party laboratories to verify purity and composition.</p>
-      </div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-q" aria-expanded="false">
-        Can you provide custom Zinc Oxide formulations?
-        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="faq-a" hidden>
-        <p>Yes. We offer custom formulations tailored to specific industrial requirements, including particular purity grades, particle size specifications, or packaging preferences. Contact our team to discuss your application requirements.</p>
-      </div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-q" aria-expanded="false">
-        How do I place an order or request a sample?
-        <span class="faq-chevron" aria-hidden="true">&#9660;</span>
-      </button>
-      <div class="faq-a" hidden>
-        <p>Contact us by email at <a href="mailto:info@bhattichemicalsindustry.com.pk">info@bhattichemicalsindustry.com.pk</a> or via WhatsApp at +92 304 1462460. Please specify the product, required quantity, and your location. We respond to all trade inquiries promptly.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════
-     CONTACT + FOOTER
-════════════════════════════════════════════════ -->
 
 </main>
 

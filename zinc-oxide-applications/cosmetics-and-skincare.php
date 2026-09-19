@@ -14,16 +14,16 @@ require_once __DIR__ . '/../includes/helpers.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
-    <title>Zinc Oxide for Cosmetics &amp; Skincare (3000+ Word Technical Guide) | Bhatti Chemicals</title>
-    <meta name="description" content="Exhaustive scientific monograph on 99.9% Zinc Oxide in cosmetics and skincare by Bhatti Chemicals Industry, Pakistan. Physical UV blocking mechanism, non-nano formulations, mineral sunscreens, and dermatological safety.">
-    <meta name="keywords" content="zinc oxide for cosmetics, zinc oxide skincare, mineral sunscreen UV blocker, cosmetic grade zinc oxide Pakistan, non nano zinc oxide, SPF booster zinc oxide, baby diaper cream active, buy cosmetic zinc oxide Gujranwala, reef safe sunscreen ingredient">
+    <title>Zinc Oxide for Cosmetics &amp; Skincare | Bhatti Chemicals</title>
+    <meta name="description" content="99.9% pure Zinc Oxide for cosmetics &amp; mineral sunscreens. Broad-spectrum physical UV blocker &amp; skin-soothing agent. Direct factory supply Pakistan.">
+    <meta name="keywords" content="zinc oxide for cosmetics, zinc oxide skincare, mineral sunscreen UV blocker, cosmetic grade zinc oxide Pakistan, non nano zinc oxide, SPF booster zinc oxide, baby diaper cream active, buy cosmetic zinc oxide Gujranwala">
     <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/cosmetics-and-skincare.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
-    <meta property="og:title" content="Zinc Oxide (ZnO) in Cosmetics &amp; Skincare — Comprehensive Formulation Monograph">
-    <meta property="og:description" content="Detailed scientific guide on high-purity 99.9% Zinc Oxide as an active mineral UV blocker, anti-inflammatory agent, and skin barrier protectant in sunscreens, foundations, and baby care products.">
+    <meta property="og:title" content="Zinc Oxide for Cosmetics &amp; Skincare | Bhatti Chemicals">
+    <meta property="og:description" content="Detailed scientific guide on high-purity 99.9% Zinc Oxide as an active mineral UV blocker, anti-inflammatory agent, and skin barrier protectant. Made in Pakistan.">
     <meta property="og:image" content="<?php echo site_url('/assets/images/icons/applications/cosmatic.jpg'); ?>">
     <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/cosmetics-and-skincare.php">
 
@@ -39,6 +39,11 @@ require_once __DIR__ . '/../includes/helpers.php';
     <link rel="shortcut icon" href="<?php echo site_url('/assets/favicon/favicon.ico'); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
+
+    <!-- Google Fonts: Sora & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
     <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -209,12 +214,12 @@ require_once __DIR__ . '/../includes/helpers.php';
     *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
     html { scroll-behavior: smooth; scroll-padding-top: 82px; }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       color: #1a1a1a; background: #fafafa;
       overflow-x: hidden; line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-    h1,h2,h3,h4,h5 { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.25; }
+    h1,h2,h3,h4,h5 { font-family: 'Sora', sans-serif; letter-spacing: -0.02em; line-height: 1.25; }
     h1 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 800; color: #fff; }
     h2 { font-size: clamp(1.65rem, 3vw, 2.35rem); font-weight: 700; color: #0d1f19; margin: 1.8rem 0 1rem; }
     h3 { font-size: 1.3rem; font-weight: 700; color: #007b5e; margin: 1.4rem 0 0.6rem; }
@@ -1251,6 +1256,15 @@ require_once __DIR__ . '/../includes/helpers.php';
         </div>
         <h3>Paints &amp; Protective Coatings</h3>
         <p>Mildew-resistant and anti-corrosive additive for automotive, marine, and architectural primers.</p>
+        <span style="color:#007b5e; font-weight:700; font-size:0.9rem;">Read Application Guide &rarr;</span>
+      </a>
+
+      <a href="<?php echo site_url('/zinc-oxide-applications/ceramics-and-glass.php'); ?>" style="text-decoration:none;" class="app-deep-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h14v-8h3L12 3zm0 4.5l5 4.5v6H7v-6l5-4.5z"/></svg>
+        </div>
+        <h3>Ceramics &amp; Glazes</h3>
+        <p>High-temperature flux, low thermal expansion, and surface gloss for tiles and sanitaryware.</p>
         <span style="color:#007b5e; font-weight:700; font-size:0.9rem;">Read Application Guide &rarr;</span>
       </a>
     </div>

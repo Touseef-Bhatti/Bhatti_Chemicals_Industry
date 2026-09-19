@@ -2,8 +2,35 @@ RewriteOptions inherit
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  # Canonicalize any spaced or alternate folder access to standard kebab-case URL
+
+  # Canonicalize legacy spaced folder
   RewriteRule ^zincOxide[_\s\-]+applications/?(.*)$ /zinc-oxide-applications/$1 [R=301,L,NC]
+
+  # Redirect legacy contact URLs
+  RewriteRule ^contact/?$ /contact-us.php [R=301,L,NC]
+  RewriteRule ^contact\.php$ /contact-us.php [R=301,L,NC]
+
+  # Redirect legacy slash / extensionless URLs for root company pages
+  RewriteRule ^about/?$ /about.php [R=301,L,NC]
+  RewriteRule ^services/?$ /services.php [R=301,L,NC]
+  RewriteRule ^privacy-policy/?$ /privacy-policy.php [R=301,L,NC]
+  RewriteRule ^terms-and-conditions/?$ /terms-and-conditions.php [R=301,L,NC]
+
+  # Redirect legacy product URLs (with or without trailing slash)
+  RewriteRule ^products/zinc-oxide/?$ /products/zinc-oxide.php [R=301,L,NC]
+  RewriteRule ^products/zinc-ash/?$ /products/zinc-ash.php [R=301,L,NC]
+  RewriteRule ^products/zinc-ingot/?$ /products/zinc-ingot.php [R=301,L,NC]
+  RewriteRule ^products/zinc-dross/?$ /products/zinc-dross.php [R=301,L,NC]
+  RewriteRule ^products/zinc-dust/?$ /products/zinc-dust.php [R=301,L,NC]
+  RewriteRule ^products/zinc-alloy/?$ /products/zinc-alloy.php [R=301,L,NC]
+
+  # Redirect legacy application URLs (with or without trailing slash)
+  RewriteRule ^zinc-oxide-applications/rubber-and-tyres/?$ /zinc-oxide-applications/rubber-and-tyres.php [R=301,L,NC]
+  RewriteRule ^zinc-oxide-applications/cosmetics-and-skincare/?$ /zinc-oxide-applications/cosmetics-and-skincare.php [R=301,L,NC]
+  RewriteRule ^zinc-oxide-applications/pharmaceuticals-and-ointments/?$ /zinc-oxide-applications/pharmaceuticals-and-ointments.php [R=301,L,NC]
+  RewriteRule ^zinc-oxide-applications/paints-and-coatings/?$ /zinc-oxide-applications/paints-and-coatings.php [R=301,L,NC]
+  RewriteRule ^zinc-oxide-applications/ceramics-and-glass/?$ /zinc-oxide-applications/ceramics-and-glass.php [R=301,L,NC]
+  RewriteRule ^zinc-oxide-applications/agriculture-and-animal-feed/?$ /zinc-oxide-applications/agriculture-and-animal-feed.php [R=301,L,NC]
 </IfModule>
 
 AddType text/vtt .vtt

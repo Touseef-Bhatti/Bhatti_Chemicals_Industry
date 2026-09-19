@@ -1,134 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/about.php</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/contact-us.php</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
+  <!-- Products Hub & Flagship Products -->
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/products/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/cosmetics-and-skincare.php</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/pharmaceuticals-and-ointments.php</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-ash.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-ingot.php</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-ingot.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-ash.php</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-dross.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-dust.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/products/zinc-alloy.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+  </url>
+
+  <!-- Technical Application Hub & Industry Sector Monographs -->
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/ceramics-and-glass.php</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/cosmetics-and-skincare.php</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/pharmaceuticals-and-ointments.php</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <!-- Company & Services -->
+  <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/about.php</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/services.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
+    <loc>https://www.bhattichemicalsindustry.com.pk/contact-us.php</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Legal & Compliance -->
+  <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/privacy-policy.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
 
   <url>
     <loc>https://www.bhattichemicalsindustry.com.pk/terms-and-conditions.php</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>

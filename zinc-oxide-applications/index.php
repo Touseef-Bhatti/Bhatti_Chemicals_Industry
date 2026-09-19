@@ -14,23 +14,23 @@ require_once __DIR__ . '/../includes/helpers.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
-    <title>Industrial Applications of Zinc Oxide | Rubber, Cosmetics, Paints, Feed &amp; Pharma | Bhatti Chemicals</title>
-    <meta name="description" content="Engineering hub for the 5 major industrial applications of 99.9% pure Zinc Oxide (ZnO) by Bhatti Chemicals Industry, Gujranwala: rubber vulcanization, cosmetics UV filtering, USP ointments, anti-corrosive paints &amp; agricultural animal feed.">
-    <meta name="keywords" content="industrial applications of zinc oxide, zinc oxide uses, zinc oxide for rubber or tyre, zinc oxide cosmetics, zinc oxide pharmaceuticals, zinc oxide paints coatings, zinc oxide animal feed, zinc oxide manufacturer Pakistan, French process zinc oxide Gujranwala">
+    <title>Zinc Oxide Industrial Applications | Bhatti Chemicals</title>
+    <meta name="description" content="Explore industrial applications of 99.9% Zinc Oxide (ZnO) for rubber, paints, ceramics, pharma, cosmetics &amp; feed. Buy bulk from Pakistan.">
+    <meta name="keywords" content="zinc oxide applications, industrial zinc oxide uses, zinc oxide for rubber or tyre, zinc oxide cosmetics, zinc oxide pharmaceuticals, zinc oxide paints coatings, zinc oxide ceramics, zinc oxide animal feed, zinc oxide manufacturer Pakistan">
     <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
-    <meta property="og:title" content="Industrial Applications of Zinc Oxide (ZnO) | Bhatti Chemicals Industry">
-    <meta property="og:description" content="Complete engineering guide to the 5 major manufacturing sectors powered by 99.9% pure French Process Zinc Oxide: rubber &amp; tyres, cosmetics, pharmaceuticals, coatings, and agricultural feed.">
+    <meta property="og:title" content="Industrial Applications of Zinc Oxide | Bhatti Chemicals">
+    <meta property="og:description" content="Complete engineering guide to the 6 major manufacturing sectors powered by 99.9% pure French Process Zinc Oxide: rubber, cosmetics, pharma, coatings, ceramics, and feed.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Industrial Applications of Zinc Oxide | Bhatti Chemicals">
-    <meta name="twitter:description" content="Comprehensive engineering guide to 5 critical manufacturing sectors using 99.9% pure Zinc Oxide from Bhatti Chemicals Industry, Gujranwala, Pakistan.">
+    <meta name="twitter:title" content="Zinc Oxide Industrial Applications | Bhatti Chemicals">
+    <meta name="twitter:description" content="Comprehensive engineering guide to 6 critical manufacturing sectors using 99.9% pure Zinc Oxide from Bhatti Chemicals Industry, Gujranwala, Pakistan.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80">
 
     <!-- Favicons -->
@@ -39,6 +39,11 @@ require_once __DIR__ . '/../includes/helpers.php';
     <link rel="shortcut icon" href="<?php echo site_url('/assets/favicon/favicon.ico'); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
+
+    <!-- Google Fonts: Sora & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
     <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -99,7 +104,15 @@ require_once __DIR__ . '/../includes/helpers.php';
           "name": "What are the primary industrial applications of Zinc Oxide?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Zinc Oxide (ZnO) is critically employed across five primary industries: 1) Rubber and tyre manufacturing as an essential vulcanization activator and thermal heat dissipator; 2) Cosmetics and skincare as a broad-spectrum physical mineral UV blocker; 3) Pharmaceuticals as an antiseptic, astringent, and wound-healing agent in ointments and calamine; 4) Paints and coatings for anti-corrosion, UV polymer stabilization, and non-leaching mildew resistance; and 5) Agriculture and animal feed as an essential trace mineral (~80.34% elemental Zn) for dairy cattle hoof health, poultry eggshell strength, and crop micronutrient fertilization."
+            "text": "Zinc Oxide (ZnO) is critically employed across six primary industries: 1) Rubber and tyre manufacturing as an essential vulcanization activator and thermal heat dissipator; 2) Ceramics and glazes as a low-expansion flux and gloss enhancer; 3) Cosmetics and skincare as a broad-spectrum physical mineral UV blocker; 4) Pharmaceuticals as an antiseptic, astringent, and wound-healing agent in ointments and calamine; 5) Paints and coatings for anti-corrosion, UV polymer stabilization, and non-leaching mildew resistance; and 6) Agriculture and animal feed as an essential trace mineral (~80.34% elemental Zn) for dairy cattle hoof health, poultry eggshell strength, and crop micronutrient fertilization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Zinc Oxide function in ceramic glazes and tiles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In ceramic glazes, Zinc Oxide acts as a versatile high-temperature flux (> 1050°C) with an exceptionally low thermal expansion coefficient that prevents crazing. Low additions (1% to 4%) deliver high gloss and melt fluidity in porcelain sanitaryware and floor tiles, while higher additions (6% to 15%) develop matte and crystalline willemite (Zn2SiO4) finishes."
           }
         },
         {
@@ -164,12 +177,12 @@ require_once __DIR__ . '/../includes/helpers.php';
     *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
     html { scroll-behavior: smooth; scroll-padding-top: 82px; }
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       color: #1a1a1a; background: #fafafa;
       overflow-x: hidden; line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-    h1,h2,h3,h4,h5 { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.25; }
+    h1,h2,h3,h4,h5 { font-family: 'Sora', sans-serif; letter-spacing: -0.02em; line-height: 1.25; }
     h1 { font-size: clamp(2.1rem, 4.5vw, 3.4rem); font-weight: 800; color: #fff; }
     h2 { font-size: clamp(1.6rem, 3vw, 2.35rem); font-weight: 700; color: #0d1f19; margin-bottom: 0.8rem; }
     h3 { font-size: 1.35rem; font-weight: 700; color: #0d1f19; margin-bottom: 0.5rem; }
@@ -467,7 +480,7 @@ require_once __DIR__ . '/../includes/helpers.php';
         <div class="kpi-label">Purity (French Process)</div>
       </div>
       <div class="kpi-item">
-        <div class="kpi-number">5 Major</div>
+        <div class="kpi-number">6 Major</div>
         <div class="kpi-label">Industrial Verticals</div>
       </div>
       <div class="kpi-item">
@@ -666,6 +679,30 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
     </article>
 
+    <!-- 6. Ceramics & Glazes -->
+    <article class="sector-card" id="ceramics">
+      <div class="sector-img-wrap">
+        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80"
+             alt="Zinc Oxide used in ceramic glazes porcelain tiles and sanitaryware" width="800" height="600" loading="lazy">
+      </div>
+      <div>
+        <span class="sector-badge">Sector 06 &bull; Ceramics, Tiles &amp; Glazes</span>
+        <h3>Ceramics, Tiles &amp; Glazes</h3>
+        <p>
+          Functioning as an essential high-temperature flux (> 1050&deg;C), Zinc Oxide reduces glaze melt viscosity, prevents crazing through low thermal expansion, and produces bright gloss in porcelain sanitaryware and floor tiles. In crystalline glazes, higher additions precipitate macroscopic Willemite (Zn₂SiO₄) crystals, while specialty glass benefits from enhanced chemical durability.
+        </p>
+        <div class="pill-tags">
+          <span class="pill-tag">Dosage: 2.0 &ndash; 12.0 wt%</span>
+          <span class="pill-tag">Low Thermal Expansion</span>
+          <span class="pill-tag">Iron-Free (Fe₂O₃ &le; 0.005%)</span>
+          <span class="pill-tag">ISO 6745 / ASTM D79</span>
+        </div>
+        <a href="<?php echo site_url('/zinc-oxide-applications/ceramics-and-glass.php'); ?>" class="sector-btn">
+          Explore Ceramics &amp; Glazes Guide &rarr;
+        </a>
+      </div>
+    </article>
+
   </div>
 </section>
 
@@ -726,6 +763,13 @@ require_once __DIR__ . '/../includes/helpers.php';
             <td class="highlight-cell">50 &ndash; 3,000 mg/kg</td>
             <td>High elemental zinc content (~80.3%), controlled cadmium (Cd &le; 10 ppm)</td>
             <td>EU EC 1831/2003 / AAFCO</td>
+          </tr>
+          <tr>
+            <td><strong>Ceramics &amp; Glazes</strong></td>
+            <td>High-temp flux, thermal expansion control, gloss &amp; willemite crystallization</td>
+            <td class="highlight-cell">2.0 &ndash; 12.0 wt%</td>
+            <td>Ultra-low iron (Fe₂O₃ &le; 0.005%), wet sieve residue (325 mesh &le; 0.05%)</td>
+            <td>ISO 6745 / ASTM D79</td>
           </tr>
         </tbody>
       </table>
@@ -799,7 +843,7 @@ require_once __DIR__ . '/../includes/helpers.php';
         </button>
         <div class="faq-a" hidden>
           <p>
-            Zinc Oxide (ZnO) is critically employed across five primary industries: 1) Rubber and tyre manufacturing as an essential vulcanization activator and thermal heat dissipator; 2) Cosmetics and skincare as a broad-spectrum physical mineral UV blocker; 3) Pharmaceuticals as an antiseptic, astringent, and wound-healing agent in ointments and calamine; 4) Paints and coatings for anti-corrosion, UV polymer stabilization, and non-leaching mildew resistance; and 5) Agriculture and animal feed as an essential trace mineral (~80.34% elemental Zn) for dairy cattle hoof health, poultry eggshell strength, and crop micronutrient fertilization.
+            Zinc Oxide (ZnO) is critically employed across six primary industries: 1) Rubber and tyre manufacturing as an essential vulcanization activator and thermal heat dissipator; 2) Ceramics and glazes as a low-expansion flux and gloss enhancer; 3) Cosmetics and skincare as a broad-spectrum physical mineral UV blocker; 4) Pharmaceuticals as an antiseptic, astringent, and wound-healing agent in ointments and calamine; 5) Paints and coatings for anti-corrosion, UV polymer stabilization, and non-leaching mildew resistance; and 6) Agriculture and animal feed as an essential trace mineral (~80.34% elemental Zn) for dairy cattle hoof health, poultry eggshell strength, and crop micronutrient fertilization.
           </p>
         </div>
       </div>
@@ -854,7 +898,19 @@ require_once __DIR__ . '/../includes/helpers.php';
 
       <div class="faq-card">
         <button class="faq-q" aria-expanded="false">
-          6. Why is French Process Zinc Oxide superior to American Process?
+          6. How does Zinc Oxide function in ceramic glazes and tiles?
+          <span class="faq-icon" aria-hidden="true">&#9660;</span>
+        </button>
+        <div class="faq-a" hidden>
+          <p>
+            In ceramic glazes, Zinc Oxide acts as a versatile high-temperature flux (> 1050&deg;C) with an exceptionally low thermal expansion coefficient that prevents crazing. Low additions (1% to 4%) deliver high gloss and melt fluidity in porcelain sanitaryware and floor tiles, while higher additions (6% to 15%) develop matte and crystalline willemite (Zn₂SiO₄) finishes.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <button class="faq-q" aria-expanded="false">
+          7. Why is French Process Zinc Oxide superior to American Process?
           <span class="faq-icon" aria-hidden="true">&#9660;</span>
         </button>
         <div class="faq-a" hidden>
@@ -866,7 +922,7 @@ require_once __DIR__ . '/../includes/helpers.php';
 
       <div class="faq-card">
         <button class="faq-q" aria-expanded="false">
-          7. What export packaging options are available for international shipments?
+          8. What export packaging options are available for international shipments?
           <span class="faq-icon" aria-hidden="true">&#9660;</span>
         </button>
         <div class="faq-a" hidden>
@@ -878,7 +934,7 @@ require_once __DIR__ . '/../includes/helpers.php';
 
       <div class="faq-card">
         <button class="faq-q" aria-expanded="false">
-          8. How can industrial procurement teams request samples and contract pricing?
+          9. How can industrial procurement teams request samples and contract pricing?
           <span class="faq-icon" aria-hidden="true">&#9660;</span>
         </button>
         <div class="faq-a" hidden>
