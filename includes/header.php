@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="<?php echo site_url('/assets/js/lazy-bg.js'); ?>" defer></script>
 <?php endif; ?>
+<link rel="stylesheet" href="<?php echo site_url('/assets/css/search.css'); ?>">
 
 <?php
 $scriptName = str_replace('\\', '/', $_SERVER['SCRIPT_NAME'] ?? ($_SERVER['PHP_SELF'] ?? ''));
@@ -66,6 +67,10 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
           <a href="<?php echo site_url('/services.php'); ?>" class="nav-link <?php echo $isServicesActive ? 'active' : ''; ?>">Services</a>
         </li>
 
+        <li>
+          <a href="<?php echo site_url('/export.php'); ?>" class="nav-link <?php echo ($currentPage=='export.php') ? 'active' : ''; ?>">Export</a>
+        </li>
+
         <li class="has-dropdown">
           <a href="<?php echo site_url('/about.php'); ?>" class="nav-link <?php echo $isAboutActive ? 'active' : ''; ?>">
             About
@@ -86,6 +91,10 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
     </nav>
 
     <div class="header-actions">
+      <button type="button" class="search-trigger desktop-only" id="searchTrigger" aria-label="Search" aria-controls="searchOverlay" aria-expanded="false" title="Search (Ctrl+K)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="search-trigger-label">Search</span>
+      </button>
       <a href="<?php echo site_url('/contact-us.php#quote'); ?>" class="btn-header-cta desktop-only">Request a Quote</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -131,6 +140,10 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
     </li>
 
     <li>
+      <a href="<?php echo site_url('/export.php'); ?>" class="mobile-nav-link <?php echo ($currentPage=='export.php') ? 'active' : ''; ?>">Global Export</a>
+    </li>
+
+    <li>
       <div class="mobile-nav-link" data-accordion="about" role="button" tabindex="0">
         <span>About</span>
         <span class="mobile-accordion-toggle">
@@ -151,9 +164,75 @@ $isHomeActive = (!$isProductSection && $currentPage == 'index.php');
   </ul>
 
   <div class="mobile-sidebar-cta">
+    <button type="button" class="btn-primary-mobile" id="searchTriggerMobile" aria-label="Open search" aria-controls="searchOverlay" aria-expanded="false" style="width:100%;cursor:pointer;border:none;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:10px;background:rgba(0,123,94,0.12);color:var(--brand-jade,#007b5e);">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      Search
+    </button>
     <a href="<?php echo site_url('/contact-us.php#quote'); ?>" class="btn-primary-mobile">Request a Quote</a>
   </div>
 </aside>
+
+<!-- ============================================================
+     SEARCH OVERLAY
+============================================================ -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search Bhatti Chemicals Industry" aria-hidden="true">
+  <div class="search-container">
+
+    <!-- Input Row -->
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="search" class="search-input" id="searchInput" aria-label="Search products, applications, and pages" placeholder="Search products, applications, pages…" autocomplete="off" spellcheck="false">
+      <span class="search-shortcut-badge" aria-hidden="true"><kbd>ESC</kbd></span>
+      <button type="button" class="search-close-btn" id="searchCloseBtn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Quick Links (shown before typing) -->
+    <div class="search-quick-links" id="searchQuickLinks">
+      <div class="search-quick-links-title">Quick Links</div>
+      <div class="search-quick-links-grid">
+        <a href="<?php echo site_url('/products/zinc-oxide.php'); ?>" class="search-quick-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          Zinc Oxide
+        </a>
+        <a href="<?php echo site_url('/products/'); ?>" class="search-quick-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          All Products
+        </a>
+        <a href="<?php echo site_url('/zinc-oxide-applications/'); ?>" class="search-quick-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Applications
+        </a>
+        <a href="<?php echo site_url('/contact-us.php#quote'); ?>" class="search-quick-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Get a Quote
+        </a>
+        <a href="<?php echo site_url('/contact-us.php'); ?>" class="search-quick-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Contact Us
+        </a>
+        <a href="<?php echo site_url('/export.php'); ?>" class="search-quick-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Global Export
+        </a>
+      </div>
+    </div>
+
+    <!-- Dynamic Results (populated by JS) -->
+    <div class="search-results" id="searchResults"></div>
+
+    <!-- Footer Hints -->
+    <div class="search-footer" id="searchFooter">
+      <span class="search-footer-hint"><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+      <span class="search-footer-hint"><kbd>↵</kbd> Open</span>
+      <span class="search-footer-hint"><kbd>ESC</kbd> Close</span>
+    </div>
+
+  </div>
+</div>
+
+<script src="<?php echo site_url('/assets/js/search.js'); ?>" defer></script>
 
 <script>
 (function () {

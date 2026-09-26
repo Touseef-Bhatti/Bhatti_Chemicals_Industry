@@ -19,7 +19,7 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
     <meta name="description" content="Bhatti Chemicals Industry is an ISO 9001:2015 certified manufacturer of high-purity Zinc Oxide and a trusted exporter of Zinc Ash, based in Gujranwala, Pakistan. Serving rubber, ceramics, paint, pharmaceutical, and agriculture industries worldwide.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="Zinc Oxide manufacturer Pakistan, Zinc Oxide supplier, Zinc Ash exporter, Bhatti Chemicals Industry, Gujranwala chemical manufacturer, industrial Zinc Oxide, ISO 9001 certified Zinc Oxide">
-    <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/">
+    <link rel="canonical" href="https://bhattichemicalsindustry.com.pk/">
     <link rel="preload" as="image" type="image/webp"
           href="<?php echo site_url('/assets/images/products/hero-zinc-oxide-bag.webp'); ?>"
           fetchpriority="high">
@@ -29,8 +29,8 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
     <meta property="og:title" content="Zinc Oxide Manufacturer & Zinc Ash Exporter | Bhatti Chemicals Industry">
     <meta property="og:description" content="ISO 9001:2015 certified manufacturer of Zinc Oxide and exporter of Zinc Ash, Gujranwala, Pakistan. Serving global industries since inception.">
-    <meta property="og:image" content="https://www.bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-appearance.webp">
-    <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/">
+    <meta property="og:image" content="https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-appearance.webp">
+    <meta property="og:url" content="https://bhattichemicalsindustry.com.pk/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Zinc Oxide Manufacturer & Zinc Ash Exporter | Bhatti Chemicals Industry">
     <meta name="twitter:description" content="ISO 9001:2015 certified manufacturer of Zinc Oxide and exporter of Zinc Ash, Gujranwala, Pakistan.">
@@ -53,7 +53,7 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
     <!-- Google Analytics -->
     <script>
       (function () {
-        if (location.hostname !== 'www.bhattichemicalsindustry.com.pk') return;
+        if (location.hostname !== 'bhattichemicalsindustry.com.pk') return;
         function loadAnalytics() {
           window.dataLayer = window.dataLayer || [];
           window.gtag = function(){ dataLayer.push(arguments); };
@@ -82,8 +82,8 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Bhatti Chemicals Industry",
-      "url": "https://www.bhattichemicalsindustry.com.pk/",
-      "logo": "https://www.bhattichemicalsindustry.com.pk/assets/images/logo/bhatti-chemicals-logo.gif",
+      "url": "https://bhattichemicalsindustry.com.pk/",
+      "logo": "https://bhattichemicalsindustry.com.pk/assets/images/logo/bhatti-chemicals-logo.gif",
       "description": "ISO 9001:2015 certified manufacturer of Zinc Oxide and exporter of Zinc Ash, based in Gujranwala, Pakistan, serving rubber, ceramics, glass, paint, pharmaceutical, and agriculture industries worldwide.",
       "email": ["bhattichemicalsindustry@gmail.com","info@bhattichemicalsindustry.com.pk"],
       "telephone": "+92-304-1462460",
@@ -99,7 +99,7 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Bhatti Chemicals Industry",
-      "url": "https://www.bhattichemicalsindustry.com.pk/"
+      "url": "https://bhattichemicalsindustry.com.pk/"
     }
     </script>
     <!-- FAQ Page Schema -->
@@ -640,6 +640,15 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
       display: flex; align-items: center; gap: 12px;
       transition: background 0.2s, border-color 0.2s, color 0.2s;
     }
+    .industries-grid li > a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+      min-width: 0;
+      color: inherit;
+      text-decoration: none;
+    }
     .industries-grid li:hover {
       background: #007b5e;
       border-color: #007b5e;
@@ -652,6 +661,21 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
       color: #007b5e;
     }
     .industries-grid li:hover .industry-icon { color: #fff; }
+    .industries-grid li::after {
+      content: '→';
+      margin-left: auto;
+      color: #007b5e;
+      font-size: 1.1rem;
+      opacity: 0;
+      transform: translateX(-5px);
+      transition: opacity 0.2s, transform 0.2s, color 0.2s;
+    }
+    .industries-grid li:hover::after,
+    .industries-grid li:focus-within::after {
+      color: #fff;
+      opacity: 1;
+      transform: translateX(0);
+    }
 
     /* ============================================================
        WHY CHOOSE US
@@ -1042,14 +1066,14 @@ if ($isLocalhost && isset($_GET['clear_sw']) && !headers_sent()) {
     <p class="section-desc">Our Zinc Oxide is used as a critical input material in eight major industrial categories, each with distinct quality requirements that our 99.9% purity product meets consistently.</p>
   </div>
   <ul class="industries-grid" role="list">
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17h10v2H7v-2Zm-3-4h2.2l1-4H20l1.4 4H23v5h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H1v-3a2 2 0 0 1 2-2h1Zm5-2-.5 2h10.8l-.7-2H9Zm-3 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm12 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></span> Rubber &amp; Tyres</li>
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18h1.4a2.6 2.6 0 0 0 0-5.2H12a1.2 1.2 0 0 1 0-2.4h2a7 7 0 0 0 0-10.4H12Zm-3 7a1.4 1.4 0 1 1 0-2.8A1.4 1.4 0 0 1 9 10Zm4-1.5a1.4 1.4 0 1 1 2.8 0 1.4 1.4 0 0 1-2.8 0ZM7.5 15a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z"/></svg></span> Paints &amp; Coatings</li>
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 2h8v5.5l3.3 5.7A5.8 5.8 0 0 1 14.3 22H9.7a5.8 5.8 0 0 1-5-8.8L8 7.5V2Zm2 2v4.1l-3.6 6.1A3.8 3.8 0 0 0 9.7 20h4.6a3.8 3.8 0 0 0 3.3-5.8L14 8.1V4h-4Zm-1 11h6l1.2 2H7.8L9 15Z"/></svg></span> Ceramics &amp; Glass</li>
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.4 3.4a4.8 4.8 0 0 1 6.8 6.8l-4 4a4.8 4.8 0 0 1-6.8-6.8l4-4Zm1.4 1.4-4 4a2.8 2.8 0 0 0 4 4l1.3-1.3-4-4 2.7-2.7Zm5.4 5 4.4 4.4a4 4 0 0 1-5.6 5.6l-4.4-4.4 5.6-5.6Zm0 2.8-2.8 2.8 3 3a2 2 0 0 0 2.8-2.8l-3-3Z"/></svg></span> Pharmaceuticals</li>
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 3.5C13.5 4 8.8 7.2 7.1 12.6A8.3 8.3 0 0 0 3 20.5l2 .1c.2-2.2 1.1-4.2 2.6-5.8 2.3 2.3 6.4 2.3 9.3-.5 2.4-2.4 3.3-6.1 3.6-10.8Zm-2.3 2.3c-.4 3.3-1.2 5.5-2.7 7-1.9 1.9-4.5 2.1-6 .6 1.8-1.6 4.1-2.7 6.8-3.3l-.4-2c-2.4.5-4.6 1.4-6.4 2.7 1.7-2.7 4.5-4.3 8.7-5Z"/></svg></span> Cosmetics &amp; Skincare</li>
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22V12.8C8.5 12.2 6 9.4 6 6V3h2v3a4 4 0 0 0 3 3.9V2h2v7.9A4 4 0 0 0 16 6V3h2v3c0 3.4-2.5 6.2-6 6.8V22h-2Z"/></svg></span> Agriculture &amp; Fertilizers</li>
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 10a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v4h2v2h-2v3h-2v-3H7v3H5v-3H3v-2h2v-4Zm2 0v4h10v-4a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm3-1h2v2h-2V9Zm4 0h2v2h-2V9Z"/></svg></span> Animal Feed</li>
-    <li class="reveal" role="listitem"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h9a2 2 0 0 1 2 2v2h2v4h-2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v12h9V6H7Zm5 1-3 5h2l-1 5 4-6h-2l2-4h-2Z"/></svg></span> Battery Manufacturing</li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/rubber-and-tyres.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17h10v2H7v-2Zm-3-4h2.2l1-4H20l1.4 4H23v5h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H1v-3a2 2 0 0 1 2-2h1Zm5-2-.5 2h10.8l-.7-2H9Zm-3 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm12 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></span> Rubber &amp; Tyres</a></li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/paints-and-coatings.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18h1.4a2.6 2.6 0 0 0 0-5.2H12a1.2 1.2 0 0 1 0-2.4h2a7 7 0 0 0 0-10.4H12Zm-3 7a1.4 1.4 0 1 1 0-2.8A1.4 1.4 0 0 1 9 10Zm4-1.5a1.4 1.4 0 1 1 2.8 0 1.4 1.4 0 0 1-2.8 0ZM7.5 15a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z"/></svg></span> Paints &amp; Coatings</a></li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/ceramics-and-glass.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 2h8v5.5l3.3 5.7A5.8 5.8 0 0 1 14.3 22H9.7a5.8 5.8 0 0 1-5-8.8L8 7.5V2Zm2 2v4.1l-3.6 6.1A3.8 3.8 0 0 0 9.7 20h4.6a3.8 3.8 0 0 0 3.3-5.8L14 8.1V4h-4Zm-1 11h6l1.2 2H7.8L9 15Z"/></svg></span> Ceramics &amp; Glass</a></li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/pharmaceuticals-and-ointments.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.4 3.4a4.8 4.8 0 0 1 6.8 6.8l-4 4a4.8 4.8 0 0 1-6.8-6.8l4-4Zm1.4 1.4-4 4a2.8 2.8 0 0 0 4 4l1.3-1.3-4-4 2.7-2.7Zm5.4 5 4.4 4.4a4 4 0 0 1-5.6 5.6l-4.4-4.4 5.6-5.6Zm0 2.8-2.8 2.8 3 3a2 2 0 0 0 2.8-2.8l-3-3Z"/></svg></span> Pharmaceuticals</a></li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/cosmetics-and-skincare.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 3.5C13.5 4 8.8 7.2 7.1 12.6A8.3 8.3 0 0 0 3 20.5l2 .1c.2-2.2 1.1-4.2 2.6-5.8 2.3 2.3 6.4 2.3 9.3-.5 2.4-2.4 3.3-6.1 3.6-10.8Zm-2.3 2.3c-.4 3.3-1.2 5.5-2.7 7-1.9 1.9-4.5 2.1-6 .6 1.8-1.6 4.1-2.7 6.8-3.3l-.4-2c-2.4.5-4.6 1.4-6.4 2.7 1.7-2.7 4.5-4.3 8.7-5Z"/></svg></span> Cosmetics &amp; Skincare</a></li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/agriculture-and-animal-feed.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22V12.8C8.5 12.2 6 9.4 6 6V3h2v3a4 4 0 0 0 3 3.9V2h2v7.9A4 4 0 0 0 16 6V3h2v3c0 3.4-2.5 6.2-6 6.8V22h-2Z"/></svg></span> Agriculture &amp; Fertilizers</a></li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/agriculture-and-animal-feed.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 10a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v4h2v2h-2v3h-2v-3H7v3H5v-3H3v-2h2v-4Zm2 0v4h10v-4a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm3-1h2v2h-2V9Zm4 0h2v2h-2V9Z"/></svg></span> Animal Feed</a></li>
+    <li class="reveal" role="listitem"><a href="<?php echo site_url('/zinc-oxide-applications/ceramics-and-glass.php'); ?>"><span class="industry-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h9a2 2 0 0 1 2 2v2h2v4h-2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v12h9V6H7Zm5 1-3 5h2l-1 5 4-6h-2l2-4h-2Z"/></svg></span> Glass Manufacturing</a></li>
   </ul>
 </section>
 

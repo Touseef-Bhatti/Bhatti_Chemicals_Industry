@@ -1,4 +1,11 @@
-<?php require_once __DIR__ . '/includes/helpers.php'; ?>
+<?php
+if (!headers_sent() && extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
+    ob_start('ob_gzhandler');
+}
+define('BCI_HEADER_ASSETS_LOADED', true);
+define('BCI_FOOTER_ASSETS_LOADED', true);
+require_once __DIR__ . '/includes/helpers.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +15,14 @@
 
     <meta name="description" content="About Bhatti Chemicals Industry — ISO 9001:2015 certified Zinc Oxide manufacturer and Zinc Ash exporter based in Gujranwala, Pakistan. Led by CEO M. Ashraf Bhatti with 50+ years of zinc manufacturing expertise.">
     <meta name="keywords" content="Bhatti Chemicals Industry about, M Ashraf Bhatti CEO, zinc oxide manufacturer Gujranwala, zinc products Pakistan, zinc chemical manufacturer history">
-    <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/about.php">
+    <link rel="canonical" href="https://bhattichemicalsindustry.com.pk/about.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
     <meta property="og:title" content="About Bhatti Chemicals Industry | Zinc Oxide Manufacturer, Pakistan">
     <meta property="og:description" content="ISO 9001:2015 certified manufacturer of Zinc Oxide and exporter of Zinc Ash in Gujranwala, Pakistan. Over 50 years of zinc manufacturing expertise under CEO M. Ashraf Bhatti.">
-    <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/about.php">
+    <meta property="og:url" content="https://bhattichemicalsindustry.com.pk/about.php">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
@@ -24,13 +31,33 @@
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
+    <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M"></script>
+    <!-- Google Analytics (Delayed Execution) -->
+    <script>
+      (function () {
+        if (location.hostname !== 'bhattichemicalsindustry.com.pk') return;
+        function loadAnalytics() {
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function(){ dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', 'G-F1BD95KL8M');
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M';
+          document.head.appendChild(script);
+        }
+        window.addEventListener('load', function () {
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadAnalytics, { timeout: 3000 });
+          } else {
+            setTimeout(loadAnalytics, 1500);
+          }
+        });
+      })();
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -46,8 +73,8 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Bhatti Chemicals Industry",
-      "url": "https://www.bhattichemicalsindustry.com.pk/",
-      "logo": "https://www.bhattichemicalsindustry.com.pk/assets/images/logo/bhatti-chemicals-logo.gif",
+      "url": "https://bhattichemicalsindustry.com.pk/",
+      "logo": "https://bhattichemicalsindustry.com.pk/assets/images/logo/bhatti-chemicals-logo.gif",
       "description": "ISO 9001:2015 certified manufacturer of Zinc Oxide and exporter of Zinc Ash, based in Gujranwala, Pakistan.",
       "foundingDate": "1974",
       "email": ["bhattichemicalsindustry@gmail.com","info@bhattichemicalsindustry.com.pk"],
@@ -228,7 +255,7 @@
       color: #007b5e; line-height: 1;
       margin-bottom: 3px;
     }
-    .fact-chip span { font-size: 0.8rem; color: #6b7280; }
+    .fact-chip span { font-size: 0.8rem; color: #374151; }
 
     /* CEO card */
     .ceo-card {
@@ -294,6 +321,7 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 1.6rem;
     }
+    .service-icon svg { width: 28px; height: 28px; fill: currentColor; }
     .service-card h3 { color: #1a1a1a; margin-bottom: 0.6rem; }
     .service-card p { font-size: 0.93rem; color: #4a5568; }
 
@@ -330,6 +358,7 @@
       position: relative; z-index: 1;
       box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba(0,123,94,0.2);
     }
+    .timeline-dot svg { width: 20px; height: 20px; fill: currentColor; }
     .timeline-body h3 { color: #1a1a1a; margin-bottom: 0.4rem; padding-top: 6px; }
     .timeline-body p { font-size: 0.96rem; color: #4a5568; line-height: 1.7; }
 
@@ -356,7 +385,8 @@
       transition: background 0.2s, border-color 0.2s;
     }
     .why-card:hover { background: rgba(0,123,94,0.18); border-color: rgba(0,123,94,0.4); }
-    .why-icon { font-size: 1.9rem; margin-bottom: 14px; }
+    .why-icon { font-size: 1.9rem; margin-bottom: 14px; color: #4ade9e; }
+    .why-icon svg { display: block; width: 30px; height: 30px; fill: currentColor; }
     .why-card h3 { color: #fff; margin-bottom: 0.6rem; font-size: 1.02rem; }
     .why-card p { color: rgba(255,255,255,0.65); font-size: 0.9rem; }
 
@@ -420,6 +450,7 @@
       display: flex; align-items: center; gap: 7px;
       transition: background 0.2s, color 0.2s, border-color 0.2s;
     }
+    .industry-tag svg { width: 17px; height: 17px; fill: currentColor; }
     .industry-tag:hover {
       background: #007b5e; color: #fff; border-color: #007b5e;
     }
@@ -433,7 +464,7 @@
       text-align: center;
     }
     .cta-strip h2 { color: #fff; margin-bottom: 0.75rem; }
-    .cta-strip p { color: rgba(255,255,255,0.75); font-size: 1rem; margin-bottom: 2rem; max-width: 540px; margin-left: auto; margin-right: auto; }
+    .cta-strip p { color: rgba(255,255,255,0.92); font-size: 1rem; margin-bottom: 2rem; max-width: 540px; margin-left: auto; margin-right: auto; }
     .cta-btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
     .btn-white {
       display: inline-block; padding: 14px 30px;
@@ -483,6 +514,8 @@
 
 <?php include __DIR__ . '/includes/header.php'; ?>
 <?php include __DIR__ . '/includes/whatsapp-widget.php'; ?>
+
+<main id="main-content">
 
 <!-- ════════════════════════════════════════════════
      PAGE HERO
@@ -569,32 +602,32 @@
   </div>
   <div class="services-grid">
     <div class="service-card reveal">
-      <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></div>
+      <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2h6v2h-1v4.5l5 8.7A3.2 3.2 0 0 1 16.2 22H7.8A3.2 3.2 0 0 1 5 17.2l5-8.7V4H9V2Zm3 7.1-5.3 9.1A1.2 1.2 0 0 0 7.8 20h8.4a1.2 1.2 0 0 0 1.1-1.8L12 9.1ZM8.9 16h6.2l1.1 2H7.8l1.1-2Z"/></svg></div>
       <h3>Custom Formulations</h3>
       <p>We offer custom Zinc Oxide formulations tailored to client specifications, ensuring optimal purity, particle size, and physical properties for your specific industrial application.</p>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-wrench"></i></div>
+      <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.7 19.3 14.8 12.4a6.1 6.1 0 0 0-7.7-7.7l3.2 3.2-2.4 2.4-3.2-3.2a6.1 6.1 0 0 0 7.7 7.7l6.9 6.9a1.7 1.7 0 0 0 2.4-2.4ZM19 21a.7.7 0 1 1 0-1.4A.7.7 0 0 1 19 21Z"/></svg></div>
       <h3>Technical Support</h3>
       <p>Our team provides product consultation and technical guidance to help industrial buyers integrate zinc materials correctly into their manufacturing processes.</p>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-truck"></i></div>
+      <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 5h12v10h2V8h4l3 4v3h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H1V6a1 1 0 0 1 1-1Zm2 2v6h1a3 3 0 0 1 5 0h2V7H4Zm14 3v3h2.5L19 10h-1Zm-11 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></div>
       <h3>Timely Delivery</h3>
       <p>We manage logistics and supply chain coordination to ensure on-schedule delivery of zinc products to customers in Pakistan and internationally, with full documentation.</p>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-microscope"></i></div>
+      <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2h3v7.6l2.3 2.3 2.1-2.1 1.4 1.4-3.1 3.1 1.7 1.7H21v2h-4.6l-1.7-1.7-1.4 1.4 1.8 1.8H20v2H4v-2h6.3l2.9-2.9-2.1-2.1L9 14.6V20H7v-6.2l2-2V2Z"/></svg></div>
       <h3>Research & Development</h3>
       <p>Ongoing investment in R&D enables us to refine production processes, improve product consistency, and develop solutions that meet evolving industrial standards.</p>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-check-circle"></i></div>
+      <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 7.7-5.5 5.5a1 1 0 0 1-1.4 0l-2.5-2.5 1.4-1.4 1.8 1.8 4.8-4.8 1.4 1.4Z"/></svg></div>
       <h3>Quality Assurance</h3>
       <p>ISO 9001:2015 certified quality management systems and third-party laboratory testing ensure every batch meets verified quality standards before dispatch.</p>
     </div>
     <div class="service-card reveal">
-      <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5Zm-6 8.5V15c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.5l-6 3-6-3ZM4 16h2v4H4v-4Z"/></svg></div>
       <h3>Customer Training</h3>
       <p>We provide guidance and training for customers integrating our products into their operations, helping ensure correct usage, storage, and handling of zinc materials.</p>
     </div>
@@ -611,35 +644,35 @@
   </div>
   <div class="timeline">
     <div class="timeline-item reveal">
-      <div class="timeline-dot" aria-hidden="true"><i class="fa-solid fa-industry"></i></div>
+      <div class="timeline-dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V5l9-3 9 3v16H3Zm4-2h2v-5H7v5Zm4 0h2v-5h-2v5Zm4 0h2v-5h-2v5ZM5 7h14V5.4l-7-2.3-7 2.3V7Z"/></svg></div>
       <div class="timeline-body">
         <h3>Founding</h3>
         <p>Bhatti Chemicals Industry was established with a clear mandate: to manufacture high-quality Zinc Oxide products for Pakistan's growing industrial base, starting with domestic rubber and ceramics customers.</p>
       </div>
     </div>
     <div class="timeline-item reveal">
-      <div class="timeline-dot" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+      <div class="timeline-dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19h18v2H1V3h2v16Zm3-3 4-5 3 3 5-7 1.6 1.2-6.4 9-3-3-2.6 3.2L6 16Z"/></svg></div>
       <div class="timeline-body">
         <h3>Growth &amp; Expansion</h3>
         <p>Through commitment to product quality and reliable supply, the company expanded its customer base from local manufacturers to regional and international buyers, growing its range to include Zinc Ash, Zinc Ingot, and Zinc Dross.</p>
       </div>
     </div>
     <div class="timeline-item reveal">
-      <div class="timeline-dot" aria-hidden="true"><i class="fa-solid fa-globe"></i></div>
+      <div class="timeline-dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3.1a15.3 15.3 0 0 0-1-5A8.1 8.1 0 0 1 18.9 11ZM12 4.1c.7 1 1.5 3.1 1.8 6.9h-3.6c.3-3.8 1.1-5.9 1.8-6.9ZM4.3 13h3.9c.1 1.5.3 2.8.6 3.9A8 8 0 0 1 4.3 13Zm3.9-2H4.3a8 8 0 0 1 4.5-3.9A17 17 0 0 0 8.2 11Zm3.8 8.9c-.7-1-1.5-3.1-1.8-6.9h3.6c-.3 3.8-1.1 5.9-1.8 6.9Zm3.2-3c.3-1.1.5-2.4.6-3.9h3.9a8 8 0 0 1-4.5 3.9Z"/></svg></div>
       <div class="timeline-body">
         <h3>International Reach</h3>
         <p>Bhatti Chemicals Industry expanded operations across multiple continents, establishing export relationships with buyers in India, UAE, Saudi Arabia, the UK, China, and other key markets.</p>
       </div>
     </div>
     <div class="timeline-item reveal">
-      <div class="timeline-dot" aria-hidden="true"><i class="fa-solid fa-medal"></i></div>
+      <div class="timeline-dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 2 4 3 4-3 2 1v5.2a6 6 0 0 1-3.8 5.6L16 22l-4-2-4 2 1.8-8.2A6 6 0 0 1 6 8.2V3l2-1Zm0 4v2.2a4 4 0 0 0 8 0V6l-4 3-4-3Z"/></svg></div>
       <div class="timeline-body">
         <h3>ISO 9001:2015 Certification</h3>
         <p>The company achieved ISO 9001:2015 certification, formalising quality management systems that underpin consistent batch-to-batch product quality and regulatory compliance for international buyers.</p>
       </div>
     </div>
     <div class="timeline-item reveal">
-      <div class="timeline-dot" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
+      <div class="timeline-dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5c5.5 0 9.5 5 10.5 7-1 2-5 7-10.5 7S2.5 14 1.5 12C2.5 10 6.5 5 12 5Zm0 2c-3.4 0-6.3 2.7-8 5 1.7 2.3 4.6 5 8 5s6.3-2.7 8-5c-1.7-2.3-4.6-5-8-5Zm0 1.5A3.5 3.5 0 1 1 12 15a3.5 3.5 0 0 1 0-7Z"/></svg></div>
       <div class="timeline-body">
         <h3>Today &amp; Forward</h3>
         <p>Under CEO M. Ashraf Bhatti, the company continues to strengthen its position as a trusted zinc products manufacturer, investing in production technology, quality systems, and customer support to serve an expanding global customer base.</p>
@@ -659,22 +692,22 @@
   </div>
   <div class="why-grid">
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-trophy"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10v2h3v3a5 5 0 0 1-4 4.9A5 5 0 0 1 13 16v2h4v2H7v-2h4v-2a5 5 0 0 1-3-3.1A5 5 0 0 1 4 8V5h3V3Zm-1 4v1a3 3 0 0 0 2 2.8V7H6Zm12 0v3.8A3 3 0 0 0 18 8V7h-1Z"/></svg></div>
       <h3>Verified Product Quality</h3>
       <p>ISO 9001:2015 certified processes, third-party lab testing on every batch, and consistent 99.9% purity Zinc Oxide make quality verification straightforward for buyers.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m2 8 4-4 5 2 2-1 5 2 4-2v11l-4 2-5-2-5 2-6-2V8Zm5-.9L4 8.5v6.2l3 1V7.1Zm2 .4v8.2l4 1.4v-8.2L9 7.5Zm6 1.4v8.2l3 1V9.9l-3-1Z"/></svg></div>
       <h3>Expert Consultation</h3>
       <p>Our experienced team provides technical product support and responsive communication — from initial inquiry through to after-sales assistance.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 5v4.6l3.2 1.9-1 1.7-4.2-2.6V7h2Z"/></svg></div>
       <h3>Reliable Delivery</h3>
       <p>Stable production capacity and established logistics partnerships mean orders are fulfilled consistently and on schedule, whether domestic or international.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-telescope"></i></div>
+      <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 3 7 7-1.4 1.4-1.8-1.8L5 12.4l-1.4-1.4 2.8-2.8L2.6 4.4 4 3Zm8 8 8 8-1.4 1.4-8-8L12 11Zm-2 6 2 2-3 3-2-2 3-3Z"/></svg></div>
       <h3>Long-Term Partnership</h3>
       <p>With over 50 years of operation, we bring the experience, stability, and commitment needed to be a long-term supply chain partner rather than a one-time transaction.</p>
     </div>
@@ -691,15 +724,15 @@
     <p>Our Zinc Oxide and zinc materials are used by manufacturers across eight major industry categories.</p>
   </div>
   <div class="industry-tags">
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-car"></i></span> Rubber &amp; Tyres</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-palette"></i></span> Paints &amp; Coatings</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-jar"></i></span> Ceramics &amp; Glass</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-pills"></i></span> Pharmaceuticals</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-leaf"></i></span> Cosmetics &amp; Skincare</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-wheat-awn"></i></span> Agriculture &amp; Fertilizers</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-cow"></i></span> Animal Feed</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-bolt"></i></span> Battery Manufacturing</span>
-    <span class="industry-tag"><span aria-hidden="true"><i class="fa-solid fa-nut"></i></span> Steel Galvanizing</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7h12l3 4h3v6h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H1V9a2 2 0 0 1 2-2Zm2 2v5h1a3 3 0 0 1 5 0h5v-1.3L14 9H5Zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></span> Rubber &amp; Tyres</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16v4H4V3Zm2 6h12l-2 12H8L6 9Zm4 2v7h2v-7h-2Z"/></svg></span> Paints &amp; Coatings</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h12v3h2v2H4V6h2V3Zm1 7h10v9H7v-9Zm2 2v5h6v-5H9Z"/></svg></span> Ceramics &amp; Glass</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3h8v3l2 2v9a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8l2-2V3Zm2 2v2l-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V9l-2-2V5h-4Z"/></svg></span> Pharmaceuticals</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 3c-7 .5-11.7 3.7-13.4 9.1A8.3 8.3 0 0 0 3 20l2 .1c.2-2.2 1.1-4.2 2.6-5.8 2.3 2.3 6.4 2.3 9.3-.5C19.3 11.4 20 7.7 20 3Z"/></svg></span> Cosmetics &amp; Skincare</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22V12.8C8.5 12.2 6 9.4 6 6V3h2v3a4 4 0 0 0 3 3.9V2h2v7.9A4 4 0 0 0 16 6V3h2v3c0 3.4-2.5 6.2-6 6.8V22h-2Z"/></svg></span> Agriculture &amp; Fertilizers</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 10a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v4h2v2h-2v3h-2v-3H7v3H5v-3H3v-2h2v-4Zm2 0v4h10v-4a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Z"/></svg></span> Animal Feed</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2 4 13h6l-1 9 9-12h-6l1-8Z"/></svg></span> Battery Manufacturing</span>
+    <span class="industry-tag"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.5 8 11 4.6-1.5 8-6 8-11V5l-8-3Zm0 3 5 1.9V11c0 3.5-2.1 6.7-5 8-2.9-1.3-5-4.5-5-8V6.9L12 5Z"/></svg></span> Steel Galvanizing</span>
   </div>
 </section>
 
@@ -795,6 +828,8 @@
 <!-- ════════════════════════════════════════════════
      CONTACT + FOOTER
 ════════════════════════════════════════════════ -->
+
+</main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
 

@@ -14,24 +14,24 @@ require_once __DIR__ . '/../includes/helpers.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
-    <title>Zinc Oxide for Rubber &amp; Tyres | Bhatti Chemicals</title>
-    <meta name="description" content="Buy 99.9% Zinc Oxide for rubber &amp; tyre manufacturing. Primary vulcanization activator &amp; heat dissipator in 25 kg bags from Gujranwala, Pakistan.">
+    <title>Zinc Oxide for Tyre Manufacturers &amp; Rubber Industry | Bhatti Chemicals Pakistan</title>
+    <meta name="description" content="Pakistan's large tyre industries use Bhatti Chemicals Industry 99.99% pure Zinc Oxide. Best vulcanization activator &amp; heat dissipator guaranteed pure with certified lab report.">
     <meta name="keywords" content="zinc oxide for rubber, zinc oxide for tyre manufacturing, zinc oxide for tire manufacturing, rubber vulcanization activator, ZnO rubber grade, zinc oxide tyre heat dissipation, rubber grade zinc oxide Pakistan, buy zinc oxide Gujranwala, tyre compound chemicals, ASTM D4295 zinc oxide, radial tyre tread formulation, rubber curing kinetics">
-    <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php">
+    <link rel="canonical" href="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php">
 
     <!-- Open Graph / Social Cards -->
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
-    <meta property="og:title" content="Zinc Oxide for Rubber &amp; Tyres | Bhatti Chemicals">
-    <meta property="og:description" content="Technical guide on 99.9% pure Zinc Oxide as primary activator in rubber vulcanization, tyre heat dissipation, and elastomeric compounds. Made in Pakistan.">
-    <meta property="og:image" content="<?php echo site_url('/assets/images/icons/applications/tire.jpg'); ?>">
-    <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php">
+    <meta property="og:title" content="Zinc Oxide for Tyre Manufacturers &amp; Rubber Industry | Bhatti Chemicals Pakistan">
+    <meta property="og:description" content="Pakistan's large tyre industries use Bhatti Chemicals Industry 99.99% pure Zinc Oxide. Best vulcanization activator &amp; heat dissipator guaranteed pure with certified lab report.">
+    <meta property="og:image" content="<?php echo site_url('/assets/images/products/zinc-oxide-bag.jpg'); ?>">
+    <meta property="og:url" content="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zinc Oxide for Rubber &amp; Tyres | Bhatti Chemicals">
-    <meta name="twitter:description" content="Technical guide on 99.9% Zinc Oxide in tyre vulcanization, compound heat dissipation, and mechanical rubber performance.">
-    <meta name="twitter:image" content="<?php echo site_url('/assets/images/icons/applications/tire.jpg'); ?>">
+    <meta name="twitter:title" content="Zinc Oxide for Tyre Manufacturers &amp; Rubber Industry | Bhatti Chemicals Pakistan">
+    <meta name="twitter:description" content="Pakistan's large tyre industries use Bhatti Chemicals Industry 99.99% pure Zinc Oxide. Guaranteed pure with certified in-house and SGS testing.">
+    <meta name="twitter:image" content="<?php echo site_url('/assets/images/products/zinc-oxide-bag.jpg'); ?>">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
@@ -40,11 +40,6 @@ require_once __DIR__ . '/../includes/helpers.php';
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
-    <!-- Google Fonts: Sora & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
     <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
@@ -52,7 +47,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- Google Analytics -->
     <script>
       (function () {
-        if (location.hostname !== 'www.bhattichemicalsindustry.com.pk') return;
+        if (location.hostname !== 'bhattichemicalsindustry.com.pk') return;
         function loadAnalytics() {
           window.dataLayer = window.dataLayer || [];
           window.gtag = function(){ dataLayer.push(arguments); };
@@ -81,23 +76,23 @@ require_once __DIR__ . '/../includes/helpers.php';
       "headline": "Industrial Applications of Zinc Oxide in Rubber and Tyre Manufacturing: An Exhaustive Technical Monograph",
       "description": "Comprehensive engineering monograph examining the activation chemistry, vulcanization reaction kinetics, tyre thermal dissipation, ASTM D4295 quality parameters, and industrial formulation recipes of Zinc Oxide (ZnO).",
       "image": [
-        "https://www.bhattichemicalsindustry.com.pk/assets/images/icons/applications/tire.jpg",
-        "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80"
+        "https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-bag.jpg",
+        "<?php echo site_url('/assets/images/stock/unsplash/1578844251758-2f71da64c96f.webp'); ?>"
       ],
       "author": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
-        "url": "https://www.bhattichemicalsindustry.com.pk/"
+        "url": "https://bhattichemicalsindustry.com.pk/"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
+          "url": "https://bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
         }
       },
-      "mainEntityOfPage": "https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php",
+      "mainEntityOfPage": "https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php",
       "datePublished": "2026-03-01",
       "dateModified": "2026-03-17",
       "articleBody": "Zinc Oxide (ZnO) 99.9% manufactured by Bhatti Chemicals Industry is the premier inorganic activator for sulfur vulcanization in automotive tyres, conveyor belting, and technical rubber goods...",
@@ -116,7 +111,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Rubber Grade Zinc Oxide (ZnO ≥ 99.9%)",
-      "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/icons/applications/tire.jpg",
+      "image": "https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-bag.jpg",
       "description": "High-purity 99.9% French Process Zinc Oxide manufactured by Bhatti Chemicals Industry in Gujranwala, Pakistan. Standard inorganic activator for PCR and TBR tyre treads, sidewalls, carcass belts, and industrial rubber compounds.",
       "brand": {
         "@type": "Brand",
@@ -136,7 +131,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       "material": "Zinc Oxide (ZnO)",
       "offers": {
         "@type": "Offer",
-        "url": "https://www.bhattichemicalsindustry.com.pk/contact-us.php",
+        "url": "https://bhattichemicalsindustry.com.pk/contact-us.php",
         "availability": "https://schema.org/InStock",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
@@ -204,11 +199,11 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.bhattichemicalsindustry.com.pk/"},
-        {"@type":"ListItem","position":2,"name":"Products","item":"https://www.bhattichemicalsindustry.com.pk/products/"},
-        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
-        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/"},
-        {"@type":"ListItem","position":5,"name":"Rubber & Tyre Applications","item":"https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php"}
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://bhattichemicalsindustry.com.pk/"},
+        {"@type":"ListItem","position":2,"name":"Products","item":"https://bhattichemicalsindustry.com.pk/products/"},
+        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
+        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/"},
+        {"@type":"ListItem","position":5,"name":"Rubber & Tyre Applications","item":"https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/rubber-and-tyres.php"}
       ]
     }
     </script>
@@ -522,21 +517,21 @@ require_once __DIR__ . '/../includes/helpers.php';
       <span>›</span>
       <span aria-current="page">Rubber &amp; Tyre Applications</span>
     </nav>
-    <span class="eyebrow" style="color:#4ade9e;">Comprehensive Engineering Monograph</span>
-    <h1>Zinc Oxide Used in Rubber &amp; Tyre Manufacturing</h1>
+    <span class="eyebrow" style="color:#4ade9e;">Pakistan's Flagship Zinc Oxide Manufacturer &bull; 99.99% Purity Guaranteed</span>
+    <h1>Zinc Oxide for Tyre Manufacturers &amp; Rubber Industry</h1>
     <div class="hero-tag-row">
-      <span class="hero-tag highlight">Primary Vulcanization Activator</span>
-      <span class="hero-tag">Tyre Heat Dissipation</span>
-      <span class="hero-tag">Purity ≥ 99.9% (French Process)</span>
-      <span class="hero-tag">Dynamic Fatigue &amp; Anti-Aging</span>
-      <span class="hero-tag">ASTM D4295 / ISO 9001:2015</span>
+      <span class="hero-tag highlight">Pakistan's Large Tyre Industries Trust Our Zinc Oxide</span>
+      <span class="hero-tag">Guaranteed 99.99% Pure ZnO</span>
+      <span class="hero-tag">Primary Vulcanization Activator</span>
+      <span class="hero-tag">Tyre Heat Dissipation (25–30 W/m·K)</span>
+      <span class="hero-tag">Certified On-Site &amp; SGS Lab Tested</span>
     </div>
     <p class="hero-desc">
-      An exhaustive chemical and engineering analysis of high-purity Zinc Oxide (ZnO) in rubber vulcanization kinetics, tyre thermal management, steel cord adhesion, and compounding formulations for automotive PCR, commercial TBR, conveyor belting, and technical elastomeric goods.
+      <strong>Bhatti Chemicals Industry</strong> is Pakistan's premier manufacturer of high-purity Zinc Oxide (<strong>99.99% pure guaranteed</strong>). <strong>Pakistan's large tyre industries</strong>—including leading automotive passenger car radial (PCR), commercial truck &amp; bus radial (TBR), motorcycle, and industrial conveyor belt manufacturers—use our French Process Zinc Oxide for optimal vulcanization kinetics, superior thermal dissipation, and scorch safety.
     </p>
     <div class="hero-ctas">
-      <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-primary">Request Bulk Commercial Quotation</a>
-      <a href="#vulcanization-kinetics" class="btn-ghost">Explore Reaction Chemistry</a>
+      <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-primary">Request Commercial Tyre Grade Quotation</a>
+      <a href="#lab-report-showcase" class="btn-ghost" style="border-color:#4ade9e; color:#4ade9e;">View Official Certified Lab Report</a>
     </div>
   </div>
 </section>
@@ -570,9 +565,9 @@ require_once __DIR__ . '/../includes/helpers.php';
 <!-- GEO CITABILITY BLOCK -->
 <div class="container">
   <aside class="geo-quotable-block" aria-label="Executive quotation summary of Zinc Oxide in rubber manufacturing">
-    <div class="geo-quotable-title">Verified Chemical Definition &amp; Industrial Summary</div>
+    <div class="geo-quotable-title">Verified Chemical Definition &amp; Industrial Authority Summary</div>
     <p class="geo-quotable-text">
-      <strong>Zinc Oxide (ZnO)</strong> manufactured by <strong>Bhatti Chemicals Industry</strong> in Gujranwala, Pakistan, is a fine white inorganic powder (purity ≥ 99.9%, CAS: 1314-13-2, molecular weight: 81.38 g/mol) that functions as the indispensable inorganic activator in the accelerated sulfur vulcanization of natural rubber (NR) and synthetic elastomers (SBR, BR, EPDM, NBR). When reacted with stearic acid during compounding, Zinc Oxide forms soluble zinc stearate complexes that coordinate with sulfur donors and accelerators (such as TBBS, CBS, and MBT). This chemical synergy accelerates cross-linking rates, optimizes mono- and di-sulfidic network density, dramatically improves mechanical tensile strength and dynamic modulus, and provides critical thermal conductivity (25–30 W/m·K) that dissipates destructive friction heat in high-speed automotive and radial truck tyres, preventing tread separation and catastrophic road blowouts.
+      <strong>Bhatti Chemicals Industry's Zinc Oxide</strong> is recognized across Pakistan and global markets as the best, purest, and most reliable vulcanization activator for tyre and rubber manufacturers. <strong>Pakistan's large tyre industries use our Zinc Oxide</strong> because it is <strong>guaranteed 99.99% pure</strong>, tested in our certified in-house quality assurance laboratory and verified by internationally recognized inspection agencies like SGS. Produced via the high-temperature French indirect thermal vaporization process, our Zinc Oxide features ultra-low lead impurities (Pb &le; 50 ppm), strict iron control (Fe &le; 30 ppm), and optimal specific surface area (4.5–6.0 m&sup2;/g). When reacted with stearic acid in Banbury mixers, it activates sulfur cross-linking with pinpoint precision, delivers rapid cure kinetics with maximum scorch safety, provides essential carcass thermal conductivity (25–30 W/m&middot;K) to dissipate road friction heat, and prevents catastrophic tread separation and blowouts in high-speed radial tyres.
     </p>
   </aside>
 </div>
@@ -605,7 +600,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
 
       <div class="img-box">
-        <img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1578844251758-2f71da64c96f.webp'); ?>"
              alt="Automotive tyre manufacturing line — rubber compound molding and vulcanization curing press"
              width="600" height="420" loading="lazy">
         <div class="img-caption">Modern automotive tyre curing press: high-temperature sulfur vulcanization activated by Zinc Oxide.</div>
@@ -655,6 +650,64 @@ require_once __DIR__ . '/../includes/helpers.php';
         </tbody>
       </table>
     </div>
+
+    <!-- ── OFFICIAL IN-HOUSE & SGS LAB REPORT SHOWCASE ── -->
+    <div id="lab-report-showcase" style="margin-top: 45px;">
+      <?php 
+        $appLabTitle = 'Tyre & Rubber Manufacturing';
+        $appLabSub = 'Certified 99.99% Pure Zinc Oxide for Automotive Radial Tyres & Industrial Rubber Compounding';
+        include __DIR__ . '/../includes/app-lab-report-card.php'; 
+      ?>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     COMPANY PROMOTIONAL SECTION: WHY PAKISTAN'S TYRE LEADERS CHOOSE US
+════════════════════════════════════════════════ -->
+<section class="content-section" style="background:#f4f8f6; padding: 75px 24px;">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color:#007b5e;">Trusted Industry Partnership</span>
+      <h2>Why Pakistan's Large Tyre Industries Use Bhatti Chemicals Zinc Oxide</h2>
+      <p>
+        From major automotive radial tyre manufacturers to leading commercial vehicle, motorcycle, and industrial conveyor belt producers, Pakistan's rubber compounding giants rely on Bhatti Chemicals Industry for guaranteed purity, technical performance, and dependable supply.
+      </p>
+    </div>
+
+    <div class="card-grid-3" style="grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
+      <div class="app-deep-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <h3>Guaranteed 99.99% Purity</h3>
+        <p>Manufactured exclusively from pure special high-grade (SHG) virgin zinc via the French indirect thermal process. Zero recycled ash contamination, ensuring predictable cure rates and maximum vulcanizate tensile strength.</p>
+      </div>
+
+      <div class="app-deep-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>Certified On-Site &amp; SGS Verification</h3>
+        <p>Every commercial batch is tested in our dedicated on-site laboratory for chemical assay, 325-mesh residue (&le;0.05%), and heavy metals. Third-party testing from internationally recognized laboratories like SGS is provided with every bulk order.</p>
+      </div>
+
+      <div class="app-deep-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <h3>Large Domestic Scale &amp; Fast Dispatch</h3>
+        <p>With an annual production capacity of 5,000 metric tons, we provide immediate factory dispatch from Gujranwala with dedicated freight routes to Karachi, Lahore, Sheikhupura, and Rawalpindi, guaranteeing zero plant shutdowns.</p>
+      </div>
+
+      <div class="app-deep-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>Moisture-Proof 25 kg Bagging</h3>
+        <p>Packaged in heavy-duty 3-ply kraft paper bags with heat-sealed polyethylene inner liners that block atmospheric moisture and CO₂ absorption, preserving full active surface area during long warehouse storage.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -673,7 +726,7 @@ require_once __DIR__ . '/../includes/helpers.php';
 
     <div class="two-col-grid">
       <div class="img-box">
-        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1580273916550-e323be2ae537.webp'); ?>"
              alt="Close up of radial tyre rubber tread grooves exhibiting high modulus and abrasion resistance from Zinc Oxide"
              width="600" height="420" loading="lazy">
         <div class="img-caption">Microscopic polymer cross-linking: Zinc Oxide optimizes mono- and di-sulfidic bridges for extreme road wear resistance.</div>
@@ -773,7 +826,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
 
       <div class="img-box">
-        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1511919884226-fd3cad34687c.webp'); ?>"
              alt="High performance highway vehicle tyre on asphalt demonstrating rolling friction heat dissipation"
              width="600" height="420" loading="lazy">
         <div class="img-caption">High-speed road contact generates intense hysteretic friction heat; Zinc Oxide dissipates this heat outward to prevent tread separation.</div>
@@ -964,7 +1017,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       </div>
 
       <div class="img-box">
-        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1581091226825-a6a2a5aee158.webp'); ?>"
              alt="Industrial rubber factory workshop exhibiting conveyor belt calendering and steel reinforcement"
              width="600" height="420" loading="lazy">
         <div class="img-caption">High-pressure rubber processing: Zinc Oxide ensures steel cord bonding and tear-resistant ply adhesion.</div>

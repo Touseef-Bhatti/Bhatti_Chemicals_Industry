@@ -63,6 +63,7 @@
         <li><a href="<?php echo site_url('/about.php'); ?>">About Us</a></li>
         <li><a href="<?php echo site_url('/about.php#ceo-vision'); ?>">CEO &amp; Vision</a></li>
         <li><a href="<?php echo site_url('/services.php'); ?>">Laboratory Services</a></li>
+        <li><a href="<?php echo site_url('/export.php'); ?>">Global Export Supply</a></li>
         <li><a href="<?php echo site_url('/products/'); ?>">All Products</a></li>
         <li><a href="<?php echo site_url('/contact-us.php'); ?>">Contact Us</a></li>
         <li><a href="<?php echo site_url('/about.php#FAQs'); ?>">FAQs</a></li>
@@ -102,3 +103,18 @@
     </div>
   </div>
 </footer>
+
+<!-- Universal Laboratory Report Lightbox Modal for All Product Pages -->
+<?php include_once __DIR__ . '/lab-report-modal.php'; ?>
+
+<!-- Site-wide runtime cache for remote image assets -->
+<script>
+(function () {
+  if (!('serviceWorker' in navigator)) return;
+  if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('<?php echo site_url('/service-worker.js'); ?>')
+      .catch(function (error) { console.warn('Service worker registration failed:', error); });
+  });
+})();
+</script>

@@ -1,18 +1,26 @@
-<?php require_once __DIR__ . '/includes/helpers.php'; ?>
+<?php
+if (!headers_sent() && extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
+    ob_start('ob_gzhandler');
+}
+define('BCI_HEADER_ASSETS_LOADED', true);
+define('BCI_FOOTER_ASSETS_LOADED', true);
+require_once __DIR__ . '/includes/helpers.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Privacy Policy for Bhatti Chemicals Industry — how we handle information when you visit our website or contact us regarding Zinc Oxide and Zinc Ash products.">
 <meta name="keywords" content="Privacy Policy, Bhatti Chemicals Industry, data protection, user privacy, Pakistan">
-<link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/privacy-policy.php">
+<link rel="canonical" href="https://bhattichemicalsindustry.com.pk/privacy-policy.php">
 <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
 <link rel="icon" type="image/svg+xml" href="<?php echo site_url('/assets/favicon/favicon.svg'); ?>">
 <link rel="shortcut icon" href="<?php echo site_url('/assets/favicon/favicon.ico'); ?>">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
 <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
+<link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
 <title>Privacy Policy | Bhatti Chemicals Industry</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -27,12 +35,14 @@ p{line-height:1.8;color:#4a5568;margin-bottom:1.4rem;font-size:.97rem}
 .breadcrumb{display:flex;gap:8px;margin-bottom:1rem;font-size:.8rem;color:rgba(255,255,255,.45)}
 .breadcrumb a{color:rgba(255,255,255,.55);text-decoration:none}.breadcrumb a:hover{color:#4ade9e}
 .legal-content{max-width:800px;margin:0 auto;padding:70px 24px;background:#fff}
-.legal-updated{font-size:.82rem;color:#9ca3af;margin-bottom:2rem}
+.legal-updated{font-size:.82rem;color:#475569;margin-bottom:2rem}
 </style>
 </head>
 <body>
 <?php include __DIR__ . '/includes/header.php'; ?>
 <?php include __DIR__ . '/includes/whatsapp-widget.php'; ?>
+
+<main id="main-content">
 
 <section class="page-hero">
   <div class="page-hero-inner">
@@ -64,6 +74,8 @@ p{line-height:1.8;color:#4a5568;margin-bottom:1.4rem;font-size:.97rem}
   <p>You may request access to, correction of, or deletion of any personal information you have shared with us. Contact us at <a href="mailto:info@bhattichemicalsindustry.com.pk" style="color:#007b5e;">info@bhattichemicalsindustry.com.pk</a> for any privacy-related requests.</p>
 </section>
 
+
+</main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
 </body>

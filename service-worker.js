@@ -1,4 +1,5 @@
-const CACHE_NAME = 'static-v5';
+const CACHE_NAME = 'static-v6';
+const IMAGE_CACHE_NAME = 'image-assets-v2';
 const IS_LOCALHOST = /^(localhost|127\.0\.0\.1)$/.test(self.location.hostname);
 
 if (IS_LOCALHOST) {
@@ -53,7 +54,7 @@ self.addEventListener('activate', (event) => {
     const cacheNames = await caches.keys();
     await Promise.all(
       cacheNames
-        .filter((cacheName) => cacheName !== CACHE_NAME)
+        .filter((cacheName) => cacheName !== CACHE_NAME && cacheName !== IMAGE_CACHE_NAME)
         .map((cacheName) => caches.delete(cacheName))
     );
   })());
@@ -67,6 +68,28 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   const url = new URL(req.url);
+
+  // Cache locally hosted image assets after the first visit.
+  if (req.destination === 'image' && url.origin === self.location.origin) {
+    event.respondWith((async () => {
+      const cache = await caches.open(IMAGE_CACHE_NAME);
+      const cached = await cache.match(req);
+      if (cached) return cached;
+
+      try {
+        const response = await fetch(req);
+        if (response && (response.ok || response.type === 'opaque')) {
+          await cache.put(req, response.clone());
+        }
+        return response;
+      } catch (err) {
+        const fallback = await cache.match(req);
+        if (fallback) return fallback;
+        throw err;
+      }
+    })());
+    return;
+  }
 
   // Handle navigation requests (HTML pages) with a network-first strategy so
   // returning visitors get fresh page content after deployments.

@@ -14,24 +14,24 @@ require_once __DIR__ . '/../includes/helpers.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
-    <title>Zinc Oxide Industrial Applications | Bhatti Chemicals</title>
-    <meta name="description" content="Explore industrial applications of 99.9% Zinc Oxide (ZnO) for rubber, paints, ceramics, pharma, cosmetics &amp; feed. Buy bulk from Pakistan.">
+    <title>Zinc Oxide Applications Across Global Industries | Bhatti Chemicals Pakistan</title>
+    <meta name="description" content="Bhatti Chemicals Industry manufactures 99.99% pure Zinc Oxide for tyre manufacturers, ceramics, pharmaceuticals, paints, cosmetics &amp; animal feed with certified lab reports.">
     <meta name="keywords" content="zinc oxide applications, industrial zinc oxide uses, zinc oxide for rubber or tyre, zinc oxide cosmetics, zinc oxide pharmaceuticals, zinc oxide paints coatings, zinc oxide ceramics, zinc oxide animal feed, zinc oxide manufacturer Pakistan">
-    <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/">
+    <link rel="canonical" href="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
-    <meta property="og:title" content="Industrial Applications of Zinc Oxide | Bhatti Chemicals">
-    <meta property="og:description" content="Complete engineering guide to the 6 major manufacturing sectors powered by 99.9% pure French Process Zinc Oxide: rubber, cosmetics, pharma, coatings, ceramics, and feed.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/">
+    <meta property="og:title" content="Zinc Oxide Applications Across Global Industries | Bhatti Chemicals Pakistan">
+    <meta property="og:description" content="Bhatti Chemicals Industry manufactures guaranteed 99.99% pure Zinc Oxide for tyre manufacturers, ceramics, pharmaceuticals, paints, cosmetics &amp; feed. Certified on-site and SGS tested.">
+    <meta property="og:image" content="<?php echo site_url('/assets/images/stock/unsplash/1578844251758-2f71da64c96f.webp'); ?>">
+    <meta property="og:url" content="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zinc Oxide Industrial Applications | Bhatti Chemicals">
-    <meta name="twitter:description" content="Comprehensive engineering guide to 6 critical manufacturing sectors using 99.9% pure Zinc Oxide from Bhatti Chemicals Industry, Gujranwala, Pakistan.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1200&q=80">
+    <meta name="twitter:title" content="Zinc Oxide Applications Across Global Industries | Bhatti Chemicals Pakistan">
+    <meta name="twitter:description" content="Guaranteed 99.99% pure Zinc Oxide from Bhatti Chemicals Industry, Pakistan. Certified lab report testing for rubber, tyres, ceramics, and pharma.">
+    <meta name="twitter:image" content="<?php echo site_url('/assets/images/stock/unsplash/1578844251758-2f71da64c96f.webp'); ?>">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
@@ -40,11 +40,6 @@ require_once __DIR__ . '/../includes/helpers.php';
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
-    <!-- Google Fonts: Sora & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
     <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
@@ -52,7 +47,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- Google Analytics -->
     <script>
       (function () {
-        if (location.hostname !== 'www.bhattichemicalsindustry.com.pk') return;
+        if (location.hostname !== 'bhattichemicalsindustry.com.pk') return;
         function loadAnalytics() {
           window.dataLayer = window.dataLayer || [];
           window.gtag = function(){ dataLayer.push(arguments); };
@@ -80,14 +75,14 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@type": "CollectionPage",
       "name": "Industrial Applications of Zinc Oxide",
       "description": "Comprehensive engineering directory and technical monograph analyzing the 5 primary industrial applications of Zinc Oxide (ZnO): rubber vulcanization, cosmetics UV filtering, pharmaceutical ointments, anti-corrosive coatings, and agricultural animal feeds.",
-      "url": "https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/",
+      "url": "https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/",
       "publisher": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
-        "url": "https://www.bhattichemicalsindustry.com.pk/",
+        "url": "https://bhattichemicalsindustry.com.pk/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
+          "url": "https://bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
         }
       }
     }
@@ -165,10 +160,10 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.bhattichemicalsindustry.com.pk/"},
-        {"@type":"ListItem","position":2,"name":"Products","item":"https://www.bhattichemicalsindustry.com.pk/products/"},
-        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
-        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/"}
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://bhattichemicalsindustry.com.pk/"},
+        {"@type":"ListItem","position":2,"name":"Products","item":"https://bhattichemicalsindustry.com.pk/products/"},
+        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
+        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/"}
       ]
     }
     </script>
@@ -452,10 +447,10 @@ require_once __DIR__ . '/../includes/helpers.php';
       <span class="sep">/</span>
       <span style="color:#ffffff;">Industrial Applications</span>
     </nav>
-    <span class="eyebrow" style="color:#6ee7b7;">Comprehensive Engineering Guide &bull; French Process 99.9%</span>
+    <span class="eyebrow" style="color:#6ee7b7;">Pakistan's Flagship Zinc Oxide Manufacturer &bull; 99.99% Purity Guaranteed</span>
     <h1>Industrial Applications of Zinc Oxide</h1>
     <p class="hero-desc">
-      Zinc Oxide (ZnO, CAS No. 1314-13-2) is an indispensable functional inorganic chemical across diverse global manufacturing sectors. Operating from Gujranwala, Pakistan, Bhatti Chemicals Industry engineers 99.9% high-purity French Process Zinc Oxide customized for automotive tyre vulcanization, mineral cosmetic UV screening, pharmaceutical topical ointments, anti-corrosive industrial coatings, and agricultural animal feed nutrition.
+      <strong>Bhatti Chemicals Industry</strong> is Pakistan's premier manufacturer of guaranteed <strong>99.99% pure Zinc Oxide</strong> (French Process). From Pakistan's large tyre industries and ceramic tile manufacturers to pharmaceutical formulators, paint producers, cosmetic blenders, and feed nutritionists, leading commercial plants choose our Zinc Oxide for certified purity, reproducible reaction kinetics, and verified batch quality reports.
     </p>
     <div class="hero-ctas">
       <a href="<?php echo site_url('/contact-us.php'); ?>" class="btn-primary">
@@ -562,7 +557,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- 1. Rubber & Tyres -->
     <article class="sector-card" id="rubber-tyres">
       <div class="sector-img-wrap">
-        <img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=800&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1578844251758-2f71da64c96f.webp'); ?>"
              alt="Zinc Oxide used in rubber and tyre vulcanization manufacturing" width="800" height="600" loading="lazy">
       </div>
       <div>
@@ -586,7 +581,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- 2. Cosmetics & Skincare -->
     <article class="sector-card" id="cosmetics">
       <div class="sector-img-wrap">
-        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1556228720-195a672e8a03.webp'); ?>"
              alt="Zinc Oxide used in cosmetics mineral sunscreens and skincare" width="800" height="600" loading="lazy">
       </div>
       <div>
@@ -610,7 +605,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- 3. Pharmaceuticals -->
     <article class="sector-card" id="pharmaceuticals">
       <div class="sector-img-wrap">
-        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1584308666744-24d5c474f2ae.webp'); ?>"
              alt="Zinc Oxide used in pharmaceutical ointments and medicinal creams" width="800" height="600" loading="lazy">
       </div>
       <div>
@@ -634,7 +629,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- 4. Paints & Coatings -->
     <article class="sector-card" id="paints">
       <div class="sector-img-wrap">
-        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1589939705384-5185137a7f0f.webp'); ?>"
              alt="Zinc Oxide used in protective paints marine coatings and architectural finishes" width="800" height="600" loading="lazy">
       </div>
       <div>
@@ -658,7 +653,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- 5. Agriculture & Animal Feed -->
     <article class="sector-card" id="agriculture">
       <div class="sector-img-wrap">
-        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=800&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1570042225831-d98fa7577f1e.webp'); ?>"
              alt="Dairy cattle and livestock nutrition utilizing feed-grade Zinc Oxide" width="800" height="600" loading="lazy">
       </div>
       <div>
@@ -682,7 +677,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- 6. Ceramics & Glazes -->
     <article class="sector-card" id="ceramics">
       <div class="sector-img-wrap">
-        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80"
+        <img src="<?php echo site_url('/assets/images/stock/unsplash/1565193566173-7a0ee3dbe261.webp'); ?>"
              alt="Zinc Oxide used in ceramic glazes porcelain tiles and sanitaryware" width="800" height="600" loading="lazy">
       </div>
       <div>
@@ -820,6 +815,15 @@ require_once __DIR__ . '/../includes/helpers.php';
           Testing per ASTM D281 (spatula rub-out) maintains oil absorption strictly within 12 to 16 g/100g, while nitrogen BET surface area is monitored at 4.0 to 7.0 m<sup>2</sup>/g for optimal acid scavenging and vulcanization kinetics.
         </p>
       </div>
+    </div>
+
+    <!-- ── OFFICIAL IN-HOUSE & SGS LAB REPORT SHOWCASE ── -->
+    <div id="lab-report-showcase" style="margin-top: 55px;">
+      <?php 
+        $appLabTitle = 'Cross-Industry Manufacturing Supply';
+        $appLabSub = 'Certified 99.99% Pure Zinc Oxide Official Quality Assurance Analysis & SGS Verification';
+        include __DIR__ . '/../includes/app-lab-report-card.php'; 
+      ?>
     </div>
   </div>
 </section>

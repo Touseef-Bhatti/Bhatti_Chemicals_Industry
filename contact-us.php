@@ -1,21 +1,51 @@
-<?php require_once __DIR__ . '/includes/helpers.php'; ?>
+<?php
+if (!headers_sent() && extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
+    ob_start('ob_gzhandler');
+}
+define('BCI_HEADER_ASSETS_LOADED', true);
+define('BCI_FOOTER_ASSETS_LOADED', true);
+require_once __DIR__ . '/includes/helpers.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Contact Bhatti Chemicals Industry — Zinc Oxide manufacturer and Zinc Ash exporter in Gujranwala, Pakistan. Reach our CEO and Managing Director, request a quote, or find our office address, email, and WhatsApp contact.">
 <meta name="keywords" content="contact Bhatti Chemicals Industry, zinc oxide manufacturer contact, Gujranwala chemical company contact, zinc exporter Pakistan contact, request quote zinc oxide, Bhatti Chemicals Industry email phone">
-<link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/contact-us.php">
+<link rel="canonical" href="https://bhattichemicalsindustry.com.pk/contact-us.php">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bhatti Chemicals Industry">
 <meta property="og:title" content="Contact Bhatti Chemicals Industry | Zinc Oxide Manufacturer, Pakistan">
 <meta property="og:description" content="Get in touch with Bhatti Chemicals Industry for Zinc Oxide and Zinc Ash inquiries. Office in Gujranwala, Pakistan. Email, WhatsApp, and quotation requests.">
-<meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/contact-us.php">
+<meta property="og:url" content="https://bhattichemicalsindustry.com.pk/contact-us.php">
 <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48"><link rel="shortcut icon" href="<?php echo site_url('/assets/favicon/favicon.ico'); ?>"><link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>"><link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F1BD95KL8M');</script>
+<link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
+<link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
+
+<!-- Google Analytics (Delayed Execution) -->
+<script>
+  (function () {
+    if (location.hostname !== 'bhattichemicalsindustry.com.pk') return;
+    function loadAnalytics() {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-F1BD95KL8M');
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-F1BD95KL8M';
+      document.head.appendChild(script);
+    }
+    window.addEventListener('load', function () {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadAnalytics, { timeout: 3000 });
+      } else {
+        setTimeout(loadAnalytics, 1500);
+      }
+    });
+  })();
+</script>
 <title>Contact Us | Bhatti Chemicals Industry — Zinc Oxide Manufacturer, Gujranwala Pakistan</title>
 
 <!-- ContactPage + LocalBusiness Schema -->
@@ -24,12 +54,12 @@
   "@context": "https://schema.org",
   "@type": "ContactPage",
   "name": "Contact Bhatti Chemicals Industry",
-  "url": "https://www.bhattichemicalsindustry.com.pk/contact-us.php",
+  "url": "https://bhattichemicalsindustry.com.pk/contact-us.php",
   "mainEntity": {
     "@type": "Organization",
     "name": "Bhatti Chemicals Industry",
-    "url": "https://www.bhattichemicalsindustry.com.pk/",
-    "logo": "https://www.bhattichemicalsindustry.com.pk/assets/images/logo/bhatti-chemicals-logo.gif",
+    "url": "https://bhattichemicalsindustry.com.pk/",
+    "logo": "https://bhattichemicalsindustry.com.pk/assets/images/logo/bhatti-chemicals-logo.gif",
     "email": ["info@bhattichemicalsindustry.com.pk","bhattichemicalsindustry@gmail.com"],
     "telephone": ["+92-304-1462460","+92-55-4295107"],
     "address": {
@@ -64,7 +94,7 @@
   "name": "M. Ashraf Bhatti",
   "jobTitle": "Chief Executive Officer",
   "worksFor": { "@type": "Organization", "name": "Bhatti Chemicals Industry" },
-  "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/team/ceo-ashraf-bhatti.jpeg"
+  "image": "https://bhattichemicalsindustry.com.pk/assets/images/team/ceo-ashraf-bhatti.jpeg"
 }
 </script>
 <!-- FAQ Schema -->
@@ -111,7 +141,8 @@ p{line-height:1.8;color:#4a5568}
 .quick-contact-item{padding:26px 24px;border-right:1px solid #e2e8e0;display:flex;align-items:center;gap:14px;text-decoration:none;transition:background .2s}
 .quick-contact-item:hover{background:#f0f2f0}
 .quick-contact-item:last-child{border-right:none}
-.qc-icon{width:44px;height:44px;border-radius:10px;background:rgba(0,123,94,.08);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.qc-icon{width:44px;height:44px;border-radius:10px;background:rgba(0,123,94,.08);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;color:#007b5e}
+.qc-icon svg{display:block;width:22px;height:22px;fill:currentColor}
 .qc-text strong{display:block;font-family:'Sora',sans-serif;font-size:.92rem;color:#1a1a1a;margin-bottom:2px}
 .qc-text span{font-size:.82rem;color:#6b7280}
 
@@ -141,7 +172,8 @@ p{line-height:1.8;color:#4a5568}
 
 .info-card{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #e2e8e0}
 .info-card:last-of-type{border-bottom:none}
-.info-icon{width:46px;height:46px;border-radius:10px;background:#f0f2f0;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.info-icon{width:46px;height:46px;border-radius:10px;background:#f0f2f0;color:#007b5e;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.info-icon svg{display:block;width:22px;height:22px;fill:currentColor}
 .info-card-body strong{display:block;font-family:'Sora',sans-serif;font-size:.95rem;color:#1a1a1a;margin-bottom:4px}
 .info-card-body a,.info-card-body span{font-size:.9rem;color:#4a5568;text-decoration:none;line-height:1.6}
 .info-card-body a:hover{color:#007b5e}
@@ -220,6 +252,8 @@ p{line-height:1.8;color:#4a5568}
 <?php include __DIR__ . '/includes/header.php'; ?>
 <?php include __DIR__ . '/includes/whatsapp-widget.php'; ?>
 
+<main id="main-content">
+
 <!-- ════════════════════════════════════════════════
      PAGE HERO
 ════════════════════════════════════════════════ -->
@@ -241,19 +275,19 @@ p{line-height:1.8;color:#4a5568}
 <div class="quick-contact-strip">
   <div class="quick-contact-inner">
     <a href="mailto:info@bhattichemicalsindustry.com.pk" class="quick-contact-item">
-      <div class="qc-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+      <div class="qc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 5.6 9-5.6V7H3Zm18 10V9.9l-8.47 5.27a1 1 0 0 1-1.06 0L3 9.9V17h18Z"/></svg></div>
       <div class="qc-text"><strong>Email Us</strong><span>info@bhattichemicalsindustry.com.pk</span></div>
     </a>
     <a href="https://wa.me/923041462460" target="_blank" rel="noopener noreferrer" class="quick-contact-item">
-      <div class="qc-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+      <div class="qc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.3ZM12.2 21.6h-.1c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.9 1 1-3.8-.2-.3a9.8 9.8 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.5-4.4 9.9-9.8 9.9Zm5.4-7.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.4.3-.5.1-.2 0-.4 0-.6-.1-.2-.6-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.2.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.2-.2-.3-.5-.4Z"/></svg></div>
       <div class="qc-text"><strong>WhatsApp</strong><span>+92 304 1462 460</span></div>
     </a>
     <a href="tel:+92554295107" class="quick-contact-item">
-      <div class="qc-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+      <div class="qc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6.6 2.5 9.2 2l2.1 5.1-2.4 1.7a15.2 15.2 0 0 0 6.3 6.3l1.7-2.4 5.1 2.1-.5 2.6a3.1 3.1 0 0 1-3.4 2.5C10.6 18.9 5.1 13.4 4.1 5.9a3.1 3.1 0 0 1 2.5-3.4Z"/></svg></div>
       <div class="qc-text"><strong>Call Us (UAN)</strong><span>+92 55 4295107</span></div>
     </a>
-    <a href="#map" class="quick-contact-item">
-      <div class="qc-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+    <a href="https://maps.app.goo.gl/UDxLEqWJWLsdq5UZ9" target="_blank" rel="noopener noreferrer" class="quick-contact-item">
+      <div class="qc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 23s8-7.2 8-13A8 8 0 0 0 4 10c0 5.8 8 13 8 13Zm0-9.5A3.5 3.5 0 1 1 12 6a3.5 3.5 0 0 1 0 7.5Z"/></svg></div>
       <div class="qc-text"><strong>Visit Us</strong><span>Gujranwala, Pakistan</span></div>
     </a>
   </div>
@@ -319,7 +353,7 @@ p{line-height:1.8;color:#4a5568}
       <p>Whether you're requesting a quotation, asking about product specifications, or exploring an export partnership, here's how to reach the right team.</p>
 
       <div class="info-card">
-        <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+        <div class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 5.6 9-5.6V7H3Zm18 10V9.9l-8.47 5.27a1 1 0 0 1-1.06 0L3 9.9V17h18Z"/></svg></div>
         <div class="info-card-body">
           <strong>Email</strong>
           <a href="mailto:info@bhattichemicalsindustry.com.pk">info@bhattichemicalsindustry.com.pk</a><br>
@@ -327,21 +361,21 @@ p{line-height:1.8;color:#4a5568}
         </div>
       </div>
       <div class="info-card">
-        <div class="info-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.3ZM12.2 21.6h-.1c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.9 1 1-3.8-.2-.3a9.8 9.8 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.5-4.4 9.9-9.8 9.9Zm5.4-7.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.4.3-.5.1-.2 0-.4 0-.6-.1-.2-.6-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.2.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.2-.2-.3-.5-.4Z"/></svg></div>
         <div class="info-card-body">
           <strong>WhatsApp</strong>
           <a href="https://wa.me/923041462460" target="_blank" rel="noopener noreferrer">+92 304 1462 460</a>
         </div>
       </div>
       <div class="info-card">
-        <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+        <div class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6.6 2.5 9.2 2l2.1 5.1-2.4 1.7a15.2 15.2 0 0 0 6.3 6.3l1.7-2.4 5.1 2.1-.5 2.6a3.1 3.1 0 0 1-3.4 2.5C10.6 18.9 5.1 13.4 4.1 5.9a3.1 3.1 0 0 1 2.5-3.4Z"/></svg></div>
         <div class="info-card-body">
           <strong>Phone (UAN)</strong>
           <a href="tel:+92554295107">+92 55 4295107</a>
         </div>
       </div>
       <div class="info-card">
-        <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="info-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 23s8-7.2 8-13A8 8 0 0 0 4 10c0 5.8 8 13 8 13Zm0-9.5A3.5 3.5 0 1 1 12 6a3.5 3.5 0 0 1 0 7.5Z"/></svg></div>
         <div class="info-card-body">
           <strong>Address</strong>
           <span>Bhatti Chemicals Industry, Gujranwala, Punjab, Pakistan</span>
@@ -420,7 +454,7 @@ p{line-height:1.8;color:#4a5568}
 <section class="map-section" id="map">
   <div class="map-wrap reveal">
     <iframe
-      src="https://www.google.com/maps?q=Gujranwala,Punjab,Pakistan&output=embed"
+      src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d54067.18762354118!2d74.13955611745686!3d32.11792147687348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x391f2b8ad536f219%3A0x6e4401f638f9b3f1!2sBHATTI%20CHEMICALS%20INDUSTRY%20(Zinc%20Oxide%20Manufacturer%20in%20Gujranwala%2C%20Punjab%2C%20Pakistan)%2C%20Kacha%20Khiali%20Rd%2C%20Mian%20Sansi%2C%20Gujranwala%2C%2052550%2C%20Pakistan!3m2!1d32.1404576!2d74.17919789999999!5e0!3m2!1sen!2s!4v1790418352301!5m2!1sen!2s"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
       title="Bhatti Chemicals Industry location — Gujranwala, Pakistan">
@@ -453,6 +487,8 @@ p{line-height:1.8;color:#4a5568}
     <?php endforeach; ?>
   </div>
 </section>
+
+</main>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
 

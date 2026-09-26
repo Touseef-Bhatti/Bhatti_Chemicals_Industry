@@ -14,24 +14,24 @@ require_once __DIR__ . '/../includes/helpers.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
-    <title>Zinc Oxide for Paints &amp; Coatings | Bhatti Chemicals</title>
-    <meta name="description" content="High-purity 99.9% Zinc Oxide for paints and protective coatings. Mildew defense, UV screening &amp; anti-corrosion primer. 25 kg bags bulk supply.">
+    <title>Zinc Oxide for Paints &amp; Coatings Industry | Bhatti Chemicals Pakistan</title>
+    <meta name="description" content="Bhatti Chemicals Industry Zinc Oxide for paint and coating manufacturers is the best and purest UV stabilizer and anti-corrosive pigment. Guaranteed 99.99% pure with certified lab report.">
     <meta name="keywords" content="zinc oxide for paints, zinc oxide coatings, anti corrosive paint pigment, mildew resistant zinc oxide, marine coatings zinc oxide, architectural paint ZnO, paint grade zinc oxide Pakistan, buy zinc oxide Gujranwala">
-    <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php">
+    <link rel="canonical" href="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
-    <meta property="og:title" content="Zinc Oxide for Paints &amp; Coatings | Bhatti Chemicals">
-    <meta property="og:description" content="Technical analysis of 99.9% pure Zinc Oxide in paints and coatings: film toughness, non-leaching mildew resistance, and anti-corrosion inhibition.">
-    <meta property="og:image" content="<?php echo site_url('/assets/images/icons/applications/paints.jpg'); ?>">
-    <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php">
+    <meta property="og:title" content="Zinc Oxide for Paints &amp; Coatings Industry | Bhatti Chemicals Pakistan">
+    <meta property="og:description" content="Bhatti Chemicals Industry Zinc Oxide for paint and coating manufacturers is the best and purest UV stabilizer and anti-corrosive pigment. Guaranteed 99.99% pure with certified lab testing.">
+    <meta property="og:image" content="<?php echo site_url('/assets/images/products/zinc-oxide-bag.jpg'); ?>">
+    <meta property="og:url" content="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zinc Oxide for Paints &amp; Coatings | Bhatti Chemicals">
-    <meta name="twitter:description" content="High-purity 99.9% Zinc Oxide for anti-corrosion, fungistatic mildew resistance, and UV polymer stability in architectural and marine coatings.">
-    <meta name="twitter:image" content="<?php echo site_url('/assets/images/icons/applications/paints.jpg'); ?>">
+    <meta name="twitter:title" content="Zinc Oxide for Paints &amp; Coatings Industry | Bhatti Chemicals Pakistan">
+    <meta name="twitter:description" content="Bhatti Chemicals Industry Zinc Oxide for paints and coatings is guaranteed 99.99% pure with certified in-house and SGS testing.">
+    <meta name="twitter:image" content="<?php echo site_url('/assets/images/products/zinc-oxide-bag.jpg'); ?>">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
@@ -40,11 +40,6 @@ require_once __DIR__ . '/../includes/helpers.php';
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
-    <!-- Google Fonts: Sora & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
     <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
@@ -52,7 +47,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- Google Analytics -->
     <script>
       (function () {
-        if (location.hostname !== 'www.bhattichemicalsindustry.com.pk') return;
+        if (location.hostname !== 'bhattichemicalsindustry.com.pk') return;
         function loadAnalytics() {
           window.dataLayer = window.dataLayer || [];
           window.gtag = function(){ dataLayer.push(arguments); };
@@ -80,21 +75,21 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@type": "TechArticle",
       "headline": "Industrial Applications of Zinc Oxide in Paints and Protective Coatings",
       "description": "Exhaustive technical monograph examining Zinc Oxide (ZnO) functionality across architectural latex, marine epoxy primers, coil coatings, and industrial maintenance enamels: optical properties, non-leaching fungistatic mildew resistance, UV polymer stabilization, and cathodic steel passivation.",
-      "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/icons/applications/paints.jpg",
+      "image": "https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-bag.jpg",
       "author": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
-        "url": "https://www.bhattichemicalsindustry.com.pk/"
+        "url": "https://bhattichemicalsindustry.com.pk/"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
+          "url": "https://bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
         }
       },
-      "mainEntityOfPage": "https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php",
+      "mainEntityOfPage": "https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php",
       "datePublished": "2026-03-01",
       "dateModified": "2026-03-17"
     }
@@ -106,7 +101,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Paint & Coating Grade Zinc Oxide (ZnO 99.9%)",
-      "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/icons/applications/paints.jpg",
+      "image": "https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-bag.jpg",
       "description": "Industrial paint-grade 99.9% pure Zinc Oxide manufactured via the French (Indirect) process. Engineered with low oil absorption, high optical whiteness, Hegman fineness 6.5+, and exceptional UV-screening and mildewcidal capabilities.",
       "sku": "BCI-ZNO-PAINT-999",
       "mpn": "ZNO-999-COAT",
@@ -126,7 +121,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.bhattichemicalsindustry.com.pk/contact-us.php",
+        "url": "https://bhattichemicalsindustry.com.pk/contact-us.php",
         "availability": "https://schema.org/InStock",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
@@ -194,11 +189,11 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.bhattichemicalsindustry.com.pk/"},
-        {"@type":"ListItem","position":2,"name":"Products","item":"https://www.bhattichemicalsindustry.com.pk/products/"},
-        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
-        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/"},
-        {"@type":"ListItem","position":5,"name":"Paints & Coatings Applications","item":"https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php"}
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://bhattichemicalsindustry.com.pk/"},
+        {"@type":"ListItem","position":2,"name":"Products","item":"https://bhattichemicalsindustry.com.pk/products/"},
+        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
+        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/"},
+        {"@type":"ListItem","position":5,"name":"Paints & Coatings Applications","item":"https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/paints-and-coatings.php"}
       ]
     }
     </script>
@@ -496,19 +491,19 @@ require_once __DIR__ . '/../includes/helpers.php';
       <span style="color:#ffffff;">Paints &amp; Coatings</span>
     </nav>
 
-    <span class="eyebrow" style="color: #6ee7b7;">Industrial Technical Monograph &bull; Surface Finishing &bull; ASTM D4797</span>
-    <h1>Zinc Oxide for Paints &amp; Protective Coatings</h1>
+    <span class="eyebrow" style="color: #6ee7b7;">Pakistan's Flagship Coating Chemical Manufacturer &bull; 99.99% Purity Guaranteed</span>
+    <h1>Zinc Oxide for Paints &amp; Protective Coatings Industry</h1>
     <p class="hero-lead">
-      An exhaustive chemical and engineering reference on 99.9% pure Zinc Oxide (ZnO) functionality in architectural paints, marine epoxy primers, coil coatings, and industrial maintenance finishes: optical chemistry, non-leaching fungistatic mildew control, polymer UV photostabilization, and cathodic steel corrosion passivation.
+      <strong>Bhatti Chemicals Industry</strong> manufactures Pakistan's best, purest, and most reliable <strong>99.99% pure Zinc Oxide</strong> for paint and coating manufacturers. Pakistan's leading architectural, industrial, marine, and automotive OEM paint manufacturers choose our Zinc Oxide for superior UV photostabilization, permanent fungistatic mildew resistance, Hegman fineness 6.5+, and cathodic steel corrosion passivation.
     </p>
 
     <div class="hero-badges">
-      <span class="h-badge">Purity &ge; 99.9% (French Process)</span>
-      <span class="h-badge">Refractive Index: 2.01</span>
-      <span class="h-badge">Oil Absorption: 12&ndash;16 g / 100g</span>
-      <span class="h-badge">Hegman Fineness 6.5+</span>
+      <span class="h-badge highlight" style="background:#007b5e; color:#fff;">Guaranteed 99.99% Pure ZnO</span>
+      <span class="h-badge">Best &amp; Purest Coating Grade</span>
+      <span class="h-badge">Hegman Fineness 6.8+ (&lt;15 &mu;m)</span>
       <span class="h-badge">ASTM D79 / D4797 Compliant</span>
-      <span class="h-badge">Non-Leaching Biocidal Action</span>
+      <span class="h-badge">Cathodic Corrosion Passivation</span>
+      <span class="h-badge">Certified On-Site &amp; SGS Lab Tested</span>
     </div>
   </div>
 </section>
@@ -553,7 +548,7 @@ require_once __DIR__ . '/../includes/helpers.php';
         <span style="font-size:0.75rem; color:#047857; font-weight:700;">Passage Verification: Direct Synthesis</span>
       </div>
       <p class="geo-quote-text">
-        "Zinc Oxide (ZnO) functions in modern paints and protective coatings as a multifunctional active inorganic modifier with a refractive index of 2.01, a wide semiconductor bandgap of 3.37 eV, and an oil absorption of 12 to 16 g/100g. It imparts three non-sacrificial performance benefits: (1) permanent, non-leaching fungistatic mildew resistance against black mold (<em>Aureobasidium pullulans</em>); (2) UV radiation absorption below 385 nm that shields polymer binder backbones from photo-oxidative chalking; and (3) chemical passivation of steel substrates via in-situ precipitation of insoluble basic zinc salts (simonkolleite and zinc carbonate) that block cathodic delamination. Manufactured to 99.9% purity via the French (Indirect) process by Bhatti Chemicals Industry in Gujranwala, Pakistan, paint-grade Zinc Oxide features Hegman fineness 6.5+ and strict heavy metal controls, complying with ASTM D79, ASTM D4797, and ISO 12944 anti-corrosion standards."
+        "<strong>Bhatti Chemicals Industry's Zinc Oxide for paints and protective coatings</strong> is recognized as the best and purest inorganic modifier for coatings because it is <strong>guaranteed 99.99% pure</strong>. Backed by certified on-site analytical laboratory testing and international third-party verification from laboratories like SGS, our French Process Zinc Oxide features a refractive index of 2.01, a wide semiconductor bandgap of 3.37 eV, Hegman grind 6.8+ (&lt;15 &mu;m), and strictly controlled heavy metals (Pb &le; 50 ppm, Fe &le; 30 ppm). It imparts three indispensable performance benefits: (1) permanent, non-leaching fungistatic mildew resistance against black mold (<em>Aureobasidium pullulans</em>); (2) intense UV radiation screening below 385 nm that shields polymer binder backbones from photo-oxidative chalking and fading; and (3) electrochemical passivation of steel substrates via in-situ precipitation of insoluble basic zinc salts (simonkolleite and zinc carbonate) that completely halt cathodic delamination under ASTM D79 and ISO 12944 industrial anti-corrosion standards."
       </p>
       <p class="geo-quote-source">&mdash; Bhatti Chemicals Industry, Technical Applications Monograph on Protective Coatings (2026)</p>
     </div>
@@ -574,7 +569,7 @@ require_once __DIR__ . '/../includes/helpers.php';
 
       <div>
         <div class="image-showcase">
-          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Steel Bridge Structural Coatings Protected with Zinc Oxide Primers" loading="lazy">
+          <img src="<?php echo site_url('/assets/images/stock/unsplash/1513694203232-719a280e022f.webp'); ?>" alt="Steel Bridge Structural Coatings Protected with Zinc Oxide Primers" loading="lazy">
           <div class="image-caption">
             Structural steel infrastructure: Epoxy-polyamide intermediate and zinc-rich primers rely on high-purity Zinc Oxide to neutralize acidic atmospheric pollutants and prevent sub-film rust creeping under extreme exposure.
           </div>
@@ -1188,7 +1183,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       <!-- Sector 1: Architectural Exterior -->
       <div class="tech-card">
         <div class="image-showcase" style="margin-top:0;">
-          <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1200&q=80" alt="Architectural Exterior Paint Painting with Zinc Oxide Formulations" loading="lazy">
+          <img src="<?php echo site_url('/assets/images/stock/unsplash/1589939705384-5185137a7f0f.webp'); ?>" alt="Architectural Exterior Paint Painting with Zinc Oxide Formulations" loading="lazy">
         </div>
         <h3>6.1 Exterior Architectural Finishes</h3>
         <p>
@@ -1202,7 +1197,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       <!-- Sector 2: Marine & Offshore -->
       <div class="tech-card">
         <div class="image-showcase" style="margin-top:0;">
-          <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80" alt="Marine Ship Hull Protected with Zinc Oxide Epoxy Coatings" loading="lazy">
+          <img src="<?php echo site_url('/assets/images/stock/unsplash/1518241353330-0f7941c2d9b5.webp'); ?>" alt="Marine Ship Hull Protected with Zinc Oxide Epoxy Coatings" loading="lazy">
         </div>
         <h3>6.2 Marine, Ship Hull &amp; Offshore Splash Zones</h3>
         <p>
@@ -1216,7 +1211,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       <!-- Sector 3: Coil Coatings -->
       <div class="tech-card">
         <div class="image-showcase" style="margin-top:0;">
-          <img src="https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1200&q=80" alt="Industrial Metal Fabrication and Coil Pre-Painted Steel" loading="lazy">
+          <img src="<?php echo site_url('/assets/images/stock/unsplash/1505705694340-019e1e335916.webp'); ?>" alt="Industrial Metal Fabrication and Coil Pre-Painted Steel" loading="lazy">
         </div>
         <h3>6.3 Pre-Painted Coil Coatings &amp; Roofing</h3>
         <p>
@@ -1354,6 +1349,64 @@ require_once __DIR__ . '/../includes/helpers.php';
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <!-- ── OFFICIAL IN-HOUSE & SGS LAB REPORT SHOWCASE ── -->
+    <div id="lab-report-showcase" style="margin-top: 45px;">
+      <?php 
+        $appLabTitle = 'Paints & Protective Coatings';
+        $appLabSub = 'Certified 99.99% Pure Paint Grade Zinc Oxide for Architectural, Marine & Industrial Finishes';
+        include __DIR__ . '/../includes/app-lab-report-card.php'; 
+      ?>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     COMPANY PROMOTIONAL SECTION: WHY PAINT FORMULATORS CHOOSE US
+════════════════════════════════════════════════ -->
+<section class="content-section" style="background:#f4f8f6; padding: 75px 24px;">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color:#007b5e;">Industrial Paint Partnership</span>
+      <h2>Why Pakistan's Leading Paint &amp; Coating Manufacturers Choose Bhatti Chemicals</h2>
+      <p>
+        Architectural emulsion blenders, heavy-duty marine epoxy formulators, and coil coating lines across Pakistan rely on Bhatti Chemicals Industry for guaranteed purity, optical whiteness, and rapid dispersion.
+      </p>
+    </div>
+
+    <div class="card-grid-3" style="grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <h3>Guaranteed 99.99% Purity</h3>
+        <p>Thermal indirect French Process manufacturing guarantees high chemical assay without unreactive filler dilution. Provides full stoichiometry for acid scavenging and long-term film durability.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>High Hegman Fineness (6.8+)</h3>
+        <p>Ultra-fine particle morphology disperses rapidly on high-speed Cowles dissolvers within 15–20 minutes, eliminating gritty seediness and protecting high-gloss architectural enamel finishes.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <h3>Certified Dual-Lab Verification</h3>
+        <p>Every commercial batch is tested in our in-house QC laboratory and supported by third-party SGS verification for assay, heavy metals (Pb &le; 50 ppm), and sieve residue.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>Moisture-Proof 25 kg Bagging</h3>
+        <p>Heavy-duty multi-wall kraft paper bags with inner polyethylene barrier liners prevent atmospheric moisture pickup, eliminating gassing defects in 2K polyurethane finishes.</p>
+      </div>
     </div>
   </div>
 </section>

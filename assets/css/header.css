@@ -438,6 +438,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 18px 20px;
+  background: var(--brand-bg-dark);
   border-bottom: 1px solid #e2e8e0;
 }
 
@@ -447,8 +448,8 @@ body {
   width: 34px; height: 34px;
   border-radius: 50%;
   border: none;
-  background: #f0f2f0;
-  color: #1a1a1a;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
   font-size: 1.1rem;
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
@@ -555,12 +556,12 @@ li.accordion-open .mobile-submenu {
 @media (max-width: 1024px) {
   .main-nav { display: none; }
   .menu-toggle { display: flex; }
-  .btn-header-cta.desktop-only { display: none; }
+  .desktop-only { display: none !important; }
 }
 
 @media (max-width: 480px) {
   .header-inner { padding: 0 16px; }
-  .mobile-sidebar { width: 100%; max-width: 100%; right: -100%; }
+  .mobile-sidebar { width: 80%; max-width: 80%; right: -80%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

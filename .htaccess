@@ -3,6 +3,21 @@ RewriteOptions inherit
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Canonical host: force HTTPS non-www URLs in production only.
+  RewriteCond %{HTTP_HOST} ^www\.bhattichemicalsindustry\.com\.pk$ [NC]
+  RewriteRule ^ https://bhattichemicalsindustry.com.pk%{REQUEST_URI} [R=301,L,NE]
+  RewriteCond %{HTTP_HOST} ^bhattichemicalsindustry\.com\.pk$ [NC]
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://bhattichemicalsindustry.com.pk%{REQUEST_URI} [R=301,L,NE]
+
+  # Consolidate legacy entry-point URLs reported by Search Console.
+  RewriteCond %{THE_REQUEST} \s/+index\.php(?:[?\s]) [NC]
+  RewriteRule ^index\.php$ / [R=301,L,NE]
+  RewriteRule ^index\.html$ / [R=301,L,NC,NE]
+  RewriteRule ^termAndConditions\.php$ /terms-and-conditions.php [R=301,L,NC,NE]
+  RewriteRule ^zincDross\.php$ /products/zinc-dross.php [R=301,L,NC,NE]
+  RewriteRule ^Zincproducts\.html$ /products/ [R=301,L,NC,NE]
+
   # Canonicalize legacy spaced folder
   RewriteRule ^zincOxide[_\s\-]+applications/?(.*)$ /zinc-oxide-applications/$1 [R=301,L,NC]
 

@@ -20,6 +20,10 @@ desktop.ini
 *.sublime-workspace
 *.code-workspace
 
+# Local agent and workspace metadata
+/.agents/
+/.codex/
+
 # Scratch, Temporary & Backup Files
 scratch/
 tmp/
@@ -30,6 +34,14 @@ temp/
 *.swo
 *~
 *.orig
+
+# Local PHP and JavaScript tooling output
+.phpunit.result.cache
+.php-cs-fixer.cache
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Server Cache & Logs
 cache/

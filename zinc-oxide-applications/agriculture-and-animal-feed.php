@@ -14,24 +14,24 @@ require_once __DIR__ . '/../includes/helpers.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
-    <title>Zinc Oxide for Agriculture &amp; Feed | Bhatti Chemicals</title>
-    <meta name="description" content="Feed grade 99.9% Zinc Oxide (~80.3% Zn) for animal feed premixes, poultry nutrition &amp; agricultural fertilizers. Bulk 25 kg bags from Pakistan.">
+    <title>Zinc Oxide for Agriculture &amp; Animal Feed Industry | Bhatti Chemicals Pakistan</title>
+    <meta name="description" content="Bhatti Chemicals Industry Zinc Oxide for agriculture & animal feed is the best, purest, and most bio-available zinc micronutrient. Guaranteed 99.99% pure (~80.34% elemental Zn) with certified lab report.">
     <meta name="keywords" content="zinc oxide for animal feed, feed grade zinc oxide, agricultural zinc oxide, zinc micronutrient fertilizer, poultry zinc premix, buy zinc oxide Pakistan, feed grade ZnO Gujranwala">
-    <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php">
+    <link rel="canonical" href="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Bhatti Chemicals Industry">
-    <meta property="og:title" content="Zinc Oxide for Agriculture &amp; Feed | Bhatti Chemicals">
-    <meta property="og:description" content="Technical monograph on 99.9% pure Feed and Agricultural Grade Zinc Oxide: essential dietary trace mineral for livestock and crop fortification. Made in Pakistan.">
-    <meta property="og:image" content="<?php echo site_url('/assets/images/icons/applications/feed.jpg'); ?>">
-    <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php">
+    <meta property="og:title" content="Zinc Oxide for Agriculture &amp; Animal Feed Industry | Bhatti Chemicals Pakistan">
+    <meta property="og:description" content="Bhatti Chemicals Industry Zinc Oxide for agriculture and animal feed is the best and purest bio-available zinc micronutrient. Guaranteed 99.99% pure with certified lab testing.">
+    <meta property="og:image" content="<?php echo site_url('/assets/images/products/zinc-oxide-bag.jpg'); ?>">
+    <meta property="og:url" content="https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zinc Oxide for Agriculture &amp; Feed | Bhatti Chemicals">
-    <meta name="twitter:description" content="High-purity feed-grade Zinc Oxide (~80.3% elemental Zn) for livestock nutrition, poultry eggshell integrity, and crop fertilizer enrichment.">
-    <meta name="twitter:image" content="<?php echo site_url('/assets/images/icons/applications/feed.jpg'); ?>">
+    <meta name="twitter:title" content="Zinc Oxide for Agriculture &amp; Animal Feed Industry | Bhatti Chemicals Pakistan">
+    <meta name="twitter:description" content="Bhatti Chemicals Industry Zinc Oxide for agriculture and animal feed is guaranteed 99.99% pure (~80.34% elemental Zn) with certified in-house and SGS testing.">
+    <meta name="twitter:image" content="<?php echo site_url('/assets/images/products/zinc-oxide-bag.jpg'); ?>">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
@@ -40,11 +40,6 @@ require_once __DIR__ . '/../includes/helpers.php';
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url('/assets/favicon/apple-touch-icon.png'); ?>">
     <link rel="manifest" href="<?php echo site_url('/assets/favicon/site.webmanifest'); ?>">
 
-    <!-- Google Fonts: Sora & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo site_url('/assets/css/header.min.css'); ?>">
     <link rel="preload" href="<?php echo site_url('/assets/css/footer.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="<?php echo site_url('/assets/css/footer.css'); ?>"></noscript>
@@ -52,7 +47,7 @@ require_once __DIR__ . '/../includes/helpers.php';
     <!-- Google Analytics -->
     <script>
       (function () {
-        if (location.hostname !== 'www.bhattichemicalsindustry.com.pk') return;
+        if (location.hostname !== 'bhattichemicalsindustry.com.pk') return;
         function loadAnalytics() {
           window.dataLayer = window.dataLayer || [];
           window.gtag = function(){ dataLayer.push(arguments); };
@@ -80,21 +75,21 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@type": "TechArticle",
       "headline": "Industrial Applications of Zinc Oxide in Agriculture and Animal Feed Nutrition",
       "description": "Exhaustive technical monograph analyzing Zinc Oxide (ZnO) functionality in livestock feed premixes (swine, poultry, ruminants, aquaculture) and agronomic crop fertilization: 80.34% elemental zinc density, enzyme catalysis, gut barrier integrity, and crop yield enhancement.",
-      "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/icons/applications/feed.jpg",
+      "image": "https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-bag.jpg",
       "author": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
-        "url": "https://www.bhattichemicalsindustry.com.pk/"
+        "url": "https://bhattichemicalsindustry.com.pk/"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Bhatti Chemicals Industry",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
+          "url": "https://bhattichemicalsindustry.com.pk/assets/favicon/favicon.svg"
         }
       },
-      "mainEntityOfPage": "https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php",
+      "mainEntityOfPage": "https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php",
       "datePublished": "2026-03-01",
       "dateModified": "2026-03-17"
     }
@@ -106,7 +101,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Feed & Agricultural Grade Zinc Oxide (ZnO 99.9%)",
-      "image": "https://www.bhattichemicalsindustry.com.pk/assets/images/icons/applications/agriculture.jpg",
+      "image": "https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-bag.jpg",
       "description": "High-purity 99.9% Zinc Oxide containing ~80.34% bioavailable elemental zinc, engineered with ultra-low heavy metal limits (Lead ≤ 20 ppm, Cadmium ≤ 10 ppm, Arsenic ≤ 5 ppm). Optimal for animal feed premixes, mineral licks, foliar sprays, and granular fertilizer coating.",
       "sku": "BCI-ZNO-FEED-999",
       "mpn": "ZNO-999-AGRI",
@@ -126,7 +121,7 @@ require_once __DIR__ . '/../includes/helpers.php';
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.bhattichemicalsindustry.com.pk/contact-us.php",
+        "url": "https://bhattichemicalsindustry.com.pk/contact-us.php",
         "availability": "https://schema.org/InStock",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
@@ -194,11 +189,11 @@ require_once __DIR__ . '/../includes/helpers.php';
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.bhattichemicalsindustry.com.pk/"},
-        {"@type":"ListItem","position":2,"name":"Products","item":"https://www.bhattichemicalsindustry.com.pk/products/"},
-        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://www.bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
-        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/"},
-        {"@type":"ListItem","position":5,"name":"Agriculture & Animal Feed Applications","item":"https://www.bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php"}
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://bhattichemicalsindustry.com.pk/"},
+        {"@type":"ListItem","position":2,"name":"Products","item":"https://bhattichemicalsindustry.com.pk/products/"},
+        {"@type":"ListItem","position":3,"name":"Zinc Oxide","item":"https://bhattichemicalsindustry.com.pk/products/zinc-oxide.php"},
+        {"@type":"ListItem","position":4,"name":"Industrial Applications","item":"https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/"},
+        {"@type":"ListItem","position":5,"name":"Agriculture & Animal Feed Applications","item":"https://bhattichemicalsindustry.com.pk/zinc-oxide-applications/agriculture-and-animal-feed.php"}
       ]
     }
     </script>
@@ -496,19 +491,19 @@ require_once __DIR__ . '/../includes/helpers.php';
       <span style="color:#ffffff;">Agriculture &amp; Animal Feed</span>
     </nav>
 
-    <span class="eyebrow" style="color: #6ee7b7;">Nutritional Biochemistry &bull; Agronomic Fertility &bull; Heavy Metal Controlled</span>
-    <h1>Zinc Oxide for Agriculture &amp; Animal Feed</h1>
+    <span class="eyebrow" style="color: #6ee7b7;">Pakistan's Flagship Feed Grade Micronutrient Manufacturer &bull; 99.99% Purity Guaranteed</span>
+    <h1>Zinc Oxide for Agriculture &amp; Animal Feed Industry</h1>
     <p class="hero-lead">
-      An exhaustive technical reference on Feed and Agricultural Grade Zinc Oxide (ZnO 99.9%, ~80.34% elemental Zn): biochemical metalloenzyme functions, post-weaning piglet diarrhea suppression, poultry eggshell and bone mineralization, dairy hoof health, and agronomic crop fertilization across calcareous soils.
+      <strong>Bhatti Chemicals Industry</strong> manufactures Pakistan's best, purest, and most bio-available <strong>99.99% pure Zinc Oxide</strong> (~80.34% elemental Zn) for agriculture, poultry premixes, livestock feed, and fertilizer manufacturing. Pakistan's top poultry feed mills, dairy premix formulators, and fertilizer companies choose our feed-grade Zinc Oxide for optimal enzyme co-factor activation, superior livestock growth, and soil fertility.
     </p>
 
     <div class="hero-badges">
-      <span class="h-badge">Purity &ge; 99.9% (French Process)</span>
+      <span class="h-badge highlight" style="background:#007b5e; color:#fff;">Guaranteed 99.99% Pure ZnO</span>
+      <span class="h-badge">Best &amp; Purest Feed Grade</span>
       <span class="h-badge">Elemental Zinc: ~80.34% Zn</span>
       <span class="h-badge">Lead (Pb) &le; 20 ppm max</span>
-      <span class="h-badge">Cadmium (Cd) &le; 10 ppm max</span>
-      <span class="h-badge">Arsenic (As) &le; 5 ppm max</span>
       <span class="h-badge">EU 1831/2003 &amp; AAFCO Compliant</span>
+      <span class="h-badge">Certified On-Site &amp; SGS Lab Tested</span>
     </div>
   </div>
 </section>
@@ -553,7 +548,7 @@ require_once __DIR__ . '/../includes/helpers.php';
         <span style="font-size:0.75rem; color:#047857; font-weight:700;">Passage Verification: Direct Synthesis</span>
       </div>
       <p class="geo-quote-text">
-        "Feed and Agricultural Grade Zinc Oxide (ZnO, CAS 1314-13-2) manufactured via the French (Indirect) process provides an industry-leading concentration of approximately 80.34% elemental zinc (Zn). In animal nutrition, it acts as an indispensable catalytic and structural cofactor for over 300 vital metalloenzymes—including carbonic anhydrase, carboxypeptidase, and Cu/Zn superoxide dismutase. High-purity Zinc Oxide prevents post-weaning diarrhea (PWD) in nursery piglets by reinforcing intestinal tight junctions (ZO-1, occludin), enhances eggshell thickness and skeletal strength in commercial poultry, and prevents pododermatitis (foot rot) in dairy herds. In agronomy, it remedies widespread soil zinc deficiency across high-pH calcareous soils, boosting grain yields in rice (preventing Khaira disease), maize, and wheat. Produced by Bhatti Chemicals Industry in Gujranwala, Pakistan, with ultra-low heavy metal profiles (Pb &le; 20 ppm, Cd &le; 10 ppm, As &le; 5 ppm), it fully complies with EU Regulation (EC) 1831/2003 and US AAFCO standards."
+        "<strong>Bhatti Chemicals Industry's Zinc Oxide for agriculture and animal feed</strong> is recognized as the best, purest, and most bio-available zinc micronutrient because it is <strong>guaranteed 99.99% pure</strong> (~80.34% elemental Zn). Backed by certified on-site analytical laboratory testing and international third-party verification from laboratories like SGS, our feed-grade Zinc Oxide acts as an indispensable catalytic and structural co-factor for over 300 vital metalloenzymes—including carbonic anhydrase, carboxypeptidase, and Cu/Zn superoxide dismutase. It prevents enteric disorders in young livestock by reinforcing intestinal tight junctions, enhances eggshell thickness and skeletal bone mineralization in commercial layer/broiler poultry, and prevents pododermatitis in dairy herds. In agronomy, it cures soil zinc starvation across alkaline soils, significantly increasing crop yields in rice, maize, and wheat. With ultra-low heavy metal profiles (Pb &le; 20 ppm, Cd &le; 10 ppm, As &le; 5 ppm), it fully complies with EU Regulation (EC) 1831/2003 and US AAFCO nutritional standards."
       </p>
       <p class="geo-quote-source">&mdash; Bhatti Chemicals Industry, Technical Applications Monograph on Agricultural &amp; Feed Nutrition (2026)</p>
     </div>
@@ -577,7 +572,7 @@ require_once __DIR__ . '/../includes/helpers.php';
 
       <div>
         <div class="image-showcase">
-          <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=1200&q=80" alt="Dairy Cattle and Livestock Feed Nutrition with Zinc Oxide Premixes" loading="lazy">
+          <img src="<?php echo site_url('/assets/images/stock/unsplash/1570042225831-d98fa7577f1e.webp'); ?>" alt="Dairy Cattle and Livestock Feed Nutrition with Zinc Oxide Premixes" loading="lazy">
           <div class="image-caption">
             Commercial dairy and livestock feed compounding: Feed-grade Zinc Oxide provides 80.34% elemental zinc density, optimizing hoof horn hardness, milk somatic cell count, and herd fertility.
           </div>
@@ -693,7 +688,7 @@ require_once __DIR__ . '/../includes/helpers.php';
 
       <div>
         <div class="image-showcase" style="margin-top:0;">
-          <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1200&q=80" alt="Dairy Cattle Grazing in Green Pasture Benefiting from Zinc Mineral Nutrition" loading="lazy">
+          <img src="<?php echo site_url('/assets/images/stock/unsplash/1500595046743-cd271d694d30.webp'); ?>" alt="Dairy Cattle Grazing in Green Pasture Benefiting from Zinc Mineral Nutrition" loading="lazy">
           <div class="image-caption">
             Ruminant herd nutrition: Feed-grade Zinc Oxide reinforces hoof keratinization, prevents lameness, and suppresses somatic cell count in lactating dairy cows and water buffalo.
           </div>
@@ -1228,6 +1223,64 @@ require_once __DIR__ . '/../includes/helpers.php';
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <!-- ── OFFICIAL IN-HOUSE & SGS LAB REPORT SHOWCASE ── -->
+    <div id="lab-report-showcase" style="margin-top: 45px;">
+      <?php 
+        $appLabTitle = 'Agriculture & Animal Feed Premix Nutrition';
+        $appLabSub = 'Certified 99.99% Pure Feed Grade Zinc Oxide (~80.34% Elemental Zn) with Controlled Heavy Metals';
+        include __DIR__ . '/../includes/app-lab-report-card.php'; 
+      ?>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     COMPANY PROMOTIONAL SECTION: WHY FEED & FERTILIZER PRODUCERS CHOOSE US
+════════════════════════════════════════════════ -->
+<section class="content-section" style="background:#f4f8f6; padding: 75px 24px;">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color:#007b5e;">Agricultural Leadership</span>
+      <h2>Why Pakistan's Leading Feed Mills &amp; Fertilizer Blenders Choose Bhatti Chemicals</h2>
+      <p>
+        From nationwide poultry feed compounders to commercial fertilizer granulators, nutritionists rely on Bhatti Chemicals Industry for guaranteed purity, high bio-availability, and non-toxic safety.
+      </p>
+    </div>
+
+    <div class="card-grid-3" style="grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <h3>Guaranteed 99.99% Purity (~80.34% Zn)</h3>
+        <p>Highest commercial elemental zinc concentration available. Reduces freight cost per kilogram of active zinc and provides instant in vivo solubility upon reaching the acidic abomasum or proventriculus.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>EU &amp; AAFCO Heavy Metal Compliance</h3>
+        <p>Strictly controlled toxic contaminants: Lead (Pb &le; 20 ppm), Cadmium (Cd &le; 10 ppm), and Arsenic (As &le; 5 ppm). Completely safe for livestock consumption and organic agronomic fertilizer blending.</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <h3>Dual-Lab Verified Test Reports</h3>
+        <p>Every commercial batch is tested in our in-house analytical laboratory and supported by third-party testing from internationally recognized laboratories like SGS, with published Certificate of Analysis (CoA).</p>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>Moisture-Proof 25 kg &amp; 1 MT Bags</h3>
+        <p>Available in 25 kg 3-ply kraft paper bags with inner polyethylene barrier liners or 1,000 kg FIBC jumbo bags for automated pneumatic feed mill batching and fertilizer coating drums.</p>
+      </div>
     </div>
   </div>
 </section>

@@ -16,7 +16,7 @@ require_once __DIR__ . '/includes/helpers.php';
   <title>Chemical Laboratory Services in Pakistan | Bhatti Chemicals Industry</title>
   <meta name="description" content="Bhatti Chemicals Industry provides in-house chemical laboratory services in Gujranwala, Pakistan for zinc, metals recycling, quality control and chemical manufacturing, supported by SGS Pakistan certification and trusted laboratory collaboration.">
   <meta name="keywords" content="chemical laboratory services Pakistan, industrial laboratory Gujranwala, zinc testing laboratory Pakistan, metals recycling laboratory, chemical analysis Pakistan, SGS Pakistan certified laboratory, Bhatti Chemicals Industry laboratory, zinc oxide quality testing">
-  <link rel="canonical" href="https://www.bhattichemicalsindustry.com.pk/services.php">
+  <link rel="canonical" href="https://bhattichemicalsindustry.com.pk/services.php">
 
   <meta name="geo.region" content="PK-PB">
   <meta name="geo.placename" content="Gujranwala, Punjab, Pakistan">
@@ -26,12 +26,12 @@ require_once __DIR__ . '/includes/helpers.php';
   <meta property="og:site_name" content="Bhatti Chemicals Industry">
   <meta property="og:title" content="Chemical Laboratory Services in Pakistan | Bhatti Chemicals Industry">
   <meta property="og:description" content="In-house laboratory services for zinc, metals recycling and chemical manufacturing in Gujranwala, Pakistan, with SGS Pakistan certification and specialist collaboration.">
-  <meta property="og:url" content="https://www.bhattichemicalsindustry.com.pk/services.php">
-  <meta property="og:image" content="https://www.bhattichemicalsindustry.com.pk/assets/lab-reports/zinc-oxide-lab-report.jpg">
+  <meta property="og:url" content="https://bhattichemicalsindustry.com.pk/services.php">
+  <meta property="og:image" content="https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-appearance.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Industrial Chemical Laboratory Services | Bhatti Chemicals Industry">
   <meta name="twitter:description" content="Chemical testing, zinc analysis, metals recycling research and batch quality control from Gujranwala, Pakistan.">
-  <meta name="twitter:image" content="https://www.bhattichemicalsindustry.com.pk/assets/lab-reports/zinc-oxide-lab-report.jpg">
+  <meta name="twitter:image" content="https://bhattichemicalsindustry.com.pk/assets/images/products/zinc-oxide-appearance.webp">
 
   <link rel="icon" type="image/png" href="<?php echo site_url('/assets/favicon/favicon-48x48.png'); ?>" sizes="48x48">
   <link rel="icon" type="image/svg+xml" href="<?php echo site_url('/assets/favicon/favicon.svg'); ?>">
@@ -46,7 +46,7 @@ require_once __DIR__ . '/includes/helpers.php';
 
   <script>
   (function(){
-    if(location.hostname!=='www.bhattichemicalsindustry.com.pk')return;
+    if(location.hostname!=='bhattichemicalsindustry.com.pk')return;
     function loadAnalytics(){
       window.dataLayer=window.dataLayer||[];
       window.gtag=function(){dataLayer.push(arguments);};
@@ -68,7 +68,7 @@ require_once __DIR__ . '/includes/helpers.php';
     "@graph": [
       {
         "@type": "Service",
-        "@id": "https://www.bhattichemicalsindustry.com.pk/services.php#laboratory-service",
+        "@id": "https://bhattichemicalsindustry.com.pk/services.php#laboratory-service",
         "name": "Industrial Chemical Laboratory Services",
         "serviceType": [
           "Chemical analysis",
@@ -81,7 +81,7 @@ require_once __DIR__ . '/includes/helpers.php';
         "provider": {
           "@type": "Organization",
           "name": "Bhatti Chemicals Industry",
-          "url": "https://www.bhattichemicalsindustry.com.pk/",
+          "url": "https://bhattichemicalsindustry.com.pk/",
           "telephone": "+92-304-1462460",
           "email": "info@bhattichemicalsindustry.com.pk",
           "address": {
@@ -102,15 +102,15 @@ require_once __DIR__ . '/includes/helpers.php';
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.bhattichemicalsindustry.com.pk/services.php#webpage",
-        "url": "https://www.bhattichemicalsindustry.com.pk/services.php",
+        "@id": "https://bhattichemicalsindustry.com.pk/services.php#webpage",
+        "url": "https://bhattichemicalsindustry.com.pk/services.php",
         "name": "Chemical Laboratory Services in Pakistan",
         "isPartOf": {
           "@type": "WebSite",
           "name": "Bhatti Chemicals Industry",
-          "url": "https://www.bhattichemicalsindustry.com.pk/"
+          "url": "https://bhattichemicalsindustry.com.pk/"
         },
-        "about": {"@id": "https://www.bhattichemicalsindustry.com.pk/services.php#laboratory-service"},
+        "about": {"@id": "https://bhattichemicalsindustry.com.pk/services.php#laboratory-service"},
         "inLanguage": "en-PK"
       }
     ]
